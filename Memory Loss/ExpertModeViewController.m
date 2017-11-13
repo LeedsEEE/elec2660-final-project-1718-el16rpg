@@ -34,4 +34,20 @@
 }
 */
 
+- (IBAction)didPressTrackOneExpertModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackTwoExpertModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackThreeExpertModeButtons:(UIButton *)sender {
+}
+- (IBAction)didPressTrackFourExpertModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackFiveExpertModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackSixExpertModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackSevenExpertModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackEightExpertModeButton:(UIButton *)sender {
+}
 @end

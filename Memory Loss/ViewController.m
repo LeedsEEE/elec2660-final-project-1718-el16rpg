@@ -26,4 +26,15 @@
 }
 
 
+- (IBAction)didPressEasy:(UIButton *)sender {
+}
+
+- (IBAction)didPressMedium:(UIButton *)sender {
+}
+
+- (IBAction)didPressHard:(UIButton *)sender {
+}
+
+- (IBAction)didPressExpert:(UIButton *)sender {
+}
 @end

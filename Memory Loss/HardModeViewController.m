@@ -34,4 +34,20 @@
 }
 */
 
+- (IBAction)didPressTrackOneHardModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackTwoHardModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackThreeHardModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackFourHardModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackFiveHardModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackSixHardModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackSevenHardModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackEightHardModeButton:(UIButton *)sender {
+}
 @end

@@ -34,6 +34,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didPressEasy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hw2-SG-tre"/>
                                     <segue destination="4aZ-tK-48y" kind="showDetail" id="IrQ-PB-Owl"/>
                                 </connections>
                             </button>
@@ -48,6 +49,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didPressHard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hA8-3y-fpy"/>
                                     <segue destination="Sqg-yW-GSn" kind="showDetail" id="xGx-D5-Zhp"/>
                                 </connections>
                             </button>
@@ -62,6 +64,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didPressExpert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bjj-Tx-E2r"/>
                                     <segue destination="gXg-Nk-5fT" kind="showDetail" id="6QO-bG-VyU"/>
                                 </connections>
                             </button>
@@ -76,6 +79,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="didPressMedium:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ayA-VW-1HO"/>
                                     <segue destination="RmF-PQ-Nc9" kind="showDetail" id="dno-Vp-fvf"/>
                                 </connections>
                             </button>
@@ -145,85 +149,133 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIP-3M-u3u">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sIP-3M-u3u">
                                 <rect key="frame" x="83" y="56" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="mcE-1G-b0W"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1x-yn-aXa">
                                 <rect key="frame" x="83" y="128" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="fow-gH-sDJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4G-xn-bPi">
                                 <rect key="frame" x="83" y="200" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="C68-KU-b0z"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qtc-wh-8dU">
                                 <rect key="frame" x="83" y="272" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="S0y-il-UtT"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijZ-MM-rd5">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijZ-MM-rd5">
                                 <rect key="frame" x="221" y="56" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="tyL-3o-cJf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nDY-v1-I3v">
                                 <rect key="frame" x="221" y="128" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="mq9-NP-rJp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCc-t7-26X">
                                 <rect key="frame" x="221" y="200" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="RCW-CH-tYU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iqg-Ru-tnb">
                                 <rect key="frame" x="221" y="272" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="4tl-qc-FOw"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQR-7f-E4r">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQR-7f-E4r">
                                 <rect key="frame" x="361" y="56" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="B81-hC-pXb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyD-Vy-ch8">
                                 <rect key="frame" x="361" y="128" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="dzU-wj-nYa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eH2-fk-S1t">
                                 <rect key="frame" x="361" y="200" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="ugh-nW-JPi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FzB-un-bNF">
                                 <rect key="frame" x="361" y="272" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="Kjh-b3-GJE"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHG-EY-Ya6">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHG-EY-Ya6">
                                 <rect key="frame" x="499" y="56" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="VHv-Mx-45k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cM5-9I-U3D">
                                 <rect key="frame" x="499" y="128" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="CzL-Uc-zNq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3d-ui-ZZi">
                                 <rect key="frame" x="499" y="200" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="Zly-ak-rIH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcT-VU-pFm">
                                 <rect key="frame" x="499" y="272" width="85" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="7Nc-7B-59s"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -236,6 +288,24 @@
                             <constraint firstItem="ixC-Of-1XL" firstAttribute="top" secondItem="I8W-r7-ur4" secondAttribute="top" id="kI8-tO-7Gt"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="trackOneEasyModeButtons" destination="sIP-3M-u3u" id="4TW-mH-eJP"/>
+                        <outletCollection property="trackOneEasyModeButtons" destination="ijZ-MM-rd5" id="hVy-iZ-u5d"/>
+                        <outletCollection property="trackOneEasyModeButtons" destination="PQR-7f-E4r" id="b80-8K-JAQ"/>
+                        <outletCollection property="trackOneEasyModeButtons" destination="pHG-EY-Ya6" id="n3A-7k-O5c"/>
+                        <outletCollection property="trackTwoEasyModeButtons" destination="w1x-yn-aXa" id="yJV-dr-xeR"/>
+                        <outletCollection property="trackTwoEasyModeButtons" destination="nDY-v1-I3v" id="TV8-Ij-wOD"/>
+                        <outletCollection property="trackTwoEasyModeButtons" destination="gyD-Vy-ch8" id="q7x-8g-Qkc"/>
+                        <outletCollection property="trackTwoEasyModeButtons" destination="cM5-9I-U3D" id="caT-At-fjy"/>
+                        <outletCollection property="trackThreeEasyModeButtons" destination="s4G-xn-bPi" id="Ba8-2H-7QG"/>
+                        <outletCollection property="trackThreeEasyModeButtons" destination="fCc-t7-26X" id="TWh-UZ-Nh9"/>
+                        <outletCollection property="trackThreeEasyModeButtons" destination="eH2-fk-S1t" id="MwS-6r-PZA"/>
+                        <outletCollection property="trackThreeEasyModeButtons" destination="W3d-ui-ZZi" id="Vxq-N5-53l"/>
+                        <outletCollection property="trackFourEasyModeButtons" destination="Qtc-wh-8dU" id="Gni-qb-cza"/>
+                        <outletCollection property="trackFourEasyModeButtons" destination="Iqg-Ru-tnb" id="nHU-rS-4Ik"/>
+                        <outletCollection property="trackFourEasyModeButtons" destination="FzB-un-bNF" id="8u4-BJ-M6B"/>
+                        <outletCollection property="trackFourEasyModeButtons" destination="tcT-VU-pFm" id="q9L-35-E3R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nJ-ib-J2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,321 +339,513 @@
                                 <rect key="frame" x="173" y="62" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="3xD-Dp-NFg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rD0-BG-l4e">
                                 <rect key="frame" x="173" y="97" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="9r2-sa-Y1k"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZt-7Y-SkI">
                                 <rect key="frame" x="173" y="132" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="9kn-x0-ASX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNs-Wl-zCc">
                                 <rect key="frame" x="173" y="167" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="LbX-0H-iFV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIK-qT-cXE">
                                 <rect key="frame" x="173" y="202" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="5do-aB-zqH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FJM-5a-wod">
                                 <rect key="frame" x="173" y="237" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="w67-gz-wy1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hgE-H2-gQr">
                                 <rect key="frame" x="173" y="272" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="HEq-tP-J1d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vIM-pm-aW3">
                                 <rect key="frame" x="173" y="307" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="bcy-9t-Ixb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGv-4l-ydp">
                                 <rect key="frame" x="213" y="62" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="YQ6-qa-AKQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96t-Cj-ChP">
                                 <rect key="frame" x="213" y="97" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="BBI-La-bG8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Elb-7E-3f6">
                                 <rect key="frame" x="213" y="132" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="FUr-Qk-XKA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kXC-ES-BEB">
                                 <rect key="frame" x="213" y="167" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="Cep-DZ-hF6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zbe-l7-UNY">
                                 <rect key="frame" x="213" y="202" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="2Rz-8h-QDD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xhc-7Z-5o2">
                                 <rect key="frame" x="213" y="237" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="4rC-rN-ERE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAx-pM-Aa4">
                                 <rect key="frame" x="213" y="272" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="b66-QA-70S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iW7-2X-dG4">
                                 <rect key="frame" x="213" y="307" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="FS0-p6-RHa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTd-EO-B8d">
                                 <rect key="frame" x="253" y="62" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="OoZ-rc-6IU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbx-0R-phF">
                                 <rect key="frame" x="253" y="97" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="THv-Za-Msp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wr2-Sb-cYZ">
                                 <rect key="frame" x="253" y="132" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="df0-LS-3PR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll2-rE-ivc">
                                 <rect key="frame" x="253" y="167" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="d4L-13-7wM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEY-eD-IhG">
                                 <rect key="frame" x="253" y="202" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="cWt-y7-bfN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xKY-9O-shU">
                                 <rect key="frame" x="253" y="237" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="4FO-Wy-IYa"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cj3-8H-dyy">
                                 <rect key="frame" x="253" y="272" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="k91-Kn-NjB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXx-Iu-grN">
                                 <rect key="frame" x="253" y="307" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="ghs-oB-Hr5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPO-aX-l6w">
                                 <rect key="frame" x="293" y="62" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="ciu-cx-W0I"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXT-n5-5ZR">
                                 <rect key="frame" x="293" y="97" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="n04-CK-2Ep"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epL-r5-Uzu">
                                 <rect key="frame" x="293" y="132" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="tTH-je-0AO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLD-mH-4DF">
                                 <rect key="frame" x="293" y="167" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="Hzs-bo-ch5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dvT-CK-8DQ">
                                 <rect key="frame" x="293" y="202" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="5BP-5I-qY1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70e-Oh-EvI">
                                 <rect key="frame" x="293" y="237" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="xVn-eZ-gBx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xom-Ds-cNR">
                                 <rect key="frame" x="293" y="272" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="0Zi-Q3-wyV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZk-hn-q7h">
                                 <rect key="frame" x="293" y="307" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="r9s-oF-5kL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsS-UN-fdw">
                                 <rect key="frame" x="333" y="62" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="dp2-Qh-oef"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xx4-l3-HcJ">
                                 <rect key="frame" x="333" y="97" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="Og8-CU-1LC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9FL-Vs-02C">
                                 <rect key="frame" x="333" y="132" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="xus-gZ-W4x"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGI-Zd-5pn">
                                 <rect key="frame" x="333" y="167" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="1WG-1t-Jys"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrQ-0T-9Xb">
                                 <rect key="frame" x="333" y="202" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="bRn-Im-Y1a"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FwL-UI-T2c">
                                 <rect key="frame" x="333" y="237" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="XNu-uw-ncP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AG-UI-9gA">
                                 <rect key="frame" x="333" y="272" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="ikE-cS-650"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUt-kh-njN">
                                 <rect key="frame" x="333" y="307" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="CKF-jI-cSc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqG-d3-JcE">
                                 <rect key="frame" x="373" y="62" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="oSZ-R7-PtT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DyP-jQ-eb5">
                                 <rect key="frame" x="373" y="97" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="kNu-wI-H7v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q04-4M-dZL">
                                 <rect key="frame" x="373" y="132" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="KgO-Dy-IEc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ap-tX-OPz">
                                 <rect key="frame" x="373" y="167" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="MOi-YH-xxP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9H-dR-qmD">
                                 <rect key="frame" x="373" y="202" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="aXt-lD-LKN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km9-pn-mmL">
                                 <rect key="frame" x="373" y="237" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="hbh-27-qkn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAo-Bx-Kap">
                                 <rect key="frame" x="373" y="272" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="mx0-Zv-mJt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngM-oO-dcj">
                                 <rect key="frame" x="373" y="307" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="Egd-MZ-udJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgx-9i-Axn">
                                 <rect key="frame" x="413" y="62" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="25z-Ru-JgS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edg-hU-Kfu">
                                 <rect key="frame" x="413" y="97" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="d4X-Bt-lIU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljw-CX-A0U">
                                 <rect key="frame" x="413" y="132" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="Z5Z-sP-lsL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PZ1-HT-JCC">
                                 <rect key="frame" x="413" y="167" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="FC8-Ik-RLm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBg-dq-niq">
                                 <rect key="frame" x="413" y="202" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="Gyt-Le-4f9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wC-el-EnU">
                                 <rect key="frame" x="413" y="237" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="GDM-gZ-Lqs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmC-9s-n2R">
                                 <rect key="frame" x="413" y="272" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="NpZ-nk-lDT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lf5-y5-Uls">
                                 <rect key="frame" x="413" y="307" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="c9n-Pu-xlq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRa-Yf-7ig">
                                 <rect key="frame" x="453" y="62" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="vPd-BD-rI8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9kO-ji-Jid">
                                 <rect key="frame" x="453" y="97" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="v5y-9c-Iqq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eP-Mh-y9a">
                                 <rect key="frame" x="453" y="132" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="aRP-s7-bmz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcb-PU-ZZi">
                                 <rect key="frame" x="453" y="167" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="jnp-ci-30m"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbd-l1-FJd">
                                 <rect key="frame" x="453" y="202" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="EBv-Zb-c8p"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svm-YW-sHL">
                                 <rect key="frame" x="453" y="237" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="5pC-gG-qvU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6T-YB-ydR">
                                 <rect key="frame" x="453" y="272" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="6Yz-QT-fu9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRJ-nJ-6GP">
                                 <rect key="frame" x="453" y="307" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightHardModeButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="Zjq-Y9-s7P"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -596,6 +858,72 @@
                             <constraint firstItem="dJd-sZ-Oy8" firstAttribute="leading" secondItem="5iN-P9-WHY" secondAttribute="leading" id="aWa-rc-jWH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="trackOneHardModeButtons" destination="guB-zB-wzb" id="pbO-15-wzN"/>
+                        <outletCollection property="trackOneHardModeButtons" destination="mGv-4l-ydp" id="Lj9-uv-zWO"/>
+                        <outletCollection property="trackOneHardModeButtons" destination="kTd-EO-B8d" id="Bi1-41-d9i"/>
+                        <outletCollection property="trackOneHardModeButtons" destination="KPO-aX-l6w" id="PXv-ot-AUw"/>
+                        <outletCollection property="trackOneHardModeButtons" destination="YsS-UN-fdw" id="xCz-hT-JpI"/>
+                        <outletCollection property="trackOneHardModeButtons" destination="aqG-d3-JcE" id="ZtU-pT-1KR"/>
+                        <outletCollection property="trackOneHardModeButtons" destination="Rgx-9i-Axn" id="Ine-6p-SiH"/>
+                        <outletCollection property="trackOneHardModeButtons" destination="DRa-Yf-7ig" id="Pf0-ld-Clj"/>
+                        <outletCollection property="trackTwoHardModeButtons" destination="rD0-BG-l4e" id="ILn-ZR-ozj"/>
+                        <outletCollection property="trackTwoHardModeButtons" destination="96t-Cj-ChP" id="Goi-mR-ZQx"/>
+                        <outletCollection property="trackTwoHardModeButtons" destination="pbx-0R-phF" id="FJs-Us-fxh"/>
+                        <outletCollection property="trackTwoHardModeButtons" destination="BXT-n5-5ZR" id="Mwf-WC-ea7"/>
+                        <outletCollection property="trackTwoHardModeButtons" destination="xx4-l3-HcJ" id="aUh-sE-xVp"/>
+                        <outletCollection property="trackTwoHardModeButtons" destination="DyP-jQ-eb5" id="dQK-NQ-iEc"/>
+                        <outletCollection property="trackTwoHardModeButtons" destination="Edg-hU-Kfu" id="fNz-hm-7Sx"/>
+                        <outletCollection property="trackTwoHardModeButtons" destination="9kO-ji-Jid" id="YXV-iQ-y0d"/>
+                        <outletCollection property="trackThreeHardModeButtons" destination="3eP-Mh-y9a" id="Mgl-bh-hMF"/>
+                        <outletCollection property="trackThreeHardModeButtons" destination="Ljw-CX-A0U" id="CBw-y9-5HQ"/>
+                        <outletCollection property="trackThreeHardModeButtons" destination="q04-4M-dZL" id="yJ4-0N-PAZ"/>
+                        <outletCollection property="trackThreeHardModeButtons" destination="9FL-Vs-02C" id="Ezd-oP-rvf"/>
+                        <outletCollection property="trackThreeHardModeButtons" destination="epL-r5-Uzu" id="hIr-lK-gPF"/>
+                        <outletCollection property="trackThreeHardModeButtons" destination="Wr2-Sb-cYZ" id="sOP-da-9yD"/>
+                        <outletCollection property="trackThreeHardModeButtons" destination="Elb-7E-3f6" id="mLp-tW-hej"/>
+                        <outletCollection property="trackThreeHardModeButtons" destination="tZt-7Y-SkI" id="nys-m9-Pga"/>
+                        <outletCollection property="trackFourHardModeButtons" destination="tcb-PU-ZZi" id="q8Z-61-5tK"/>
+                        <outletCollection property="trackFourHardModeButtons" destination="PZ1-HT-JCC" id="vMS-ne-aDh"/>
+                        <outletCollection property="trackFourHardModeButtons" destination="6ap-tX-OPz" id="m2Y-kG-Ars"/>
+                        <outletCollection property="trackFourHardModeButtons" destination="qGI-Zd-5pn" id="sbe-ea-goa"/>
+                        <outletCollection property="trackFourHardModeButtons" destination="jLD-mH-4DF" id="yP6-eP-yin"/>
+                        <outletCollection property="trackFourHardModeButtons" destination="ll2-rE-ivc" id="VhT-5e-f4q"/>
+                        <outletCollection property="trackFourHardModeButtons" destination="kXC-ES-BEB" id="524-hF-LQr"/>
+                        <outletCollection property="trackFourHardModeButtons" destination="WNs-Wl-zCc" id="hGP-wC-twy"/>
+                        <outletCollection property="trackFiveHardModeButtons" destination="tbd-l1-FJd" id="cyN-HH-NTY"/>
+                        <outletCollection property="trackFiveHardModeButtons" destination="UBg-dq-niq" id="ttc-2y-or5"/>
+                        <outletCollection property="trackFiveHardModeButtons" destination="W9H-dR-qmD" id="GbG-jq-OY1"/>
+                        <outletCollection property="trackFiveHardModeButtons" destination="wrQ-0T-9Xb" id="RQH-xv-IVI"/>
+                        <outletCollection property="trackFiveHardModeButtons" destination="dvT-CK-8DQ" id="u2g-Oa-CXN"/>
+                        <outletCollection property="trackFiveHardModeButtons" destination="vEY-eD-IhG" id="sRm-LS-iUR"/>
+                        <outletCollection property="trackFiveHardModeButtons" destination="Zbe-l7-UNY" id="ozR-cS-w14"/>
+                        <outletCollection property="trackFiveHardModeButtons" destination="cIK-qT-cXE" id="3SK-yP-Y55"/>
+                        <outletCollection property="trackSixHardModeButtons" destination="svm-YW-sHL" id="HGb-3h-Wvd"/>
+                        <outletCollection property="trackSixHardModeButtons" destination="4wC-el-EnU" id="baP-z0-XNh"/>
+                        <outletCollection property="trackSixHardModeButtons" destination="km9-pn-mmL" id="QN8-QI-4BO"/>
+                        <outletCollection property="trackSixHardModeButtons" destination="FwL-UI-T2c" id="Zve-zE-fj6"/>
+                        <outletCollection property="trackSixHardModeButtons" destination="70e-Oh-EvI" id="3RL-YD-E38"/>
+                        <outletCollection property="trackSixHardModeButtons" destination="xKY-9O-shU" id="SdZ-4t-xWC"/>
+                        <outletCollection property="trackSixHardModeButtons" destination="Xhc-7Z-5o2" id="8dO-HN-RRZ"/>
+                        <outletCollection property="trackSixHardModeButtons" destination="FJM-5a-wod" id="wEx-bo-8gy"/>
+                        <outletCollection property="trackSevenHardModeButtons" destination="S6T-YB-ydR" id="G2G-cc-v0M"/>
+                        <outletCollection property="trackSevenHardModeButtons" destination="HmC-9s-n2R" id="m37-nJ-Lvt"/>
+                        <outletCollection property="trackSevenHardModeButtons" destination="fAo-Bx-Kap" id="nko-cP-nbk"/>
+                        <outletCollection property="trackSevenHardModeButtons" destination="1AG-UI-9gA" id="Cju-rO-4H7"/>
+                        <outletCollection property="trackSevenHardModeButtons" destination="Xom-Ds-cNR" id="a7n-M9-r2Q"/>
+                        <outletCollection property="trackSevenHardModeButtons" destination="cj3-8H-dyy" id="G4m-0y-B85"/>
+                        <outletCollection property="trackSevenHardModeButtons" destination="WAx-pM-Aa4" id="u3O-ph-ewu"/>
+                        <outletCollection property="trackSevenHardModeButtons" destination="hgE-H2-gQr" id="hOq-Qc-THL"/>
+                        <outletCollection property="trackEightHardModeButtons" destination="SRJ-nJ-6GP" id="HdI-F9-ueK"/>
+                        <outletCollection property="trackEightHardModeButtons" destination="lf5-y5-Uls" id="cEF-cQ-aZp"/>
+                        <outletCollection property="trackEightHardModeButtons" destination="ngM-oO-dcj" id="dmR-pq-cpw"/>
+                        <outletCollection property="trackEightHardModeButtons" destination="ZUt-kh-njN" id="sX4-Ec-Iyd"/>
+                        <outletCollection property="trackEightHardModeButtons" destination="bZk-hn-q7h" id="5AW-IJ-Swh"/>
+                        <outletCollection property="trackEightHardModeButtons" destination="pXx-Iu-grN" id="kRB-YC-Goo"/>
+                        <outletCollection property="trackEightHardModeButtons" destination="iW7-2X-dG4" id="vWB-Eb-yhZ"/>
+                        <outletCollection property="trackEightHardModeButtons" destination="vIM-pm-aW3" id="SWY-f8-lf2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRq-Su-MQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -639,31 +967,49 @@
                                 <rect key="frame" x="59" y="68" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="c9r-0P-uDK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkV-n1-eai">
                                 <rect key="frame" x="59" y="127" width="69" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="NR5-p3-nhh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jr-Rb-mLE">
                                 <rect key="frame" x="59" y="187" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="szL-ID-V24"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6K-lR-9cV">
                                 <rect key="frame" x="59" y="247" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="dfI-S2-HKZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JwX-2S-dKL">
                                 <rect key="frame" x="127" y="68" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="1Fm-ch-23A"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GdG-WP-vCa">
                                 <rect key="frame" x="127" y="127" width="69" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="tBD-Qq-03M"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktg-te-ZHs">
                                 <rect key="frame" x="127" y="187" width="69" height="60"/>
@@ -679,11 +1025,17 @@
                                 <rect key="frame" x="196" y="68" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="AKx-Ek-2zv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sEh-Eb-YWN">
                                 <rect key="frame" x="196" y="127" width="69" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="pGf-gE-cSn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUZ-Hq-yNb">
                                 <rect key="frame" x="196" y="187" width="69" height="60"/>
@@ -699,11 +1051,17 @@
                                 <rect key="frame" x="264" y="68" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="WHa-jE-5c5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhK-ML-4VE">
                                 <rect key="frame" x="264" y="127" width="69" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="Sje-7i-mKj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r5D-JJ-Vs8">
                                 <rect key="frame" x="264" y="187" width="69" height="60"/>
@@ -719,11 +1077,17 @@
                                 <rect key="frame" x="333" y="68" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="ckC-rx-sd9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRd-e4-LTB">
                                 <rect key="frame" x="333" y="127" width="69" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="Z0g-hh-1J3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9X0-Ou-t0q">
                                 <rect key="frame" x="333" y="187" width="69" height="60"/>
@@ -739,11 +1103,17 @@
                                 <rect key="frame" x="401" y="68" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="EuX-vH-qoJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3hC-cx-DZp">
                                 <rect key="frame" x="401" y="127" width="69" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="G04-PZ-SA4"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXb-yS-gzd">
                                 <rect key="frame" x="401" y="187" width="69" height="60"/>
@@ -759,11 +1129,17 @@
                                 <rect key="frame" x="470" y="68" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="3iZ-hu-twS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vL-7d-TIn">
                                 <rect key="frame" x="470" y="127" width="69" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="dh1-0t-Lel"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iYI-st-IAx">
                                 <rect key="frame" x="470" y="187" width="69" height="60"/>
@@ -779,11 +1155,17 @@
                                 <rect key="frame" x="538" y="68" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="3BG-2U-cAT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eie-7w-BeR">
                                 <rect key="frame" x="538" y="127" width="69" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="TBY-HO-Rqv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irZ-fZ-OTv">
                                 <rect key="frame" x="538" y="187" width="69" height="60"/>
@@ -806,6 +1188,40 @@
                             <constraint firstItem="SM3-3f-qKx" firstAttribute="centerX" secondItem="XLV-nt-5JQ" secondAttribute="centerX" id="upl-ai-NGu"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="trackOneMediumModeButtons" destination="NBA-rk-YBR" id="zKx-bv-17y"/>
+                        <outletCollection property="trackOneMediumModeButtons" destination="JwX-2S-dKL" id="71x-DN-k93"/>
+                        <outletCollection property="trackOneMediumModeButtons" destination="Zc1-5B-JQh" id="4UO-W8-9xI"/>
+                        <outletCollection property="trackOneMediumModeButtons" destination="tDk-sK-wSw" id="i8u-Xr-Eki"/>
+                        <outletCollection property="trackOneMediumModeButtons" destination="i4d-bZ-c3B" id="WyS-Fn-p4B"/>
+                        <outletCollection property="trackOneMediumModeButtons" destination="M2x-Pj-Zo6" id="pA0-Mh-qY6"/>
+                        <outletCollection property="trackOneMediumModeButtons" destination="hm7-Vj-Vqo" id="8f1-3u-X7z"/>
+                        <outletCollection property="trackOneMediumModeButtons" destination="GGC-sx-MOy" id="J48-JJ-VcE"/>
+                        <outletCollection property="trackTwoMediumModeButtons" destination="mkV-n1-eai" id="sCF-Dq-TYB"/>
+                        <outletCollection property="trackTwoMediumModeButtons" destination="GdG-WP-vCa" id="Whh-MY-lKB"/>
+                        <outletCollection property="trackTwoMediumModeButtons" destination="sEh-Eb-YWN" id="x5G-PW-peL"/>
+                        <outletCollection property="trackTwoMediumModeButtons" destination="nhK-ML-4VE" id="KGm-X1-Vsc"/>
+                        <outletCollection property="trackTwoMediumModeButtons" destination="iRd-e4-LTB" id="6aY-QG-bZX"/>
+                        <outletCollection property="trackTwoMediumModeButtons" destination="3hC-cx-DZp" id="sjO-1n-xjV"/>
+                        <outletCollection property="trackTwoMediumModeButtons" destination="8vL-7d-TIn" id="85T-24-ppi"/>
+                        <outletCollection property="trackTwoMediumModeButtons" destination="Eie-7w-BeR" id="9cr-di-xVg"/>
+                        <outletCollection property="trackThreeMediumModeButtons" destination="2jr-Rb-mLE" id="rbh-2s-q0U"/>
+                        <outletCollection property="trackThreeMediumModeButtons" destination="ktg-te-ZHs" id="eBF-3P-UqA"/>
+                        <outletCollection property="trackThreeMediumModeButtons" destination="PUZ-Hq-yNb" id="KIG-un-LAc"/>
+                        <outletCollection property="trackThreeMediumModeButtons" destination="r5D-JJ-Vs8" id="rCh-yF-nHs"/>
+                        <outletCollection property="trackThreeMediumModeButtons" destination="9X0-Ou-t0q" id="6qD-2h-yZo"/>
+                        <outletCollection property="trackThreeMediumModeButtons" destination="YXb-yS-gzd" id="2sb-Tm-M80"/>
+                        <outletCollection property="trackThreeMediumModeButtons" destination="iYI-st-IAx" id="dlR-Ga-35K"/>
+                        <outletCollection property="trackThreeMediumModeButtons" destination="irZ-fZ-OTv" id="heI-8Q-nJD"/>
+                        <outletCollection property="trackFourMediumModeButtons" destination="X6K-lR-9cV" id="bhW-3o-rSh"/>
+                        <outletCollection property="trackFourMediumModeButtons" destination="cJL-cQ-RyT" id="JXQ-ie-jVO"/>
+                        <outletCollection property="trackFourMediumModeButtons" destination="enc-Od-bku" id="rik-9w-Yrh"/>
+                        <outletCollection property="trackFourMediumModeButtons" destination="uWZ-Im-6zl" id="hHs-pj-pFK"/>
+                        <outletCollection property="trackFourMediumModeButtons" destination="ig5-XX-Oct" id="n3E-Ow-RRn"/>
+                        <outletCollection property="trackFourMediumModeButtons" destination="wKP-ir-P3D" id="Vea-Vs-aMV"/>
+                        <outletCollection property="trackFourMediumModeButtons" destination="asg-eJ-lcv" id="OO1-g9-F93"/>
+                        <outletCollection property="trackFourMediumModeButtons" destination="lyS-JE-yFS" id="IM9-5m-9zz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGY-xw-yAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -839,321 +1255,513 @@
                                 <rect key="frame" x="173" y="63" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="nse-xg-3lt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUQ-we-tYB">
                                 <rect key="frame" x="213" y="98" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="ofG-Lu-ovO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRC-1Y-smc">
                                 <rect key="frame" x="253" y="133" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="YHa-wi-18P"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3AG-aN-VHB">
                                 <rect key="frame" x="293" y="168" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="ZtD-DO-0oU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Em-BZ-nED">
                                 <rect key="frame" x="333" y="203" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="fLb-Fd-SJr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8K-hl-ggY">
                                 <rect key="frame" x="373" y="238" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="Yr0-I7-5mK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWq-8c-dls">
                                 <rect key="frame" x="413" y="273" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="ywl-Yz-QH5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sko-DO-YKA">
                                 <rect key="frame" x="173" y="98" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="1fs-aD-wCw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2R-GA-H0A">
                                 <rect key="frame" x="213" y="133" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="ZY7-qO-bU6"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFy-mK-OO5">
                                 <rect key="frame" x="253" y="168" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="3HH-XU-j1h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wle-zG-Zxc">
                                 <rect key="frame" x="293" y="203" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="fUo-fg-Y5r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pk7-yh-Ns8">
                                 <rect key="frame" x="333" y="238" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="UrF-KD-4bW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPY-Xk-Nhl">
                                 <rect key="frame" x="373" y="273" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="GhH-RQ-P9d"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yt3-eF-sgu">
                                 <rect key="frame" x="413" y="308" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DP-5f-65f">
-                                <rect key="frame" x="213" y="63" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="thd-Uz-yJs"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhW-0Z-d2K">
                                 <rect key="frame" x="173" y="133" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeExpertModeButtons:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="o7g-L3-a6f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfU-xh-7sy">
+                                <rect key="frame" x="413" y="63" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeExpertModeButtons:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="aV4-I7-t2V"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sb3-dB-Njf">
+                                <rect key="frame" x="453" y="98" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeExpertModeButtons:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="AoP-F7-qm3"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oec-hj-N7a">
                                 <rect key="frame" x="213" y="168" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeExpertModeButtons:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="Lbd-ee-RXY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Whs-g3-V9q">
                                 <rect key="frame" x="253" y="203" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeExpertModeButtons:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="NhK-Cg-DYC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZnP-JJ-RuA">
                                 <rect key="frame" x="293" y="238" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeExpertModeButtons:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="tDw-Or-b8r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Vc-ww-3fj">
                                 <rect key="frame" x="333" y="273" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeExpertModeButtons:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="P8V-gW-jPf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GK-gc-rqR">
                                 <rect key="frame" x="373" y="308" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egj-xM-alo">
-                                <rect key="frame" x="253" y="63" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Saturn.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackThreeExpertModeButtons:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="nDl-Zp-Dxp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ber-mg-I6y">
                                 <rect key="frame" x="173" y="168" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="fpC-ws-A9n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBh-xE-CsQ">
+                                <rect key="frame" x="373" y="63" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="bOv-zB-4aa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFI-tS-dY9">
+                                <rect key="frame" x="413" y="98" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="kiB-AM-chV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W6d-ng-S7H">
+                                <rect key="frame" x="453" y="133" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="p2U-rY-eRk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcA-Fu-gar">
                                 <rect key="frame" x="213" y="203" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="xt5-bM-QgO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRW-J8-JlP">
                                 <rect key="frame" x="253" y="238" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="k8m-f6-RRN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq6-eE-nuu">
                                 <rect key="frame" x="293" y="273" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="Pxw-oD-TsK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXW-Z4-SE7">
                                 <rect key="frame" x="333" y="308" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxE-P6-aa8">
-                                <rect key="frame" x="293" y="63" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackFourExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="OZZ-K5-Dk0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Pl-4q-oH4">
                                 <rect key="frame" x="173" y="203" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="pdu-fg-knm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpu-R4-pPz">
+                                <rect key="frame" x="333" y="63" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="ehX-5n-wpi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLE-Cx-ZuV">
+                                <rect key="frame" x="373" y="98" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="AAw-26-y55"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tWT-JR-TK7">
+                                <rect key="frame" x="413" y="133" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="ble-W6-AEv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2aN-6V-X0M">
+                                <rect key="frame" x="453" y="168" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="7O1-sC-He1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOG-FA-jK7">
                                 <rect key="frame" x="213" y="238" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="9ob-xc-GS0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdB-BY-JDa">
                                 <rect key="frame" x="253" y="273" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTX-a5-iZC">
-                                <rect key="frame" x="333" y="63" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="p2d-ip-JWK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AQG-ID-ltc">
                                 <rect key="frame" x="173" y="238" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="tcD-0I-uwC"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TgU-QM-aCC">
-                                <rect key="frame" x="373" y="63" width="40" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8u6-Qv-yRf">
+                                <rect key="frame" x="293" y="63" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="FRk-a2-tjX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoF-WE-Dg2">
+                                <rect key="frame" x="333" y="98" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="UUU-9b-mtW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBb-Kf-tTA">
+                                <rect key="frame" x="373" y="133" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="GNf-sS-Ja8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2N-7D-kdx">
+                                <rect key="frame" x="413" y="168" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="wet-Vz-Kku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKG-2W-4fF">
+                                <rect key="frame" x="453" y="203" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Alien.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="60G-0Z-zsh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfI-Ap-EQx">
                                 <rect key="frame" x="173" y="273" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="YBF-JV-OpB"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ih-sc-N7f">
-                                <rect key="frame" x="413" y="63" width="40" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Qt-Qo-ikZ">
+                                <rect key="frame" x="253" y="63" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="WWA-Mq-BUt"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f25-lF-tBx">
-                                <rect key="frame" x="453" y="98" width="40" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cf-f0-ogd">
+                                <rect key="frame" x="293" y="98" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="Fhc-U4-hrM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fo-oC-dec">
+                                <rect key="frame" x="333" y="133" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="wke-4m-ENY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpd-8i-SNg">
+                                <rect key="frame" x="373" y="168" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="xC6-7K-e9h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9E8-6w-Kid">
+                                <rect key="frame" x="413" y="203" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="O4P-gO-EPM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIW-wu-cht">
+                                <rect key="frame" x="453" y="238" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Meteorite.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="TPe-fn-XPq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5u-8x-DsR">
                                 <rect key="frame" x="173" y="308" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Satellite.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKZ-cp-BNo">
-                                <rect key="frame" x="453" y="238" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Saturn.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbc-sF-T4a">
-                                <rect key="frame" x="453" y="203" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Asteroid.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFr-ZN-sdk">
-                                <rect key="frame" x="453" y="168" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="2W4-gg-tZx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaB-gt-nGd">
                                 <rect key="frame" x="213" y="273" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1X0-xK-jEw">
-                                <rect key="frame" x="253" y="98" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="UFO.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOy-bY-3j3">
-                                <rect key="frame" x="413" y="133" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackSixExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="4r3-aY-Wk9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Oj-B6-xB2">
                                 <rect key="frame" x="253" y="308" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Alien.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fks-aK-Q1b">
-                                <rect key="frame" x="293" y="133" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="UFO.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gef-f1-n17">
-                                <rect key="frame" x="373" y="98" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Star.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z5m-yX-acQ">
-                                <rect key="frame" x="453" y="133" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Alien.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5yS-fK-8t6">
-                                <rect key="frame" x="333" y="168" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="UFO.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7a-dw-zaO">
-                                <rect key="frame" x="293" y="98" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Saturn.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHA-xF-w79">
-                                <rect key="frame" x="413" y="98" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Alien.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLl-y3-cfK">
-                                <rect key="frame" x="373" y="203" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="UFO.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlb-nk-MWH">
-                                <rect key="frame" x="413" y="238" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="UFO.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAj-Wu-lAB">
-                                <rect key="frame" x="373" y="168" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Saturn.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ab6-3Y-3Hy">
-                                <rect key="frame" x="333" y="98" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Asteroid.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76F-m1-1Zj">
-                                <rect key="frame" x="453" y="273" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="UFO.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C8w-h3-bMe">
-                                <rect key="frame" x="413" y="203" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Saturn.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ACO-Hj-ThR">
-                                <rect key="frame" x="373" y="133" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSixExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="Ve3-QU-mIz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gk2-s2-JUj">
                                 <rect key="frame" x="453" y="308" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
+                                <connections>
+                                    <action selector="didPressTrackOneExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="K7a-oV-Itp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gky-2u-gR6">
                                 <rect key="frame" x="213" y="308" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Meteorite.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45Y-59-fey">
-                                <rect key="frame" x="453" y="63" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Satellite.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFU-CK-gSu">
-                                <rect key="frame" x="333" y="133" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Saturn.jpg"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twg-7T-qsi">
-                                <rect key="frame" x="413" y="168" width="40" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Asteroid.jpg"/>
+                                <connections>
+                                    <action selector="didPressTrackSevenExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="noc-Lo-4YD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Lp-vV-Iwh">
                                 <rect key="frame" x="293" y="308" width="40" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Star.png"/>
+                                <connections>
+                                    <action selector="didPressTrackFiveExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="5fX-Pd-6U0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHU-Vr-Duo">
+                                <rect key="frame" x="213" y="63" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="p3t-XR-tEg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ver-7o-zev">
+                                <rect key="frame" x="253" y="98" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="5gW-Ve-mR5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgu-wF-r0G">
+                                <rect key="frame" x="293" y="133" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="jNz-VP-JlX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahe-OS-lGs">
+                                <rect key="frame" x="333" y="168" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="LGE-hp-smK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6I-lp-ZBp">
+                                <rect key="frame" x="373" y="203" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="xEH-PR-Kuc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRT-Yl-jId">
+                                <rect key="frame" x="413" y="238" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="zwP-OQ-6ao"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhk-g1-wuv">
+                                <rect key="frame" x="453" y="273" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Satellite.png"/>
+                                <connections>
+                                    <action selector="didPressTrackEightExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="grT-AP-ROo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aA-9b-F5A">
+                                <rect key="frame" x="453" y="63" width="40" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="UFO.png"/>
+                                <connections>
+                                    <action selector="didPressTrackTwoExpertModeButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="Apf-RC-Nvh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1166,6 +1774,72 @@
                             <constraint firstItem="XPF-UI-yJL" firstAttribute="centerX" secondItem="EUa-kb-OgC" secondAttribute="centerX" id="efh-aQ-EX4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="trackOneExpertModeButtons" destination="1Km-cd-e5A" id="2NZ-g0-IiP"/>
+                        <outletCollection property="trackOneExpertModeButtons" destination="TUQ-we-tYB" id="XFd-Fg-l7x"/>
+                        <outletCollection property="trackOneExpertModeButtons" destination="RRC-1Y-smc" id="bmv-sZ-tMT"/>
+                        <outletCollection property="trackOneExpertModeButtons" destination="3AG-aN-VHB" id="lrZ-28-Epj"/>
+                        <outletCollection property="trackOneExpertModeButtons" destination="3Em-BZ-nED" id="E02-WB-caC"/>
+                        <outletCollection property="trackOneExpertModeButtons" destination="u8K-hl-ggY" id="7tX-fr-0ID"/>
+                        <outletCollection property="trackOneExpertModeButtons" destination="AWq-8c-dls" id="j4V-zT-Bwb"/>
+                        <outletCollection property="trackOneExpertModeButtons" destination="gk2-s2-JUj" id="2cf-Ev-KCo"/>
+                        <outletCollection property="trackTwoExpertModeButtons" destination="sko-DO-YKA" id="qe9-JB-7TP"/>
+                        <outletCollection property="trackTwoExpertModeButtons" destination="o2R-GA-H0A" id="cFS-np-ceZ"/>
+                        <outletCollection property="trackTwoExpertModeButtons" destination="WFy-mK-OO5" id="QyK-B6-Y9L"/>
+                        <outletCollection property="trackTwoExpertModeButtons" destination="Wle-zG-Zxc" id="VRX-8w-rdj"/>
+                        <outletCollection property="trackTwoExpertModeButtons" destination="pk7-yh-Ns8" id="qnu-Sj-VwT"/>
+                        <outletCollection property="trackTwoExpertModeButtons" destination="EPY-Xk-Nhl" id="PgN-jV-QbX"/>
+                        <outletCollection property="trackTwoExpertModeButtons" destination="Yt3-eF-sgu" id="0rm-OK-N19"/>
+                        <outletCollection property="trackTwoExpertModeButtons" destination="1aA-9b-F5A" id="XhC-0A-s7Z"/>
+                        <outletCollection property="trackThreeExpertModeButtons" destination="fhW-0Z-d2K" id="8KZ-IP-OJu"/>
+                        <outletCollection property="trackThreeExpertModeButtons" destination="oec-hj-N7a" id="XVt-ao-RIY"/>
+                        <outletCollection property="trackThreeExpertModeButtons" destination="Whs-g3-V9q" id="c2O-fY-NHM"/>
+                        <outletCollection property="trackThreeExpertModeButtons" destination="ZnP-JJ-RuA" id="9S9-Zc-Vt9"/>
+                        <outletCollection property="trackThreeExpertModeButtons" destination="9Vc-ww-3fj" id="okq-ld-uoQ"/>
+                        <outletCollection property="trackThreeExpertModeButtons" destination="5GK-gc-rqR" id="PA6-4o-Q0t"/>
+                        <outletCollection property="trackThreeExpertModeButtons" destination="nfU-xh-7sy" id="w12-bu-OQK"/>
+                        <outletCollection property="trackThreeExpertModeButtons" destination="sb3-dB-Njf" id="wF7-nf-PYd"/>
+                        <outletCollection property="trackFourExpertModeButtons" destination="ber-mg-I6y" id="ixJ-Dl-y8u"/>
+                        <outletCollection property="trackFourExpertModeButtons" destination="dcA-Fu-gar" id="e8I-HQ-S1l"/>
+                        <outletCollection property="trackFourExpertModeButtons" destination="gRW-J8-JlP" id="lqC-tb-sH9"/>
+                        <outletCollection property="trackFourExpertModeButtons" destination="Rq6-eE-nuu" id="tju-HB-n0o"/>
+                        <outletCollection property="trackFourExpertModeButtons" destination="KXW-Z4-SE7" id="eY3-0w-HJL"/>
+                        <outletCollection property="trackFourExpertModeButtons" destination="wBh-xE-CsQ" id="Xc8-7y-qlD"/>
+                        <outletCollection property="trackFourExpertModeButtons" destination="yFI-tS-dY9" id="5F6-NF-I1Q"/>
+                        <outletCollection property="trackFourExpertModeButtons" destination="W6d-ng-S7H" id="kQ8-dx-Rnm"/>
+                        <outletCollection property="trackFiveExpertModeButtons" destination="5Pl-4q-oH4" id="Ezw-m3-oTE"/>
+                        <outletCollection property="trackFiveExpertModeButtons" destination="WOG-FA-jK7" id="eNs-PL-htr"/>
+                        <outletCollection property="trackFiveExpertModeButtons" destination="xdB-BY-JDa" id="pV4-in-45n"/>
+                        <outletCollection property="trackFiveExpertModeButtons" destination="7Lp-vV-Iwh" id="8jx-PN-vXB"/>
+                        <outletCollection property="trackFiveExpertModeButtons" destination="kpu-R4-pPz" id="zyv-2K-c2g"/>
+                        <outletCollection property="trackFiveExpertModeButtons" destination="yLE-Cx-ZuV" id="mXP-JJ-Zp3"/>
+                        <outletCollection property="trackFiveExpertModeButtons" destination="tWT-JR-TK7" id="5Fm-gw-bPn"/>
+                        <outletCollection property="trackFiveExpertModeButtons" destination="2aN-6V-X0M" id="x69-bl-90Q"/>
+                        <outletCollection property="trackSixExpertModeButtons" destination="AQG-ID-ltc" id="Rr4-PM-2EI"/>
+                        <outletCollection property="trackSixExpertModeButtons" destination="DaB-gt-nGd" id="xbh-TT-pN6"/>
+                        <outletCollection property="trackSixExpertModeButtons" destination="5Oj-B6-xB2" id="M8u-ro-In2"/>
+                        <outletCollection property="trackSixExpertModeButtons" destination="8u6-Qv-yRf" id="eiJ-hF-2HM"/>
+                        <outletCollection property="trackSixExpertModeButtons" destination="CoF-WE-Dg2" id="IQk-FF-AQW"/>
+                        <outletCollection property="trackSixExpertModeButtons" destination="ZBb-Kf-tTA" id="qab-VC-YlR"/>
+                        <outletCollection property="trackSixExpertModeButtons" destination="c2N-7D-kdx" id="GbY-Ar-cxi"/>
+                        <outletCollection property="trackSixExpertModeButtons" destination="wKG-2W-4fF" id="a2A-lp-n7M"/>
+                        <outletCollection property="trackSevenExpertModeButtons" destination="HfI-Ap-EQx" id="EvU-Cu-gVy"/>
+                        <outletCollection property="trackSevenExpertModeButtons" destination="gky-2u-gR6" id="S7q-N6-2zE"/>
+                        <outletCollection property="trackSevenExpertModeButtons" destination="5Qt-Qo-ikZ" id="acF-ou-P2T"/>
+                        <outletCollection property="trackSevenExpertModeButtons" destination="8cf-f0-ogd" id="bQN-Jd-Y7G"/>
+                        <outletCollection property="trackSevenExpertModeButtons" destination="4fo-oC-dec" id="hkU-JT-MWy"/>
+                        <outletCollection property="trackSevenExpertModeButtons" destination="Dpd-8i-SNg" id="h14-xl-KTn"/>
+                        <outletCollection property="trackSevenExpertModeButtons" destination="9E8-6w-Kid" id="8jU-h6-d9f"/>
+                        <outletCollection property="trackSevenExpertModeButtons" destination="pIW-wu-cht" id="yAQ-X5-pMx"/>
+                        <outletCollection property="trackEightExpertModeButtons" destination="o5u-8x-DsR" id="tZ6-VK-UL4"/>
+                        <outletCollection property="trackEightExpertModeButtons" destination="gHU-Vr-Duo" id="ghk-U9-D5w"/>
+                        <outletCollection property="trackEightExpertModeButtons" destination="Ver-7o-zev" id="6No-2l-P2x"/>
+                        <outletCollection property="trackEightExpertModeButtons" destination="Rgu-wF-r0G" id="6vW-GK-R6q"/>
+                        <outletCollection property="trackEightExpertModeButtons" destination="Ahe-OS-lGs" id="hby-s4-l7k"/>
+                        <outletCollection property="trackEightExpertModeButtons" destination="D6I-lp-ZBp" id="Dnz-M4-SiY"/>
+                        <outletCollection property="trackEightExpertModeButtons" destination="lRT-Yl-jId" id="U3q-TO-HLY"/>
+                        <outletCollection property="trackEightExpertModeButtons" destination="Lhk-g1-wuv" id="RyA-UC-w6e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDz-0F-2nY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

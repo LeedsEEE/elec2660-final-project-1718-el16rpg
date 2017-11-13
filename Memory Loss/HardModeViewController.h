@@ -10,4 +10,28 @@
 
 @interface HardModeViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneHardModeButtons;
+- (IBAction)didPressTrackOneHardModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackTwoHardModeButtons;
+- (IBAction)didPressTrackTwoHardModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeHardModeButtons;
+- (IBAction)didPressTrackThreeHardModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourHardModeButtons;
+- (IBAction)didPressTrackFourHardModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFiveHardModeButtons;
+- (IBAction)didPressTrackFiveHardModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSixHardModeButtons;
+- (IBAction)didPressTrackSixHardModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackSevenHardModeButtons;
+- (IBAction)didPressTrackSevenHardModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackEightHardModeButtons;
+- (IBAction)didPressTrackEightHardModeButton:(UIButton *)sender;
+
 @end

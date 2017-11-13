@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)didPressTrackOneMediumModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackTwoMediumModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackThreeMediumModeButton:(UIButton *)sender {
+}
+- (IBAction)didPressTrackFourMediumModeButton:(UIButton *)sender {
+}
 @end

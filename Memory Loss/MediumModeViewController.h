@@ -10,4 +10,17 @@
 
 @interface MediumModeViewController : UIViewController
 
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneMediumModeButtons;
+- (IBAction)didPressTrackOneMediumModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackTwoMediumModeButtons;
+- (IBAction)didPressTrackTwoMediumModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeMediumModeButtons;
+- (IBAction)didPressTrackThreeMediumModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourMediumModeButtons;
+- (IBAction)didPressTrackFourMediumModeButton:(UIButton *)sender;
+
+
 @end
