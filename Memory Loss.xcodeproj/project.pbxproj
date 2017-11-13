@@ -15,6 +15,10 @@
 		A8F81D1A1FBA0664004D532E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D181FBA0664004D532E /* LaunchScreen.storyboard */; };
 		A8F81D251FBA0665004D532E /* Memory_LossTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D241FBA0665004D532E /* Memory_LossTests.m */; };
 		A8F81D301FBA0665004D532E /* Memory_LossUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D2F1FBA0665004D532E /* Memory_LossUITests.m */; };
+		A8F81D3F1FBA0962004D532E /* EasyModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D3E1FBA0962004D532E /* EasyModeViewController.m */; };
+		A8F81D421FBA0976004D532E /* MediumModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D411FBA0976004D532E /* MediumModeViewController.m */; };
+		A8F81D451FBA0983004D532E /* HardModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D441FBA0983004D532E /* HardModeViewController.m */; };
+		A8F81D481FBA0991004D532E /* ExpertModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D471FBA0991004D532E /* ExpertModeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		A8F81D2B1FBA0665004D532E /* Memory LossUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Memory LossUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F81D2F1FBA0665004D532E /* Memory_LossUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memory_LossUITests.m; sourceTree = "<group>"; };
 		A8F81D311FBA0665004D532E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8F81D3D1FBA0962004D532E /* EasyModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyModeViewController.h; sourceTree = "<group>"; };
+		A8F81D3E1FBA0962004D532E /* EasyModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyModeViewController.m; sourceTree = "<group>"; };
+		A8F81D401FBA0976004D532E /* MediumModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediumModeViewController.h; sourceTree = "<group>"; };
+		A8F81D411FBA0976004D532E /* MediumModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediumModeViewController.m; sourceTree = "<group>"; };
+		A8F81D431FBA0983004D532E /* HardModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HardModeViewController.h; sourceTree = "<group>"; };
+		A8F81D441FBA0983004D532E /* HardModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HardModeViewController.m; sourceTree = "<group>"; };
+		A8F81D461FBA0991004D532E /* ExpertModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpertModeViewController.h; sourceTree = "<group>"; };
+		A8F81D471FBA0991004D532E /* ExpertModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpertModeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,14 @@
 				A8F81D0E1FBA0664004D532E /* AppDelegate.m */,
 				A8F81D101FBA0664004D532E /* ViewController.h */,
 				A8F81D111FBA0664004D532E /* ViewController.m */,
+				A8F81D3D1FBA0962004D532E /* EasyModeViewController.h */,
+				A8F81D3E1FBA0962004D532E /* EasyModeViewController.m */,
+				A8F81D401FBA0976004D532E /* MediumModeViewController.h */,
+				A8F81D411FBA0976004D532E /* MediumModeViewController.m */,
+				A8F81D431FBA0983004D532E /* HardModeViewController.h */,
+				A8F81D441FBA0983004D532E /* HardModeViewController.m */,
+				A8F81D461FBA0991004D532E /* ExpertModeViewController.h */,
+				A8F81D471FBA0991004D532E /* ExpertModeViewController.m */,
 				A8F81D131FBA0664004D532E /* Main.storyboard */,
 				A8F81D161FBA0664004D532E /* Assets.xcassets */,
 				A8F81D181FBA0664004D532E /* LaunchScreen.storyboard */,
@@ -273,7 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F81D421FBA0976004D532E /* MediumModeViewController.m in Sources */,
 				A8F81D121FBA0664004D532E /* ViewController.m in Sources */,
+				A8F81D451FBA0983004D532E /* HardModeViewController.m in Sources */,
+				A8F81D481FBA0991004D532E /* ExpertModeViewController.m in Sources */,
+				A8F81D3F1FBA0962004D532E /* EasyModeViewController.m in Sources */,
 				A8F81D0F1FBA0664004D532E /* AppDelegate.m in Sources */,
 				A8F81D0C1FBA0664004D532E /* main.m in Sources */,
 			);
