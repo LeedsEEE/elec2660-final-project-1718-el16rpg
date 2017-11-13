@@ -27,6 +27,7 @@
 		A8F81D561FBA0AA2004D532E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4E1FBA0AA2004D532E /* Spaceship.png */; };
 		A8F81D571FBA0AA2004D532E /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4F1FBA0AA2004D532E /* Star.png */; };
 		A8F81D581FBA0AA2004D532E /* UFO.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D501FBA0AA2004D532E /* UFO.png */; };
+		A8F81D5C1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D5B1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		A8F81D4E1FBA0AA2004D532E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		A8F81D4F1FBA0AA2004D532E /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
 		A8F81D501FBA0AA2004D532E /* UFO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UFO.png; sourceTree = "<group>"; };
+		A8F81D5B1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iphone-background-wallpaper-2217444-l.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 				A8F81D4E1FBA0AA2004D532E /* Spaceship.png */,
 				A8F81D4F1FBA0AA2004D532E /* Star.png */,
 				A8F81D501FBA0AA2004D532E /* UFO.png */,
+				A8F81D5B1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg */,
 				A8F81D1B1FBA0664004D532E /* Info.plist */,
 				A8F81D0A1FBA0664004D532E /* Supporting Files */,
 			);
@@ -293,6 +296,7 @@
 				A8F81D581FBA0AA2004D532E /* UFO.png in Resources */,
 				A8F81D531FBA0AA2004D532E /* Meteorite.jpg in Resources */,
 				A8F81D561FBA0AA2004D532E /* Spaceship.png in Resources */,
+				A8F81D5C1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg in Resources */,
 				A8F81D1A1FBA0664004D532E /* LaunchScreen.storyboard in Resources */,
 				A8F81D511FBA0AA2004D532E /* Alien.jpg in Resources */,
 				A8F81D521FBA0AA2004D532E /* Asteroid.jpg in Resources */,
