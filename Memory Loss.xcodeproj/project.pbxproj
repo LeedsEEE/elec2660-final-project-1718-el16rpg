@@ -28,6 +28,7 @@
 		A8F81D571FBA0AA2004D532E /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4F1FBA0AA2004D532E /* Star.png */; };
 		A8F81D581FBA0AA2004D532E /* UFO.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D501FBA0AA2004D532E /* UFO.png */; };
 		A8F81D5C1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D5B1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg */; };
+		A8F81D5E1FBA1BBE004D532E /* Memory Loss Icon (6).png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D5D1FBA1BBE004D532E /* Memory Loss Icon (6).png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		A8F81D4F1FBA0AA2004D532E /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
 		A8F81D501FBA0AA2004D532E /* UFO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UFO.png; sourceTree = "<group>"; };
 		A8F81D5B1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "iphone-background-wallpaper-2217444-l.jpg"; sourceTree = "<group>"; };
+		A8F81D5D1FBA1BBE004D532E /* Memory Loss Icon (6).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Memory Loss Icon (6).png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				A8F81D4F1FBA0AA2004D532E /* Star.png */,
 				A8F81D501FBA0AA2004D532E /* UFO.png */,
 				A8F81D5B1FBA0CAA004D532E /* iphone-background-wallpaper-2217444-l.jpg */,
+				A8F81D5D1FBA1BBE004D532E /* Memory Loss Icon (6).png */,
 				A8F81D1B1FBA0664004D532E /* Info.plist */,
 				A8F81D0A1FBA0664004D532E /* Supporting Files */,
 			);
@@ -305,6 +308,7 @@
 				A8F81D571FBA0AA2004D532E /* Star.png in Resources */,
 				A8F81D551FBA0AA2004D532E /* Saturn.jpg in Resources */,
 				A8F81D151FBA0664004D532E /* Main.storyboard in Resources */,
+				A8F81D5E1FBA1BBE004D532E /* Memory Loss Icon (6).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
