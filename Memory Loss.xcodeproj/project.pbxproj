@@ -19,6 +19,14 @@
 		A8F81D421FBA0976004D532E /* MediumModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D411FBA0976004D532E /* MediumModeViewController.m */; };
 		A8F81D451FBA0983004D532E /* HardModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D441FBA0983004D532E /* HardModeViewController.m */; };
 		A8F81D481FBA0991004D532E /* ExpertModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D471FBA0991004D532E /* ExpertModeViewController.m */; };
+		A8F81D511FBA0AA2004D532E /* Alien.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D491FBA0AA2004D532E /* Alien.jpg */; };
+		A8F81D521FBA0AA2004D532E /* Asteroid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4A1FBA0AA2004D532E /* Asteroid.jpg */; };
+		A8F81D531FBA0AA2004D532E /* Meteorite.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4B1FBA0AA2004D532E /* Meteorite.jpg */; };
+		A8F81D541FBA0AA2004D532E /* Satellite.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4C1FBA0AA2004D532E /* Satellite.png */; };
+		A8F81D551FBA0AA2004D532E /* Saturn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4D1FBA0AA2004D532E /* Saturn.jpg */; };
+		A8F81D561FBA0AA2004D532E /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4E1FBA0AA2004D532E /* Spaceship.png */; };
+		A8F81D571FBA0AA2004D532E /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D4F1FBA0AA2004D532E /* Star.png */; };
+		A8F81D581FBA0AA2004D532E /* UFO.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F81D501FBA0AA2004D532E /* UFO.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +71,14 @@
 		A8F81D441FBA0983004D532E /* HardModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HardModeViewController.m; sourceTree = "<group>"; };
 		A8F81D461FBA0991004D532E /* ExpertModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpertModeViewController.h; sourceTree = "<group>"; };
 		A8F81D471FBA0991004D532E /* ExpertModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpertModeViewController.m; sourceTree = "<group>"; };
+		A8F81D491FBA0AA2004D532E /* Alien.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Alien.jpg; sourceTree = "<group>"; };
+		A8F81D4A1FBA0AA2004D532E /* Asteroid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Asteroid.jpg; sourceTree = "<group>"; };
+		A8F81D4B1FBA0AA2004D532E /* Meteorite.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Meteorite.jpg; sourceTree = "<group>"; };
+		A8F81D4C1FBA0AA2004D532E /* Satellite.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Satellite.png; sourceTree = "<group>"; };
+		A8F81D4D1FBA0AA2004D532E /* Saturn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Saturn.jpg; sourceTree = "<group>"; };
+		A8F81D4E1FBA0AA2004D532E /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		A8F81D4F1FBA0AA2004D532E /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		A8F81D501FBA0AA2004D532E /* UFO.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UFO.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +144,14 @@
 				A8F81D131FBA0664004D532E /* Main.storyboard */,
 				A8F81D161FBA0664004D532E /* Assets.xcassets */,
 				A8F81D181FBA0664004D532E /* LaunchScreen.storyboard */,
+				A8F81D491FBA0AA2004D532E /* Alien.jpg */,
+				A8F81D4A1FBA0AA2004D532E /* Asteroid.jpg */,
+				A8F81D4B1FBA0AA2004D532E /* Meteorite.jpg */,
+				A8F81D4C1FBA0AA2004D532E /* Satellite.png */,
+				A8F81D4D1FBA0AA2004D532E /* Saturn.jpg */,
+				A8F81D4E1FBA0AA2004D532E /* Spaceship.png */,
+				A8F81D4F1FBA0AA2004D532E /* Star.png */,
+				A8F81D501FBA0AA2004D532E /* UFO.png */,
 				A8F81D1B1FBA0664004D532E /* Info.plist */,
 				A8F81D0A1FBA0664004D532E /* Supporting Files */,
 			);
@@ -266,8 +290,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8F81D581FBA0AA2004D532E /* UFO.png in Resources */,
+				A8F81D531FBA0AA2004D532E /* Meteorite.jpg in Resources */,
+				A8F81D561FBA0AA2004D532E /* Spaceship.png in Resources */,
 				A8F81D1A1FBA0664004D532E /* LaunchScreen.storyboard in Resources */,
+				A8F81D511FBA0AA2004D532E /* Alien.jpg in Resources */,
+				A8F81D521FBA0AA2004D532E /* Asteroid.jpg in Resources */,
 				A8F81D171FBA0664004D532E /* Assets.xcassets in Resources */,
+				A8F81D541FBA0AA2004D532E /* Satellite.png in Resources */,
+				A8F81D571FBA0AA2004D532E /* Star.png in Resources */,
+				A8F81D551FBA0AA2004D532E /* Saturn.jpg in Resources */,
 				A8F81D151FBA0664004D532E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
