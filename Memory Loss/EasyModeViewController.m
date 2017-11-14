@@ -40,6 +40,6 @@
 }
 - (IBAction)didPressTrackThreeEasyModeButton:(UIButton *)sender {
 }
-- (IBAction)didPressTrackThreeEasyModeButton:(UIButton *)sender {
+- (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender {
 }
 @end
