@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface EasyModeViewController : UIViewController
+@interface EasyModeViewController : UIViewController {
+    
+    NSInteger trackOneButtonStateArray[8];
+    
+}
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneEasyModeButtons;
 - (IBAction)didPressTrackOneEasyModeButton:(UIButton *)sender;
@@ -21,5 +26,7 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourEasyModeButtons;
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender;
+
+@property (strong, nonatomic) AVAudioPlayer *trackOne;
 
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A892B42E1FBCB0D400AFC330 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */; };
 		A8F81D0C1FBA0664004D532E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D0B1FBA0664004D532E /* main.m */; };
 		A8F81D0F1FBA0664004D532E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D0E1FBA0664004D532E /* AppDelegate.m */; };
 		A8F81D121FBA0664004D532E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D111FBA0664004D532E /* ViewController.m */; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A8F81D071FBA0664004D532E /* Memory Loss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Loss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F81D0B1FBA0664004D532E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8F81D0D1FBA0664004D532E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A892B42E1FBCB0D400AFC330 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +113,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A892B42C1FBCB0D300AFC330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A8F81CFE1FBA0664004D532E = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +128,7 @@
 				A8F81D231FBA0665004D532E /* Memory LossTests */,
 				A8F81D2E1FBA0665004D532E /* Memory LossUITests */,
 				A8F81D081FBA0664004D532E /* Products */,
+				A892B42C1FBCB0D300AFC330 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -573,6 +585,7 @@
 				A8F81D361FBA0665004D532E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8F81D371FBA0665004D532E /* Build configuration list for PBXNativeTarget "Memory LossTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +594,7 @@
 				A8F81D391FBA0665004D532E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A8F81D3A1FBA0665004D532E /* Build configuration list for PBXNativeTarget "Memory LossUITests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +603,7 @@
 				A8F81D3C1FBA0665004D532E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

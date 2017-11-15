@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initArrays];
+    [self setupAudioPlayers];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -35,11 +39,53 @@
 */
 
 - (IBAction)didPressTrackOneEasyModeButton:(UIButton *)sender {
+    
+    NSLog(@"Track One Button %ld", sender.tag);
+    
+    if ([sender isSelected]) {  // Yes
+        NSLog(@"Selected");
+        [sender setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
+           UIControlStateNormal];
+        trackOneButtonStateArray[sender.tag] = 1;
+         sender.selected = NO;
+    }
+    else { // No
+        NSLog(@"Unselected");
+        [sender setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
+           UIControlStateNormal];
+        trackOneButtonStateArray[sender.tag] = 0;
+         sender.selected = YES;
+    }
 }
+
 - (IBAction)didPressTrackTwoEasyModeButton:(UIButton *)sender {
 }
 - (IBAction)didPressTrackThreeEasyModeButton:(UIButton *)sender {
 }
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender {
 }
+
+-(void) initArrays {
+    
+    // initialize every element to zero
+    
+    for (int i = 0; i < 8; i++) {
+        
+        trackOneButtonStateArray[i] = 0;
+    }
+    
+}
+
+-(void) setupAudioPlayers {
+    
+    NSLog(@"Setting Up Audio Players");
+    
+    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
+    
+    self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    [self.trackOne prepareToPlay];
+    
+}
+
 @end
