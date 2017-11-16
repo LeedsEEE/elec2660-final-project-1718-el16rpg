@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A892B42E1FBCB0D400AFC330 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */; };
+		A892B4311FBE397900AFC330 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A892B4301FBE397900AFC330 /* DataModel.m */; };
 		A8F81D0C1FBA0664004D532E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D0B1FBA0664004D532E /* main.m */; };
 		A8F81D0F1FBA0664004D532E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D0E1FBA0664004D532E /* AppDelegate.m */; };
 		A8F81D121FBA0664004D532E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D111FBA0664004D532E /* ViewController.m */; };
@@ -51,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A892B42F1FBE397900AFC330 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
+		A892B4301FBE397900AFC330 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		A8F81D071FBA0664004D532E /* Memory Loss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Loss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F81D0B1FBA0664004D532E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8F81D0D1FBA0664004D532E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -157,6 +160,8 @@
 				A8F81D441FBA0983004D532E /* HardModeViewController.m */,
 				A8F81D461FBA0991004D532E /* ExpertModeViewController.h */,
 				A8F81D471FBA0991004D532E /* ExpertModeViewController.m */,
+				A892B42F1FBE397900AFC330 /* DataModel.h */,
+				A892B4301FBE397900AFC330 /* DataModel.m */,
 				A8F81D131FBA0664004D532E /* Main.storyboard */,
 				A8F81D161FBA0664004D532E /* Assets.xcassets */,
 				A8F81D181FBA0664004D532E /* LaunchScreen.storyboard */,
@@ -346,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8F81D421FBA0976004D532E /* MediumModeViewController.m in Sources */,
+				A892B4311FBE397900AFC330 /* DataModel.m in Sources */,
 				A8F81D121FBA0664004D532E /* ViewController.m in Sources */,
 				A8F81D451FBA0983004D532E /* HardModeViewController.m in Sources */,
 				A8F81D481FBA0991004D532E /* ExpertModeViewController.m in Sources */,
