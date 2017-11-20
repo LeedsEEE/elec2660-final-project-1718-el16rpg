@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "AppDelegate.h"
 
 @interface HardModeViewController : UIViewController
 

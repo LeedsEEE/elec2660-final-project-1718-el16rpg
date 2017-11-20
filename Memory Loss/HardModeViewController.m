@@ -50,4 +50,7 @@
 }
 - (IBAction)didPressTrackEightHardModeButton:(UIButton *)sender {
 }
+- (IBAction)didPressPauseHardModeButton:(UIButton *)sender {
+}
+
 @end

@@ -42,4 +42,7 @@
 }
 - (IBAction)didPressTrackFourMediumModeButton:(UIButton *)sender {
 }
+- (IBAction)didPressPauseMediumModeButton:(UIButton *)sender {
+}
+
 @end

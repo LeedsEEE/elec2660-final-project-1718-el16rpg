@@ -64,6 +64,8 @@
 }
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender {
 }
+- (IBAction)didPressPauseEasyModeButton:(UIButton *)sender {
+}
 
 -(void) initArrays {
     

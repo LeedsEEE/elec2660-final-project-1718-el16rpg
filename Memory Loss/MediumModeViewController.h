@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "AppDelegate.h"
 
 @interface MediumModeViewController : UIViewController
 
@@ -22,6 +23,5 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourMediumModeButtons;
 - (IBAction)didPressTrackFourMediumModeButton:(UIButton *)sender;
-
 
 @end

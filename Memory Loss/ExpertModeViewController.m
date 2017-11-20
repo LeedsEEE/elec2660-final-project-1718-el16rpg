@@ -50,4 +50,7 @@
 }
 - (IBAction)didPressTrackEightExpertModeButton:(UIButton *)sender {
 }
+- (IBAction)didPressPauseExpertModeButton:(UIButton *)sender {
+}
+
 @end
