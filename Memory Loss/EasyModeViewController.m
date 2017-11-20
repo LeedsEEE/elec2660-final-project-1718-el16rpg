@@ -21,8 +21,6 @@
     [self setupAudioPlayers];
     
     // Do any additional setup after loading the view.
-    
-    __pauseViewController = [[PauseViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -87,12 +85,12 @@
     
     NSLog(@"Setting Up Audio Players");
     
-    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+/*    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
     
     self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     [self.trackOne prepareToPlay];
     
-}
+*/ } 
 
 @end

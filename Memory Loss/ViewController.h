@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController
+
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
 
 - (IBAction)didPressEasy:(UIButton *)sender;
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A8603B8D1FC3590000BAB564 /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8603B8C1FC3590000BAB564 /* PauseViewController.m */; };
+		A8603B8F1FC3815900BAB564 /* Space App Music.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8603B8E1FC3815900BAB564 /* Space App Music.wav */; };
 		A892B42E1FBCB0D400AFC330 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */; };
 		A892B4311FBE397900AFC330 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A892B4301FBE397900AFC330 /* DataModel.m */; };
 		A8F81D0C1FBA0664004D532E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D0B1FBA0664004D532E /* main.m */; };
@@ -54,6 +55,7 @@
 /* Begin PBXFileReference section */
 		A8603B8B1FC3590000BAB564 /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseViewController.h; sourceTree = "<group>"; };
 		A8603B8C1FC3590000BAB564 /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
+		A8603B8E1FC3815900BAB564 /* Space App Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Space App Music.wav"; sourceTree = "<group>"; };
 		A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A892B42F1FBE397900AFC330 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		A892B4301FBE397900AFC330 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				A8F81D131FBA0664004D532E /* Main.storyboard */,
 				A8F81D161FBA0664004D532E /* Assets.xcassets */,
 				A8F81D181FBA0664004D532E /* LaunchScreen.storyboard */,
+				A8603B8E1FC3815900BAB564 /* Space App Music.wav */,
 				A8F81D491FBA0AA2004D532E /* Alien.jpg */,
 				A8F81D4A1FBA0AA2004D532E /* Asteroid.jpg */,
 				A8F81D4B1FBA0AA2004D532E /* Meteorite.jpg */,
@@ -325,6 +328,7 @@
 				A8F81D1A1FBA0664004D532E /* LaunchScreen.storyboard in Resources */,
 				A8F81D511FBA0AA2004D532E /* Alien.jpg in Resources */,
 				A8F81D521FBA0AA2004D532E /* Asteroid.jpg in Resources */,
+				A8603B8F1FC3815900BAB564 /* Space App Music.wav in Resources */,
 				A8F81D171FBA0664004D532E /* Assets.xcassets in Resources */,
 				A8F81D541FBA0AA2004D532E /* Satellite.png in Resources */,
 				A8F81D571FBA0AA2004D532E /* Star.png in Resources */,
