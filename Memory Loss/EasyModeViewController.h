@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "AppDelegate.h"
+#import "PauseViewController.h"
 
 @interface EasyModeViewController : UIViewController {
     

@@ -21,6 +21,8 @@
     [self setupAudioPlayers];
     
     // Do any additional setup after loading the view.
+    
+    __pauseViewController = [[PauseViewController alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -65,6 +67,9 @@
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender {
 }
 - (IBAction)didPressPauseEasyModeButton:(UIButton *)sender {
+    
+    NSLog(@"Paused");
+    
 }
 
 -(void) initArrays {

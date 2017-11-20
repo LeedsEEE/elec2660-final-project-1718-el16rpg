@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8603B8D1FC3590000BAB564 /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8603B8C1FC3590000BAB564 /* PauseViewController.m */; };
 		A892B42E1FBCB0D400AFC330 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */; };
 		A892B4311FBE397900AFC330 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A892B4301FBE397900AFC330 /* DataModel.m */; };
 		A8F81D0C1FBA0664004D532E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D0B1FBA0664004D532E /* main.m */; };
@@ -51,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8603B8B1FC3590000BAB564 /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseViewController.h; sourceTree = "<group>"; };
+		A8603B8C1FC3590000BAB564 /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
 		A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A892B42F1FBE397900AFC330 /* DataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataModel.h; sourceTree = "<group>"; };
 		A892B4301FBE397900AFC330 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
@@ -160,6 +163,8 @@
 				A8F81D441FBA0983004D532E /* HardModeViewController.m */,
 				A8F81D461FBA0991004D532E /* ExpertModeViewController.h */,
 				A8F81D471FBA0991004D532E /* ExpertModeViewController.m */,
+				A8603B8B1FC3590000BAB564 /* PauseViewController.h */,
+				A8603B8C1FC3590000BAB564 /* PauseViewController.m */,
 				A892B42F1FBE397900AFC330 /* DataModel.h */,
 				A892B4301FBE397900AFC330 /* DataModel.m */,
 				A8F81D131FBA0664004D532E /* Main.storyboard */,
@@ -357,6 +362,7 @@
 				A8F81D481FBA0991004D532E /* ExpertModeViewController.m in Sources */,
 				A8F81D3F1FBA0962004D532E /* EasyModeViewController.m in Sources */,
 				A8F81D0F1FBA0664004D532E /* AppDelegate.m in Sources */,
+				A8603B8D1FC3590000BAB564 /* PauseViewController.m in Sources */,
 				A8F81D0C1FBA0664004D532E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
