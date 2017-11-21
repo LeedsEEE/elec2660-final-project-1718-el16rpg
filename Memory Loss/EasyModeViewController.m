@@ -93,4 +93,13 @@
     
 */ } 
 
+- (IBAction)didPressStartButton:(UIButton *)sender {
+    
+    CRCountdown* countdown123 = [[CRCountdown alloc] init];
+    [countdown123 startCountdownWithInterval:100 ticks:3 completion:0];
+    NSLog(@"%@", countdown123, _countdownTimer);
+    
+    
+}
+    
 @end

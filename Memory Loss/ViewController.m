@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "PauseViewController.h"
 
 @interface ViewController ()
 

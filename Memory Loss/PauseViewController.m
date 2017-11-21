@@ -24,7 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (IBAction)didPressResumeButton:(UIStoryboardSegue *)segue {
+}
 
 /*
 #pragma mark - Navigation

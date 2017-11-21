@@ -316,6 +316,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressStartButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="D1l-u0-N5n"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2m9-Ob-9h2">
                                 <rect key="frame" x="567" y="18" width="80" height="30"/>
@@ -325,6 +328,13 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k48-uc-pkk">
+                                <rect key="frame" x="314" y="177" width="39" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -337,6 +347,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="countdownTimer" destination="k48-uc-pkk" id="VzC-68-1wr"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="sIP-3M-u3u" id="4TW-mH-eJP"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="ijZ-MM-rd5" id="hVy-iZ-u5d"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="PQR-7f-E4r" id="b80-8K-JAQ"/>
@@ -357,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nJ-ib-J2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.5" y="27.5"/>
+            <point key="canvasLocation" x="744.3778110944528" y="26.399999999999999"/>
         </scene>
         <!--Hard Mode View Controller-->
         <scene sceneID="k8N-ni-4Dc">
@@ -2061,10 +2072,10 @@
             </objects>
             <point key="canvasLocation" x="1450" y="806"/>
         </scene>
-        <!--View Controller-->
+        <!--Pause View Controller-->
         <scene sceneID="KNs-hn-K36">
             <objects>
-                <viewController id="in2-3a-UE4" sceneMemberID="viewController">
+                <viewController id="in2-3a-UE4" customClass="PauseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D02-2i-Wru"/>
                         <viewControllerLayoutGuide type="bottom" id="y9G-jJ-a9x"/>
@@ -2090,6 +2101,9 @@
                                 <state key="normal" title="Menu">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="n6G-0B-nAD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XI-El-XPm">
                                 <rect key="frame" x="290" y="200" width="83" height="30"/>
@@ -2101,6 +2115,10 @@
                                 <state key="normal" title="Resume">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressResumeButton:" destination="in2-3a-UE4" eventType="touchUpInside" id="JGk-Iy-Cig"/>
+                                    <segue destination="CAV-h3-Mhv" kind="unwind" unwindAction="didPressResumeButton:" id="m6V-95-nTq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Loss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjD-lT-Hlc">
                                 <rect key="frame" x="265" y="95" width="136" height="50"/>
@@ -2124,6 +2142,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUQ-jn-tM1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="CAV-h3-Mhv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2156.6716641679163" y="461.60000000000002"/>
         </scene>
@@ -2140,7 +2159,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e0W-wZ-juN"/>
-        <segue reference="9Qd-2A-weg"/>
+        <segue reference="dwC-o7-1Vh"/>
+        <segue reference="K87-OK-ivB"/>
     </inferredMetricsTieBreakers>
 </document>

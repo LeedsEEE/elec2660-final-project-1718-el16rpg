@@ -10,4 +10,6 @@
 
 @interface PauseViewController : UIViewController
 
+- (IBAction)didPressResumeButton:(UIStoryboardSegue *)segue;
+
 @end

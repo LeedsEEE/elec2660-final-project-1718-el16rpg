@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "PauseViewController.h"
+#import "DataModel.h"
+#import "CRCountdown.h"
 
 @interface EasyModeViewController : UIViewController {
     
@@ -29,5 +30,9 @@
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender;
 
 @property (strong, nonatomic) AVAudioPlayer *trackOne;
+
+- (IBAction)didPressStartButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UILabel *countdownTimer;
 
 @end
