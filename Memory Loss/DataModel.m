@@ -10,4 +10,11 @@
 
 @implementation DataModel
 
+-(void) updateHighScore {
+    
+    if (self.newHighScore > self.currentHighScore)
+        self.currentHighScore = _newHighScore;
+    
+}
+
 @end
