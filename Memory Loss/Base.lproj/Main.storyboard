@@ -320,16 +320,15 @@
                                     <action selector="didPressStartButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="D1l-u0-N5n"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2m9-Ob-9h2">
-                                <rect key="frame" x="567" y="18" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="High Score:">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k48-uc-pkk">
                                 <rect key="frame" x="314" y="177" width="39" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1M-a2-Oxw">
+                                <rect key="frame" x="557" y="23" width="90" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -348,6 +347,7 @@
                     </view>
                     <connections>
                         <outlet property="countdownTimer" destination="k48-uc-pkk" id="VzC-68-1wr"/>
+                        <outlet property="currentHighScoreEasy" destination="D1M-a2-Oxw" id="ah1-wj-oxX"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="sIP-3M-u3u" id="4TW-mH-eJP"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="ijZ-MM-rd5" id="hVy-iZ-u5d"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="PQR-7f-E4r" id="b80-8K-JAQ"/>
@@ -917,14 +917,6 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="J7A-Vy-n63"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r72-k1-yiR">
-                                <rect key="frame" x="567" y="18" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="High Score:">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5h-p0-P6Z">
                                 <rect key="frame" x="18" y="337" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -967,6 +959,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-Cc-hkt">
+                                <rect key="frame" x="557" y="24" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -979,6 +978,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentHighScoreHard" destination="mhm-Cc-hkt" id="Ieu-L8-Tes"/>
                         <outletCollection property="trackOneHardModeButtons" destination="guB-zB-wzb" id="pbO-15-wzN"/>
                         <outletCollection property="trackOneHardModeButtons" destination="mGv-4l-ydp" id="Lj9-uv-zWO"/>
                         <outletCollection property="trackOneHardModeButtons" destination="kTd-EO-B8d" id="Bi1-41-d9i"/>
@@ -1336,14 +1336,6 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="PBA-ta-8Qu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pej-Gd-LW5">
-                                <rect key="frame" x="567" y="18" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="High Score:">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32o-bo-buN">
                                 <rect key="frame" x="14" y="337" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1379,6 +1371,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWe-wi-ysx">
+                                <rect key="frame" x="557" y="24" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1391,6 +1390,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentHighScoreMedium" destination="kWe-wi-ysx" id="0Xy-JD-9s3"/>
                         <outletCollection property="trackOneMediumModeButtons" destination="NBA-rk-YBR" id="zKx-bv-17y"/>
                         <outletCollection property="trackOneMediumModeButtons" destination="JwX-2S-dKL" id="71x-DN-k93"/>
                         <outletCollection property="trackOneMediumModeButtons" destination="Zc1-5B-JQh" id="4UO-W8-9xI"/>
@@ -1975,14 +1975,6 @@
                                     <segue destination="BYZ-38-t0r" kind="showDetail" id="e0W-wZ-juN"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QN2-uw-27r">
-                                <rect key="frame" x="567" y="19" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="High Score:">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAR-Xr-S3j">
                                 <rect key="frame" x="12" y="337" width="50" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2025,6 +2017,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rQ7-iu-OJf">
+                                <rect key="frame" x="557" y="24" width="90" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -2037,6 +2036,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="currentHighScoreExpert" destination="rQ7-iu-OJf" id="U3Z-d2-okW"/>
                         <outletCollection property="trackOneExpertModeButtons" destination="1Km-cd-e5A" id="2NZ-g0-IiP"/>
                         <outletCollection property="trackOneExpertModeButtons" destination="TUQ-we-tYB" id="XFd-Fg-l7x"/>
                         <outletCollection property="trackOneExpertModeButtons" destination="RRC-1Y-smc" id="bmv-sZ-tMT"/>
@@ -2127,7 +2127,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR9-rG-y3T">
-                                <rect key="frame" x="301" y="247" width="60" height="30"/>
+                                <rect key="frame" x="300" y="240" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nwd-Qd-m50"/>
                                     <constraint firstAttribute="width" constant="60" id="w78-hQ-iOg"/>
@@ -2141,7 +2141,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XI-El-XPm">
-                                <rect key="frame" x="290" y="200" width="83" height="30"/>
+                                <rect key="frame" x="289" y="193" width="83" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="GXm-Rs-lXZ"/>
                                     <constraint firstAttribute="height" constant="30" id="biy-yf-mgg"/>
@@ -2156,7 +2156,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Loss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjD-lT-Hlc">
-                                <rect key="frame" x="265" y="95" width="136" height="50"/>
+                                <rect key="frame" x="265" y="102" width="136" height="50"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -2164,15 +2164,15 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xR9-rG-y3T" firstAttribute="centerX" secondItem="35r-fa-YDc" secondAttribute="centerX" constant="-2.5" id="4CA-Te-TRY"/>
-                            <constraint firstItem="jjD-lT-Hlc" firstAttribute="centerX" secondItem="9XI-El-XPm" secondAttribute="centerX" constant="1.5" id="A5V-4k-kAu"/>
-                            <constraint firstItem="jjD-lT-Hlc" firstAttribute="top" secondItem="D02-2i-Wru" secondAttribute="bottom" constant="75" id="AlI-Qy-jAN"/>
+                            <constraint firstItem="xR9-rG-y3T" firstAttribute="centerX" secondItem="35r-fa-YDc" secondAttribute="centerX" constant="-3.5" id="4CA-Te-TRY"/>
+                            <constraint firstItem="jjD-lT-Hlc" firstAttribute="centerX" secondItem="9XI-El-XPm" secondAttribute="centerX" constant="2.5" id="A5V-4k-kAu"/>
+                            <constraint firstItem="jjD-lT-Hlc" firstAttribute="top" secondItem="D02-2i-Wru" secondAttribute="bottom" constant="82" id="AlI-Qy-jAN"/>
                             <constraint firstItem="y9G-jJ-a9x" firstAttribute="top" secondItem="T8U-rE-0ls" secondAttribute="bottom" constant="1" id="Ax9-Qk-2Aw"/>
-                            <constraint firstItem="T8U-rE-0ls" firstAttribute="centerX" secondItem="xR9-rG-y3T" secondAttribute="centerX" constant="2.5" id="BLq-Bl-XR1"/>
-                            <constraint firstItem="9XI-El-XPm" firstAttribute="top" secondItem="jjD-lT-Hlc" secondAttribute="bottom" constant="55" id="FFl-Tg-4GD"/>
-                            <constraint firstItem="9XI-El-XPm" firstAttribute="centerY" secondItem="35r-fa-YDc" secondAttribute="centerY" constant="27.5" id="RqO-GI-T3k"/>
-                            <constraint firstItem="xR9-rG-y3T" firstAttribute="centerY" secondItem="35r-fa-YDc" secondAttribute="centerY" constant="74.5" id="j9o-AI-chJ"/>
-                            <constraint firstItem="9XI-El-XPm" firstAttribute="centerX" secondItem="35r-fa-YDc" secondAttribute="centerX" constant="-2" id="zaI-Yd-2yq"/>
+                            <constraint firstItem="T8U-rE-0ls" firstAttribute="centerX" secondItem="xR9-rG-y3T" secondAttribute="centerX" constant="3.5" id="BLq-Bl-XR1"/>
+                            <constraint firstItem="9XI-El-XPm" firstAttribute="top" secondItem="jjD-lT-Hlc" secondAttribute="bottom" constant="41" id="FFl-Tg-4GD"/>
+                            <constraint firstItem="9XI-El-XPm" firstAttribute="centerY" secondItem="35r-fa-YDc" secondAttribute="centerY" constant="20.5" id="RqO-GI-T3k"/>
+                            <constraint firstItem="xR9-rG-y3T" firstAttribute="centerY" secondItem="35r-fa-YDc" secondAttribute="centerY" constant="67.5" id="j9o-AI-chJ"/>
+                            <constraint firstItem="9XI-El-XPm" firstAttribute="centerX" secondItem="35r-fa-YDc" secondAttribute="centerX" constant="-3" id="zaI-Yd-2yq"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -2194,7 +2194,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n6G-0B-nAD"/>
         <segue reference="9Qd-2A-weg"/>
+        <segue reference="n6G-0B-nAD"/>
     </inferredMetricsTieBreakers>
 </document>

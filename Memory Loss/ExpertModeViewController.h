@@ -36,4 +36,6 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackEightExpertModeButtons;
 - (IBAction)didPressTrackEightExpertModeButton:(UIButton *)sender;
 
+@property (strong, nonatomic) IBOutlet UILabel *currentHighScoreExpert;
+
 @end

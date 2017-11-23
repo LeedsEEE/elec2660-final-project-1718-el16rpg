@@ -12,8 +12,17 @@
 
 -(void) updateHighScore {
     
-    if (self.newHighScore > self.currentHighScore)
-        self.currentHighScore = _newHighScore;
+    if (self.newHighScoreEasy > self.currentHighScoreEasy)
+        self.currentHighScoreEasy = _newHighScoreEasy;
+    
+    if (self.newHighScoreMedium > self.currentHighScoreMedium)
+        self.currentHighScoreMedium = _newHighScoreMedium;
+    
+    if (self.newHighScoreHard > self.currentHighScoreHard)
+        self.currentHighScoreHard = _newHighScoreHard;
+    
+    if (self.newHighScoreExpert > self.currentHighScoreExpert)
+        self.currentHighScoreExpert = _newHighScoreExpert;
     
 }
 

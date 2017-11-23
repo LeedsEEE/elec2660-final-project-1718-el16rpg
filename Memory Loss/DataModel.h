@@ -10,7 +10,16 @@
 
 @interface DataModel : NSObject
 
-@property NSUInteger newHighScore;
-@property NSUInteger currentHighScore;
+@property NSUInteger newHighScoreEasy;
+@property NSUInteger currentHighScoreEasy;
+
+@property NSUInteger newHighScoreMedium;
+@property NSUInteger currentHighScoreMedium;
+
+@property NSUInteger newHighScoreHard;
+@property NSUInteger currentHighScoreHard;
+
+@property NSUInteger newHighScoreExpert;
+@property NSUInteger currentHighScoreExpert;
 
 @end

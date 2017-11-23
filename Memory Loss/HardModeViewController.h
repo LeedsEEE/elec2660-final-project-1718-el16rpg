@@ -35,5 +35,6 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackEightHardModeButtons;
 - (IBAction)didPressTrackEightHardModeButton:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UILabel *currentHighScoreHard;
 
 @end

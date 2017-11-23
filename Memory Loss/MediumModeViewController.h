@@ -24,4 +24,6 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourMediumModeButtons;
 - (IBAction)didPressTrackFourMediumModeButton:(UIButton *)sender;
 
+@property (strong, nonatomic) IBOutlet UILabel *currentHighScoreMedium;
+
 @end

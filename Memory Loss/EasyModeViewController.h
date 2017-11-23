@@ -35,4 +35,6 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *countdownTimer;
 
+@property (strong, nonatomic) IBOutlet UILabel *currentHighScoreEasy;
+
 @end
