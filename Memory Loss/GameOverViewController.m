@@ -1,18 +1,18 @@
 //
-//  PauseViewController.m
+//  GameOverViewController.m
 //  Memory Loss
 //
-//  Created by Rhun Gwilym on 20/11/2017.
+//  Created by Rhun Gwilym on 23/11/2017.
 //  Copyright © 2017 Rhun Gwilym. All rights reserved.
 //
 
-#import "PauseViewController.h"
+#import "GameOverViewController.h"
 
-@interface PauseViewController ()
+@interface GameOverViewController ()
 
 @end
 
-@implementation PauseViewController
+@implementation GameOverViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,8 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)didPressResumeButton:(UIStoryboardSegue *)unwindsegue {
+- (IBAction)didPressTryAgain:(UIStoryboardSegue *)unwindsegue {
 }
+
 
 /*
 #pragma mark - Navigation

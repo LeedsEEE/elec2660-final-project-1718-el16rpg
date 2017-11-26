@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-background-wallpaper-2217444-l.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ye9-Yz-Lxk">
-                                <rect key="frame" x="0.0" y="0.0" width="664" height="375"/>
+                                <rect key="frame" x="0.0" y="0.0" width="663.5" height="375"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aSB-d0-UQk">
                                 <rect key="frame" x="309" y="162" width="48" height="45"/>
@@ -1048,6 +1048,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRq-Su-MQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="743.47826086956525" y="805.60000000000002"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jgc-xy-4yk">
+            <objects>
+                <viewController id="Thn-I1-u4b" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="B49-XT-Bap"/>
+                        <viewControllerLayoutGuide type="bottom" id="kYt-mG-LDc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="M8U-iQ-EkI">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iphone-background-wallpaper-2217444-l.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="fXo-33-1Q1">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="High Scores:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWm-Yp-hdQ">
+                                <rect key="frame" x="265" y="84" width="137" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W84-Xt-kAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1094" y="-719"/>
         </scene>
         <!--Medium Mode View Controller-->
         <scene sceneID="G6j-ts-erj">
@@ -2107,6 +2138,81 @@
             </objects>
             <point key="canvasLocation" x="1450" y="806"/>
         </scene>
+        <!--Game Over View Controller-->
+        <scene sceneID="ON6-82-bym">
+            <objects>
+                <viewController id="a8x-nM-NYL" customClass="GameOverViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4d4-hN-1Sv"/>
+                        <viewControllerLayoutGuide type="bottom" id="pjG-UM-WZV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l4n-7h-Eog">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-background-wallpaper-2217444-l.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QaP-qR-Ls6">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI5-Zd-83P">
+                                <rect key="frame" x="303" y="166" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="qfK-iK-hn6"/>
+                                    <constraint firstAttribute="height" constant="30" id="yVc-kx-fXC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="igu-LU-Egy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CoL-ft-kMM">
+                                <rect key="frame" x="298" y="215" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="71" id="SoY-lp-lfN"/>
+                                    <constraint firstAttribute="height" constant="30" id="lQB-Ie-NZ9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
+                                <state key="normal" title="Try Again">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressTryAgain:" destination="a8x-nM-NYL" eventType="touchUpInside" id="TrH-uW-KqT"/>
+                                    <segue destination="m7i-GR-Xtx" kind="unwind" unwindAction="didPressTryAgain:" id="Rsz-jz-GEy"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Over!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igw-hh-oq6">
+                                <rect key="frame" x="263" y="105" width="140" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="8S2-Sc-YpB"/>
+                                    <constraint firstAttribute="height" constant="21" id="cB5-7s-nsO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Igw-hh-oq6" firstAttribute="centerX" secondItem="QaP-qR-Ls6" secondAttribute="centerX" id="5lZ-ww-3wy"/>
+                            <constraint firstItem="QaP-qR-Ls6" firstAttribute="leading" secondItem="l4n-7h-Eog" secondAttribute="leading" id="9wn-vK-0s4"/>
+                            <constraint firstItem="Igw-hh-oq6" firstAttribute="centerY" secondItem="QaP-qR-Ls6" secondAttribute="centerY" constant="-72" id="D2U-hn-i7o"/>
+                            <constraint firstItem="QaP-qR-Ls6" firstAttribute="bottom" secondItem="pjG-UM-WZV" secondAttribute="top" id="KEK-d8-V6N"/>
+                            <constraint firstItem="OI5-Zd-83P" firstAttribute="centerY" secondItem="QaP-qR-Ls6" secondAttribute="centerY" constant="-6.5" id="LXu-9s-2xp"/>
+                            <constraint firstItem="OI5-Zd-83P" firstAttribute="centerX" secondItem="QaP-qR-Ls6" secondAttribute="centerX" id="V52-wN-FFF"/>
+                            <constraint firstItem="QaP-qR-Ls6" firstAttribute="top" secondItem="l4n-7h-Eog" secondAttribute="top" id="ZBh-41-9lC"/>
+                            <constraint firstItem="CoL-ft-kMM" firstAttribute="centerY" secondItem="QaP-qR-Ls6" secondAttribute="centerY" constant="42.5" id="ZzF-JN-WSX"/>
+                            <constraint firstItem="CoL-ft-kMM" firstAttribute="centerX" secondItem="QaP-qR-Ls6" secondAttribute="centerX" id="ijh-XC-Lul"/>
+                            <constraint firstAttribute="trailing" secondItem="QaP-qR-Ls6" secondAttribute="trailing" id="pWF-4m-Wlz"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5J0-Ch-ej5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="m7i-GR-Xtx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1094.3028485757122" y="1567.2"/>
+        </scene>
         <!--Pause View Controller-->
         <scene sceneID="KNs-hn-K36">
             <objects>
@@ -2194,7 +2300,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9Qd-2A-weg"/>
-        <segue reference="n6G-0B-nAD"/>
+        <segue reference="igu-LU-Egy"/>
+        <segue reference="K87-OK-ivB"/>
     </inferredMetricsTieBreakers>
 </document>

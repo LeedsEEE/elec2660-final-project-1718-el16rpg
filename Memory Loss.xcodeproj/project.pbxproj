@@ -12,6 +12,7 @@
 		A892B42E1FBCB0D400AFC330 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */; };
 		A892B4311FBE397900AFC330 /* DataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A892B4301FBE397900AFC330 /* DataModel.m */; };
 		A8D446871FC4981500969641 /* CRCountdown.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D446861FC4981500969641 /* CRCountdown.m */; };
+		A8DBEF241FC751D5001889C3 /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DBEF231FC751D5001889C3 /* GameOverViewController.m */; };
 		A8F81D0C1FBA0664004D532E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D0B1FBA0664004D532E /* main.m */; };
 		A8F81D0F1FBA0664004D532E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D0E1FBA0664004D532E /* AppDelegate.m */; };
 		A8F81D121FBA0664004D532E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F81D111FBA0664004D532E /* ViewController.m */; };
@@ -62,6 +63,8 @@
 		A892B4301FBE397900AFC330 /* DataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataModel.m; sourceTree = "<group>"; };
 		A8D446851FC4981500969641 /* CRCountdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRCountdown.h; sourceTree = "<group>"; };
 		A8D446861FC4981500969641 /* CRCountdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRCountdown.m; sourceTree = "<group>"; };
+		A8DBEF221FC751D5001889C3 /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
+		A8DBEF231FC751D5001889C3 /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
 		A8F81D071FBA0664004D532E /* Memory Loss.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Memory Loss.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8F81D0B1FBA0664004D532E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8F81D0D1FBA0664004D532E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				A8F81D3D1FBA0962004D532E /* EasyModeViewController.h */,
 				A8F81D3E1FBA0962004D532E /* EasyModeViewController.m */,
 				A8F81D401FBA0976004D532E /* MediumModeViewController.h */,
+				A8DBEF221FC751D5001889C3 /* GameOverViewController.h */,
+				A8DBEF231FC751D5001889C3 /* GameOverViewController.m */,
 				A8F81D411FBA0976004D532E /* MediumModeViewController.m */,
 				A8F81D431FBA0983004D532E /* HardModeViewController.h */,
 				A8F81D441FBA0983004D532E /* HardModeViewController.m */,
@@ -364,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8DBEF241FC751D5001889C3 /* GameOverViewController.m in Sources */,
 				A8D446871FC4981500969641 /* CRCountdown.m in Sources */,
 				A8F81D421FBA0976004D532E /* MediumModeViewController.m in Sources */,
 				A892B4311FBE397900AFC330 /* DataModel.m in Sources */,
