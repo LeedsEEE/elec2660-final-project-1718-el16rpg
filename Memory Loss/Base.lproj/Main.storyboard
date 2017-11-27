@@ -124,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="40" y="340"/>
+            <point key="canvasLocation" x="116" y="761"/>
         </scene>
         <!--Easy Mode View Controller-->
         <scene sceneID="DRm-np-0wl">
@@ -296,6 +296,9 @@
                                 <state key="normal" title="Restart">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressEasyModeRestartButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="ch1-2V-j1R"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9i-QF-gWS">
                                 <rect key="frame" x="603" y="337" width="42" height="30"/>
@@ -317,7 +320,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="didPressStartButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="D1l-u0-N5n"/>
+                                    <action selector="didPressEasyModeStartButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="Yvt-zB-nrg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k48-uc-pkk">
@@ -368,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4nJ-ib-J2k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="744.3778110944528" y="26.399999999999999"/>
+            <point key="canvasLocation" x="743" y="386"/>
         </scene>
         <!--Hard Mode View Controller-->
         <scene sceneID="k8N-ni-4Dc">
@@ -932,6 +935,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressHardModeStartButton:" destination="Sqg-yW-GSn" eventType="touchUpInside" id="Y9G-x3-GW8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hqK-oc-Hqf">
                                 <rect key="frame" x="603" y="337" width="42" height="30"/>
@@ -1047,7 +1053,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRq-Su-MQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="743.47826086956525" y="805.60000000000002"/>
+            <point key="canvasLocation" x="743" y="1063"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Jgc-xy-4yk">
@@ -1138,7 +1144,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W84-Xt-kAM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1093.4032983508246" y="-719.20000000000005"/>
+            <point key="canvasLocation" x="1056" y="-290"/>
         </scene>
         <!--Medium Mode View Controller-->
         <scene sceneID="G6j-ts-erj">
@@ -1442,6 +1448,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressMediumModeStartButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="1uw-5g-68S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzN-vZ-hql">
                                 <rect key="frame" x="601" y="337" width="46" height="30"/>
@@ -1518,7 +1527,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aGY-xw-yAk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450.5" y="27.5"/>
+            <point key="canvasLocation" x="1372" y="388"/>
         </scene>
         <!--Expert Mode View Controller-->
         <scene sceneID="lep-Do-cuh">
@@ -2081,6 +2090,9 @@
                                 <state key="normal" title="Start">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="didPressExpertModeStartButton:" destination="gXg-Nk-5fT" eventType="touchUpInside" id="R89-zX-bvO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3E-fD-aGC">
                                 <rect key="frame" x="603" y="337" width="42" height="30"/>
@@ -2196,7 +2208,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDz-0F-2nY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1450" y="806"/>
+            <point key="canvasLocation" x="1372" y="1062"/>
         </scene>
         <!--Game Over View Controller-->
         <scene sceneID="ON6-82-bym">
@@ -2282,7 +2294,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5J0-Ch-ej5" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="m7i-GR-Xtx" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1094.3028485757122" y="1567.2"/>
+            <point key="canvasLocation" x="1056" y="1758"/>
         </scene>
         <!--Pause View Controller-->
         <scene sceneID="KNs-hn-K36">
@@ -2369,7 +2381,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUQ-jn-tM1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="CAV-h3-Mhv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2156.6716641679163" y="413.60000000000002"/>
+            <point key="canvasLocation" x="2003" y="761"/>
         </scene>
     </scenes>
     <resources>
@@ -2384,7 +2396,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n6G-0B-nAD"/>
+        <segue reference="dwC-o7-1Vh"/>
         <segue reference="K87-OK-ivB"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -26,4 +26,10 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *currentHighScoreMedium;
 
+@property float tempoMediumModeBPM;
+
+- (IBAction)didPressMediumModeStartButton:(UIButton *)sender;
+
+@property (strong, nonatomic) NSTimer *mediumModeTimer;
+
 @end

@@ -53,4 +53,14 @@
 - (IBAction)didPressPauseHardModeButton:(UIButton *)sender {
 }
 
+- (IBAction)didPressHardModeStartButton:(UIButton *)sender {
+    
+    CRCountdown* countdown123 = [[CRCountdown alloc] init];
+    [countdown123 startCountdownWithInterval:100 ticks:3 completion:0];
+    NSLog(@"%@", countdown123, self.countdownTimer);
+    
+    self.tempoHardModeBPM = 120;
+    
+}
+
 @end

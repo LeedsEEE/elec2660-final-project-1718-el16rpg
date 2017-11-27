@@ -38,4 +38,10 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *currentHighScoreExpert;
 
+@property float tempoExpertModeBPM;
+
+- (IBAction)didPressExpertModeStartButton:(UIButton *)sender;
+
+@property (strong, nonatomic) NSTimer *expertModeTimer;
+
 @end

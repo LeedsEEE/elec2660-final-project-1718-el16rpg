@@ -29,12 +29,22 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourEasyModeButtons;
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender;
 
-@property (strong, nonatomic) AVAudioPlayer *trackOne;
+- (IBAction)didPressEasyModeStartButton:(id)sender;
 
-- (IBAction)didPressStartButton:(UIButton *)sender;
+- (IBAction)didPressEasyModeRestartButton:(id)sender;
+
+@property (strong, nonatomic) AVAudioPlayer *trackOne;
 
 @property (strong, nonatomic) IBOutlet UILabel *countdownTimer;
 
 @property (strong, nonatomic) IBOutlet UILabel *currentHighScoreEasy;
+
+@property float tempoEasyModeBPM;
+
+@property (strong, nonatomic) NSTimer *easyModeTimer;
+
+@property NSInteger sampleNumber;
+
+@property BOOL playing;
 
 @end

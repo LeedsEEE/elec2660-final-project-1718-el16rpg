@@ -19,6 +19,8 @@
     
     [self initArrays];
     [self setupAudioPlayers];
+    self.sampleNumber = 0;
+    [self initAlpha];
     
     // Do any additional setup after loading the view.
 }
@@ -64,9 +66,57 @@
 }
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender {
 }
+
+- (IBAction)didPressEasyModeStartButton:(id)sender {
+    
+    CRCountdown* countdown123 = [[CRCountdown alloc] init];
+    [countdown123 startCountdownWithInterval:100 ticks:3 completion:0];
+    NSLog(@"%@", countdown123, self.countdownTimer);
+    
+    self.playing = YES;
+    
+    self.tempoEasyModeBPM = 60;
+    
+    self.easyModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoEasyModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    
+}
+
+- (IBAction)didPressEasyModeRestartButton:(id)sender {
+    
+    NSLog(@"Restarted!");
+    
+    self.playing = NO;
+    [self.easyModeTimer invalidate];
+    
+    [self.trackOne stop];
+    self.trackOne.currentTime = 0.0;
+    [self.trackOne prepareToPlay];
+    
+    [self initArrays];
+    self.sampleNumber = 0;
+    [self initAlpha];
+    
+    for (UIButton *button in self.trackOneEasyModeButtons) {
+     
+        [button setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
+         UIControlStateNormal];
+        button.selected = YES;
+        
+    }
+    
+}
 - (IBAction)didPressPauseEasyModeButton:(UIButton *)sender {
     
     NSLog(@"Paused");
+    
+    NSLog(@"Stopped Music!");
+    
+    self.playing = NO;
+    [self.easyModeTimer invalidate];
+    
+    [self.trackOne stop];
+    self.trackOne.currentTime = 0.0;
+    [self.trackOne prepareToPlay];
     
 }
 
@@ -91,15 +141,45 @@
     self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     [self.trackOne prepareToPlay];
     
-*/ } 
+*/ }
 
-- (IBAction)didPressStartButton:(UIButton *)sender {
+-(void) timerFire:(NSTimer *)timer {
     
-    CRCountdown* countdown123 = [[CRCountdown alloc] init];
-    [countdown123 startCountdownWithInterval:100 ticks:3 completion:0];
-    NSLog(@"%@", countdown123, self.countdownTimer);
+    NSLog(@"Timer Fire! Sample %ld", self.sampleNumber);
     
+    for (UIButton *button in self.trackOneEasyModeButtons) {
+        if (button.tag == self.sampleNumber)    {
+            button.alpha = 1.0;
+        }
+        else {
+            button.alpha = 0.5;
+        }
+    }
+    
+    // if current sample is on
+    if (trackOneButtonStateArray[self.sampleNumber] == 1) {
+        
+        if ([self.trackOne isPlaying]) { // if a sample is already playing
+            [self.trackOne stop];
+            self.trackOne.currentTime = 0.0; // stop and rewind
+        }
+        
+        [self.trackOne play];
+    }
+
+    
+    self.sampleNumber++;
+    if (self.sampleNumber > 3)
+        self.sampleNumber = 0;
     
 }
+
+-(void) initAlpha {
     
+    for (UIButton *button in self.trackOneEasyModeButtons) {
+        button.alpha = 0.5;
+    }
+    
+}
+
 @end

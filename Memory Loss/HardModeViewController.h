@@ -37,4 +37,10 @@
 - (IBAction)didPressTrackEightHardModeButton:(UIButton *)sender;
 @property (strong, nonatomic) IBOutlet UILabel *currentHighScoreHard;
 
+@property float tempoHardModeBPM;
+
+- (IBAction)didPressHardModeStartButton:(UIButton *)sender;
+
+@property (strong, nonatomic) NSTimer *hardModeTimer
+
 @end
