@@ -49,7 +49,7 @@
     
     CRCountdown* countdown123 = [[CRCountdown alloc] init];
     [countdown123 startCountdownWithInterval:100 ticks:3 completion:0];
-    NSLog(@"%@", countdown123, self.countdownTimer);
+    NSLog(@"%@", countdown123, self.countdownTimerMediumMode);
     
     self.tempoMediumModeBPM = 95;
     

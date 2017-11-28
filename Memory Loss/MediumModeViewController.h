@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "CRCountdown.h"
 #import "DataModel.h"
 
 @interface MediumModeViewController : UIViewController
@@ -29,6 +30,8 @@
 @property float tempoMediumModeBPM;
 
 - (IBAction)didPressMediumModeStartButton:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UILabel *countdownTimerMediumMode;
 
 @property (strong, nonatomic) NSTimer *mediumModeTimer;
 

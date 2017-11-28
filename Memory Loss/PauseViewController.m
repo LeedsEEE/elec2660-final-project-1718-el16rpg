@@ -25,6 +25,9 @@
 }
 
 - (IBAction)didPressResumeButton:(UIStoryboardSegue *)unwindsegue {
+    
+    [self.navigationController popViewControllerAnimated:YES];
+    
 }
 
 /*

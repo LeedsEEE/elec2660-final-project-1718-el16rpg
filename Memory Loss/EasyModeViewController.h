@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "DataModel.h"
 #import "CRCountdown.h"
+#import "DataModel.h"
 
 @interface EasyModeViewController : UIViewController {
     
     NSInteger trackOneButtonStateArray[8];
+    NSInteger trackTwoButtonStateArray[8];
+    NSInteger trackThreeButtonStateArray[8];
+    NSInteger trackFourButtonStateArray[8];
     
 }
 
@@ -34,8 +37,11 @@
 - (IBAction)didPressEasyModeRestartButton:(id)sender;
 
 @property (strong, nonatomic) AVAudioPlayer *trackOne;
+@property (strong, nonatomic) AVAudioPlayer *trackTwo;
+@property (strong, nonatomic) AVAudioPlayer *trackThree;
+@property (strong, nonatomic) AVAudioPlayer *trackFour;
 
-@property (strong, nonatomic) IBOutlet UILabel *countdownTimer;
+@property (strong, nonatomic) IBOutlet UILabel *countdownTimerEasyMode;
 
 @property (strong, nonatomic) IBOutlet UILabel *currentHighScoreEasy;
 
@@ -46,5 +52,7 @@
 @property NSInteger sampleNumber;
 
 @property BOOL playing;
+
+@property (strong, nonatomic) IBOutlet UIButton *didPressEasyModeStartButton;
 
 @end

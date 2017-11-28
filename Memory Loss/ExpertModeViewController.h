@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "CRCountdown.h"
 #import "DataModel.h"
 
 @interface ExpertModeViewController : UIViewController
@@ -42,6 +43,10 @@
 
 - (IBAction)didPressExpertModeStartButton:(UIButton *)sender;
 
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *countdownTimersExpertMode;
+
 @property (strong, nonatomic) NSTimer *expertModeTimer;
+
+@property CRCountdown *expertModeCountdown;
 
 @end

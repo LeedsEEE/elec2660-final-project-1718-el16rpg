@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
@@ -349,8 +349,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="countdownTimer" destination="k48-uc-pkk" id="VzC-68-1wr"/>
+                        <outlet property="countdownTimerEasyMode" destination="k48-uc-pkk" id="cLU-QE-0rn"/>
                         <outlet property="currentHighScoreEasy" destination="D1M-a2-Oxw" id="ah1-wj-oxX"/>
+                        <outlet property="didPressEasyModeStartButton" destination="aBy-7C-DLh" id="p4M-eJ-MRV"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="sIP-3M-u3u" id="4TW-mH-eJP"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="ijZ-MM-rd5" id="hVy-iZ-u5d"/>
                         <outletCollection property="trackOneEasyModeButtons" destination="PQR-7f-E4r" id="b80-8K-JAQ"/>
@@ -1049,6 +1050,8 @@
                         <outletCollection property="trackEightHardModeButtons" destination="pXx-Iu-grN" id="kRB-YC-Goo"/>
                         <outletCollection property="trackEightHardModeButtons" destination="iW7-2X-dG4" id="vWB-Eb-yhZ"/>
                         <outletCollection property="trackEightHardModeButtons" destination="vIM-pm-aW3" id="SWY-f8-lf2"/>
+                        <outletCollection property="countdownTimersHardMode" destination="ybm-bZ-A00" id="59P-qi-dcg"/>
+                        <outletCollection property="countdownTimersHardMode" destination="tn8-fQ-J4V" id="iEc-aP-0YM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DRq-Su-MQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1085,7 +1088,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where Are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eV-Rt-Ftf">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eV-Rt-Ftf">
                                 <rect key="frame" x="431" y="173" width="166" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
@@ -1490,6 +1493,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="countdownTimerMediumMode" destination="WdK-5Y-Mas" id="dJZ-db-prR"/>
                         <outlet property="currentHighScoreMedium" destination="kWe-wi-ysx" id="0Xy-JD-9s3"/>
                         <outletCollection property="trackOneMediumModeButtons" destination="NBA-rk-YBR" id="zKx-bv-17y"/>
                         <outletCollection property="trackOneMediumModeButtons" destination="JwX-2S-dKL" id="71x-DN-k93"/>
@@ -2204,6 +2208,8 @@
                         <outletCollection property="trackEightExpertModeButtons" destination="D6I-lp-ZBp" id="Dnz-M4-SiY"/>
                         <outletCollection property="trackEightExpertModeButtons" destination="lRT-Yl-jId" id="U3q-TO-HLY"/>
                         <outletCollection property="trackEightExpertModeButtons" destination="Lhk-g1-wuv" id="RyA-UC-w6e"/>
+                        <outletCollection property="countdownTimersExpertMode" destination="PkK-ot-geL" id="L9h-WM-vtm"/>
+                        <outletCollection property="countdownTimersExpertMode" destination="v9U-h0-7xa" id="DOx-D2-fXz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jDz-0F-2nY" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2360,6 +2366,9 @@
                                 <state key="normal" title="See High Scores">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Thn-I1-u4b" kind="showDetail" id="Ru1-vC-flE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
@@ -2396,7 +2405,8 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dwC-o7-1Vh"/>
-        <segue reference="K87-OK-ivB"/>
+        <segue reference="igu-LU-Egy"/>
+        <segue reference="A5v-WV-d1o"/>
+        <segue reference="RVu-66-QJr"/>
     </inferredMetricsTieBreakers>
 </document>

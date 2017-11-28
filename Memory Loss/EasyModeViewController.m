@@ -50,6 +50,7 @@
            UIControlStateNormal];
         trackOneButtonStateArray[sender.tag] = 1;
          sender.selected = NO;
+        
     }
     else { // No
         NSLog(@"Unselected");
@@ -58,26 +59,88 @@
         trackOneButtonStateArray[sender.tag] = 0;
          sender.selected = YES;
     }
+    
 }
 
 - (IBAction)didPressTrackTwoEasyModeButton:(UIButton *)sender {
+    
+    NSLog(@"Track Two Button %ld", sender.tag);
+    
+    if ([sender isSelected]) {  // Yes
+        NSLog(@"Selected");
+        [sender setImage: [UIImage imageNamed:@"UFO.png"] forState:
+         UIControlStateNormal];
+        trackTwoButtonStateArray[sender.tag] = 1;
+        sender.selected = NO;
+        
+    }
+    else { // No
+        NSLog(@"Unselected");
+        [sender setImage: [UIImage imageNamed:@"UFO.png"] forState:
+         UIControlStateNormal];
+        trackTwoButtonStateArray[sender.tag] = 0;
+        sender.selected = YES;
+    }
+    
 }
+
 - (IBAction)didPressTrackThreeEasyModeButton:(UIButton *)sender {
+    
+    NSLog(@"Track Three Button %ld", sender.tag);
+    
+    if ([sender isSelected]) {  // Yes
+        NSLog(@"Selected");
+        [sender setImage: [UIImage imageNamed:@"Saturn.png"] forState:
+         UIControlStateNormal];
+        trackThreeButtonStateArray[sender.tag] = 1;
+        sender.selected = NO;
+        
+    }
+    else { // No
+        NSLog(@"Unselected");
+        [sender setImage: [UIImage imageNamed:@"Saturn.png"] forState:
+         UIControlStateNormal];
+        trackThreeButtonStateArray[sender.tag] = 0;
+        sender.selected = YES;
+    }
+    
 }
+
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender {
+    
+    NSLog(@"Track Four Button %ld", sender.tag);
+    
+    if ([sender isSelected]) {  // Yes
+        NSLog(@"Selected");
+        [sender setImage: [UIImage imageNamed:@"Asteroid.png"] forState:
+         UIControlStateNormal];
+        trackFourButtonStateArray[sender.tag] = 1;
+        sender.selected = NO;
+        
+    }
+    else { // No
+        NSLog(@"Unselected");
+        [sender setImage: [UIImage imageNamed:@"Asteroid.png"] forState:
+         UIControlStateNormal];
+        trackFourButtonStateArray[sender.tag] = 0;
+        sender.selected = YES;
+    }
+    
 }
 
 - (IBAction)didPressEasyModeStartButton:(id)sender {
     
     CRCountdown* countdown123 = [[CRCountdown alloc] init];
     [countdown123 startCountdownWithInterval:100 ticks:3 completion:0];
-    NSLog(@"%@", countdown123, self.countdownTimer);
+    NSLog(@"%@", countdown123, self.countdownTimerEasyMode);
     
     self.playing = YES;
     
     self.tempoEasyModeBPM = 60;
     
     self.easyModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoEasyModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    
+    ((UIButton *)sender).enabled = NO;
     
 }
 
@@ -92,6 +155,18 @@
     self.trackOne.currentTime = 0.0;
     [self.trackOne prepareToPlay];
     
+    [self.trackTwo stop];
+    self.trackTwo.currentTime = 0.0;
+    [self.trackTwo prepareToPlay];
+    
+    [self.trackThree stop];
+    self.trackThree.currentTime = 0.0;
+    [self.trackThree prepareToPlay];
+    
+    [self.trackFour stop];
+    self.trackFour.currentTime = 0.0;
+    [self.trackFour prepareToPlay];
+    
     [self initArrays];
     self.sampleNumber = 0;
     [self initAlpha];
@@ -101,6 +176,8 @@
         [button setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
          UIControlStateNormal];
         button.selected = YES;
+        
+        self.didPressEasyModeStartButton.enabled = YES;
         
     }
     
@@ -118,6 +195,18 @@
     self.trackOne.currentTime = 0.0;
     [self.trackOne prepareToPlay];
     
+    [self.trackTwo stop];
+    self.trackTwo.currentTime = 0.0;
+    [self.trackTwo prepareToPlay];
+    
+    [self.trackThree stop];
+    self.trackThree.currentTime = 0.0;
+    [self.trackThree prepareToPlay];
+    
+    [self.trackFour stop];
+    self.trackFour.currentTime = 0.0;
+    [self.trackFour prepareToPlay];
+    
 }
 
 -(void) initArrays {
@@ -127,6 +216,9 @@
     for (int i = 0; i < 8; i++) {
         
         trackOneButtonStateArray[i] = 0;
+        trackTwoButtonStateArray[i] = 0;
+        trackThreeButtonStateArray[i] = 0;
+        trackThreeButtonStateArray[i] = 0;
     }
     
 }
@@ -135,12 +227,26 @@
     
     NSLog(@"Setting Up Audio Players");
     
-/*    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+/*  NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-    
     self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     [self.trackOne prepareToPlay];
-    
+ 
+    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
+    self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    [self.trackTwo prepareToPlay];
+ 
+    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
+    self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    [self.trackThree prepareToPlay];
+ 
+    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
+    self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+    [self.trackFour prepareToPlay];
+ 
 */ }
 
 -(void) timerFire:(NSTimer *)timer {

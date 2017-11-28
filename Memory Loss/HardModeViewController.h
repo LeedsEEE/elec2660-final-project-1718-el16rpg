@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "CRCountdown.h"
 #import "DataModel.h"
 
 @interface HardModeViewController : UIViewController
@@ -41,6 +42,8 @@
 
 - (IBAction)didPressHardModeStartButton:(UIButton *)sender;
 
-@property (strong, nonatomic) NSTimer *hardModeTimer
+@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *countdownTimersHardMode;
+
+@property (strong, nonatomic) NSTimer *hardModeTimer;
 
 @end
