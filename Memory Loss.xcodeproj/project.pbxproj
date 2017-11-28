@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8310B0A1FCDE7C90030EB2C /* HighScoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8310B091FCDE7C90030EB2C /* HighScoresViewController.m */; };
 		A8603B8D1FC3590000BAB564 /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8603B8C1FC3590000BAB564 /* PauseViewController.m */; };
 		A8603B8F1FC3815900BAB564 /* Space App Music.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8603B8E1FC3815900BAB564 /* Space App Music.wav */; };
 		A892B42E1FBCB0D400AFC330 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A8310B081FCDE7C90030EB2C /* HighScoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighScoresViewController.h; sourceTree = "<group>"; };
+		A8310B091FCDE7C90030EB2C /* HighScoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighScoresViewController.m; sourceTree = "<group>"; };
 		A8603B8B1FC3590000BAB564 /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseViewController.h; sourceTree = "<group>"; };
 		A8603B8C1FC3590000BAB564 /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
 		A8603B8E1FC3815900BAB564 /* Space App Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Space App Music.wav"; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				A8603B8C1FC3590000BAB564 /* PauseViewController.m */,
 				A8DBEF221FC751D5001889C3 /* GameOverViewController.h */,
 				A8DBEF231FC751D5001889C3 /* GameOverViewController.m */,
+				A8310B081FCDE7C90030EB2C /* HighScoresViewController.h */,
+				A8310B091FCDE7C90030EB2C /* HighScoresViewController.m */,
 				A8D446851FC4981500969641 /* CRCountdown.h */,
 				A8D446861FC4981500969641 /* CRCountdown.m */,
 				A892B42F1FBE397900AFC330 /* DataModel.h */,
@@ -372,6 +377,7 @@
 				A8DBEF241FC751D5001889C3 /* GameOverViewController.m in Sources */,
 				A8D446871FC4981500969641 /* CRCountdown.m in Sources */,
 				A8F81D421FBA0976004D532E /* MediumModeViewController.m in Sources */,
+				A8310B0A1FCDE7C90030EB2C /* HighScoresViewController.m in Sources */,
 				A892B4311FBE397900AFC330 /* DataModel.m in Sources */,
 				A8F81D121FBA0664004D532E /* ViewController.m in Sources */,
 				A8F81D451FBA0983004D532E /* HardModeViewController.m in Sources */,

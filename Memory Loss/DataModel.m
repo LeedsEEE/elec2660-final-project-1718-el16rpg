@@ -26,4 +26,7 @@
     
 }
 
+-(void) updateScoreNumber {    
+}
+
 @end
