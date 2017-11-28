@@ -55,4 +55,6 @@
 
 @property (strong, nonatomic) IBOutlet UIButton *didPressEasyModeStartButton;
 
+- (void) initAlpha;
+
 @end

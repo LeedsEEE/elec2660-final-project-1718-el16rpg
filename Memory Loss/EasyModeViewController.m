@@ -171,17 +171,48 @@
     self.sampleNumber = 0;
     [self initAlpha];
     
-    for (UIButton *button in self.trackOneEasyModeButtons) {
+    for (UIButton *button1 in self.trackOneEasyModeButtons) {
      
-        [button setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
+        [button1 setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
          UIControlStateNormal];
-        button.selected = YES;
+        button1.selected = YES;
+        
+        self.didPressEasyModeStartButton.enabled = YES;
+        
+    }
+    
+    for (UIButton *button2 in self.trackOneEasyModeButtons) {
+        
+        [button2 setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
+         UIControlStateNormal];
+        button2.selected = YES;
+        
+        self.didPressEasyModeStartButton.enabled = YES;
+        
+    }
+    
+    for (UIButton *button3 in self.trackOneEasyModeButtons) {
+        
+        [button3 setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
+         UIControlStateNormal];
+        button3.selected = YES;
+        
+        self.didPressEasyModeStartButton.enabled = YES;
+        
+    }
+    
+    for (UIButton *button4 in self.trackOneEasyModeButtons) {
+        
+        [button4 setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
+         UIControlStateNormal];
+        button4.selected = YES;
         
         self.didPressEasyModeStartButton.enabled = YES;
         
     }
     
 }
+
 - (IBAction)didPressPauseEasyModeButton:(UIButton *)sender {
     
     NSLog(@"Paused");
@@ -253,15 +284,39 @@
     
     NSLog(@"Timer Fire! Sample %ld", self.sampleNumber);
     
-    for (UIButton *button in self.trackOneEasyModeButtons) {
-        if (button.tag == self.sampleNumber)    {
-            button.alpha = 1.0;
+    for (UIButton *button1 in self.trackOneEasyModeButtons) {
+        if (button1.tag == self.sampleNumber)    {
+            button1.alpha = 1.0;
         }
         else {
-            button.alpha = 0.5;
+            button1.alpha = 0.5;
         }
     }
-    
+    for (UIButton *button2 in self.trackTwoEasyModeButtons) {
+            if (button2.tag == self.sampleNumber)    {
+                button2.alpha = 1.0;
+            }
+            else {
+                button2.alpha = 0.5;
+            }
+    }
+    for (UIButton *button3 in self.trackThreeEasyModeButtons) {
+            if (button3.tag == self.sampleNumber)    {
+                button3.alpha = 1.0;
+            }
+            else {
+                button3.alpha = 0.5;
+            }
+    }
+    for (UIButton *button4 in self.trackFourEasyModeButtons) {
+            if (button4.tag == self.sampleNumber)    {
+                button4.alpha = 1.0;
+            }
+            else {
+                button4.alpha = 0.5;
+            }
+    }
+
     // if current sample is on
     if (trackOneButtonStateArray[self.sampleNumber] == 1) {
         
@@ -270,7 +325,26 @@
             self.trackOne.currentTime = 0.0; // stop and rewind
         }
         
+        if ([self.trackTwo isPlaying]) {
+            [self.trackTwo stop];
+            self.trackTwo.currentTime = 0.0;
+        }
+        
+        if ([self.trackThree isPlaying]) {
+            [self.trackThree stop];
+            self.trackThree.currentTime = 0.0;
+        }
+        
+        if ([self.trackFour isPlaying]) {
+            [self.trackFour stop];
+            self.trackFour.currentTime = 0.0;
+        }
+        
         [self.trackOne play];
+        [self.trackTwo play];
+        [self.trackThree play];
+        [self.trackFour play];
+        
     }
 
     
@@ -279,11 +353,23 @@
         self.sampleNumber = 0;
     
 }
-
--(void) initAlpha {
     
-    for (UIButton *button in self.trackOneEasyModeButtons) {
-        button.alpha = 0.5;
+- (void) initAlpha {
+    
+    for (UIButton *button1 in self.trackOneEasyModeButtons) {
+        button1.alpha = 0.5;
+    }
+    
+    for (UIButton *button2 in self.trackTwoEasyModeButtons) {
+        button2.alpha = 0.5;
+    }
+    
+    for (UIButton *button3 in self.trackThreeEasyModeButtons) {
+        button3.alpha = 0.5;
+    }
+    
+    for (UIButton *button4 in self.trackFourEasyModeButtons) {
+        button4.alpha = 0.5;
     }
     
 }

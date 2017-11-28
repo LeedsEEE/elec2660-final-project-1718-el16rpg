@@ -2322,7 +2322,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xR9-rG-y3T">
-                                <rect key="frame" x="300" y="216" width="60" height="30"/>
+                                <rect key="frame" x="300" y="240" width="60" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nwd-Qd-m50"/>
                                     <constraint firstAttribute="width" constant="60" id="w78-hQ-iOg"/>
@@ -2336,7 +2336,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XI-El-XPm">
-                                <rect key="frame" x="289" y="169" width="83" height="30"/>
+                                <rect key="frame" x="289" y="193" width="83" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="83" id="GXm-Rs-lXZ"/>
                                     <constraint firstAttribute="height" constant="30" id="biy-yf-mgg"/>
@@ -2351,38 +2351,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Memory Loss" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjD-lT-Hlc">
-                                <rect key="frame" x="265" y="78" width="136" height="50"/>
+                                <rect key="frame" x="265" y="102" width="136" height="50"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ni-ir-HhF">
-                                <rect key="frame" x="269" y="261" width="128" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="5p5-Id-vUs"/>
-                                    <constraint firstAttribute="height" constant="30" id="F0A-iF-goj"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
-                                <state key="normal" title="See High Scores">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Thn-I1-u4b" kind="showDetail" id="Ru1-vC-flE"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="xR9-rG-y3T" firstAttribute="centerX" secondItem="35r-fa-YDc" secondAttribute="centerX" constant="-3.5" id="4CA-Te-TRY"/>
                             <constraint firstItem="jjD-lT-Hlc" firstAttribute="centerX" secondItem="9XI-El-XPm" secondAttribute="centerX" constant="2.5" id="A5V-4k-kAu"/>
-                            <constraint firstItem="jjD-lT-Hlc" firstAttribute="top" secondItem="D02-2i-Wru" secondAttribute="bottom" constant="58" id="AlI-Qy-jAN"/>
+                            <constraint firstItem="jjD-lT-Hlc" firstAttribute="top" secondItem="D02-2i-Wru" secondAttribute="bottom" constant="82" id="AlI-Qy-jAN"/>
                             <constraint firstItem="y9G-jJ-a9x" firstAttribute="top" secondItem="T8U-rE-0ls" secondAttribute="bottom" constant="1" id="Ax9-Qk-2Aw"/>
                             <constraint firstItem="T8U-rE-0ls" firstAttribute="centerX" secondItem="xR9-rG-y3T" secondAttribute="centerX" constant="3.5" id="BLq-Bl-XR1"/>
                             <constraint firstItem="9XI-El-XPm" firstAttribute="top" secondItem="jjD-lT-Hlc" secondAttribute="bottom" constant="41" id="FFl-Tg-4GD"/>
-                            <constraint firstItem="9XI-El-XPm" firstAttribute="centerY" secondItem="35r-fa-YDc" secondAttribute="centerY" constant="-3.5" id="RqO-GI-T3k"/>
-                            <constraint firstItem="1Ni-ir-HhF" firstAttribute="centerX" secondItem="T8U-rE-0ls" secondAttribute="centerX" id="aSQ-Mw-MGz"/>
-                            <constraint firstItem="1Ni-ir-HhF" firstAttribute="centerY" secondItem="T8U-rE-0ls" secondAttribute="centerY" constant="89.5" id="e2k-sM-fTV"/>
-                            <constraint firstItem="xR9-rG-y3T" firstAttribute="centerY" secondItem="35r-fa-YDc" secondAttribute="centerY" constant="43.5" id="j9o-AI-chJ"/>
+                            <constraint firstItem="9XI-El-XPm" firstAttribute="centerY" secondItem="35r-fa-YDc" secondAttribute="centerY" constant="20.5" id="RqO-GI-T3k"/>
+                            <constraint firstItem="xR9-rG-y3T" firstAttribute="centerY" secondItem="35r-fa-YDc" secondAttribute="centerY" constant="67.5" id="j9o-AI-chJ"/>
                             <constraint firstItem="9XI-El-XPm" firstAttribute="centerX" secondItem="35r-fa-YDc" secondAttribute="centerX" constant="-3" id="zaI-Yd-2yq"/>
                         </constraints>
                     </view>
@@ -2405,8 +2389,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="igu-LU-Egy"/>
-        <segue reference="A5v-WV-d1o"/>
+        <segue reference="n6G-0B-nAD"/>
         <segue reference="RVu-66-QJr"/>
     </inferredMetricsTieBreakers>
 </document>
