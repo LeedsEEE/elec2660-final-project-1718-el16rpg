@@ -1061,7 +1061,7 @@
         <!--Medium Mode-->
         <scene sceneID="7AQ-tA-yJl">
             <objects>
-                <viewController id="euY-VF-5vH" sceneMemberID="viewController">
+                <viewController id="euY-VF-5vH" customClass="HighScoreMediumViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="7ph-H2-IXI"/>
                         <viewControllerLayoutGuide type="bottom" id="xE0-Pz-RKX"/>
@@ -1145,6 +1145,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Medium Mode" id="Ezd-iG-P9g"/>
+                    <connections>
+                        <outlet property="highScoreMedium1" destination="3OU-5i-szN" id="QC0-Y9-hQR"/>
+                        <outlet property="highScoreMedium2" destination="p59-F2-SZJ" id="V3h-RP-qvW"/>
+                        <outlet property="highScoreMedium3" destination="M6r-7O-MbG" id="akH-aT-X25"/>
+                        <outlet property="highScoreMedium4" destination="NI4-rO-8vT" id="7x6-mN-MSW"/>
+                        <outlet property="highScoreMedium5" destination="4he-Ea-dE0" id="3KU-Hv-Zf3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaH-q6-g9l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1153,7 +1160,7 @@
         <!--Hard Mode-->
         <scene sceneID="e4j-5R-Rxe">
             <objects>
-                <viewController id="q5G-MG-pWZ" sceneMemberID="viewController">
+                <viewController id="q5G-MG-pWZ" customClass="HighScoreHardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bNH-Xh-Yv3"/>
                         <viewControllerLayoutGuide type="bottom" id="77b-WR-cvM"/>
@@ -1238,6 +1245,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Hard Mode" id="90O-pL-JWy"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="highScoreHard1" destination="4qy-GQ-EiJ" id="gIv-0y-5xa"/>
+                        <outlet property="highScoreHard2" destination="0SJ-I5-xYu" id="eZJ-hn-3nt"/>
+                        <outlet property="highScoreHard3" destination="4Il-0g-tMy" id="ieu-H1-MGJ"/>
+                        <outlet property="highScoreHard4" destination="tgs-7p-9wU" id="nAo-53-9Of"/>
+                        <outlet property="highScoreHard5" destination="UZk-8d-3hG" id="TOO-2K-qqu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPx-5Y-X8r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1246,7 +1260,7 @@
         <!--Expert Mode-->
         <scene sceneID="jKg-S8-p9B">
             <objects>
-                <viewController id="bB0-SY-dop" sceneMemberID="viewController">
+                <viewController id="bB0-SY-dop" customClass="HighScoreExpertViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gMi-zn-rI2"/>
                         <viewControllerLayoutGuide type="bottom" id="rqo-uL-BSV"/>
@@ -1331,6 +1345,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Expert Mode" id="W9y-b0-x9J"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="highScoreExpert1" destination="rV3-09-xvd" id="6b0-hX-Aeh"/>
+                        <outlet property="highScoreExpert2" destination="sZC-Rq-Z9a" id="WuG-Ue-blP"/>
+                        <outlet property="highScoreExpert3" destination="JtV-GU-y0I" id="lCl-GI-DWS"/>
+                        <outlet property="highScoreExpert4" destination="lkW-SH-4TG" id="vPa-yj-7nr"/>
+                        <outlet property="highScoreExpert5" destination="KK0-tO-5Ls" id="qlL-pF-G9S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ne4-GW-n4q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1339,7 +1360,7 @@
         <!--Easy Mode-->
         <scene sceneID="kBF-RG-59c">
             <objects>
-                <viewController id="uy3-UC-P4P" sceneMemberID="viewController">
+                <viewController id="uy3-UC-P4P" customClass="HighScoreEasyViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gMz-Tr-mCd"/>
                         <viewControllerLayoutGuide type="bottom" id="xYX-Tg-kvZ"/>
@@ -1423,6 +1444,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Easy Mode" id="bCJ-db-ODq"/>
+                    <connections>
+                        <outlet property="highScoreEasy1" destination="lK4-nH-Ra2" id="3Pa-Pa-2zQ"/>
+                        <outlet property="highScoreEasy2" destination="szb-SC-sJn" id="vk4-H9-xrc"/>
+                        <outlet property="highScoreEasy3" destination="Sjq-nk-59o" id="jSW-dC-k70"/>
+                        <outlet property="highScoreEasy4" destination="Adw-So-uaT" id="Y94-7S-VA4"/>
+                        <outlet property="highScoreEasy5" destination="P1H-yT-x4f" id="Za5-4d-YpG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xf2-Ko-Ptd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2688,7 +2716,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="e0W-wZ-juN"/>
+        <segue reference="DcX-eB-8DM"/>
         <segue reference="9Qd-2A-weg"/>
     </inferredMetricsTieBreakers>
 </document>
