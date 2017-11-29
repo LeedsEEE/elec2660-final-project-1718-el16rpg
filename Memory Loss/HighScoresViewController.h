@@ -11,4 +11,14 @@
 
 @interface HighScoresViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *highScore1;
+
+@property (strong, nonatomic) IBOutlet UILabel *highScore2;
+
+@property (strong, nonatomic) IBOutlet UILabel *highScore3;
+
+@property (strong, nonatomic) IBOutlet UILabel *highScore4;
+
+@property (strong, nonatomic) IBOutlet UILabel *highScore5;
+
 @end

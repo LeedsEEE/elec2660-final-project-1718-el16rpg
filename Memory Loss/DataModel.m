@@ -26,7 +26,10 @@
     
 }
 
--(void) updateScoreNumber {    
+-(void) updateScoreNumber {
+    
+    if (self.newHighScoreEasy)
+    
 }
 
 @end
