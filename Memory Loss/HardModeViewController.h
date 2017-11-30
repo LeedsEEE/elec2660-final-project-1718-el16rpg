@@ -8,10 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "CRCountdown.h"
 #import "DataModel.h"
 
-@interface HardModeViewController : UIViewController
+@interface HardModeViewController : UIViewController {
+    
+    NSInteger trackOneButtonStateArray[8];
+    NSInteger trackTwoButtonStateArray[8];
+    NSInteger trackThreeButtonStateArray[8];
+    NSInteger trackFourButtonStateArray[8];
+    NSInteger trackFiveButtonStateArray[8];
+    NSInteger trackSixButtonStateArray[8];
+    NSInteger trackSevenButtonStateArray[8];
+    NSInteger trackEightButtonStateArray[8];
+    
+}
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneHardModeButtons;
 - (IBAction)didPressTrackOneHardModeButton:(UIButton *)sender;
@@ -36,14 +46,13 @@
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackEightHardModeButtons;
 - (IBAction)didPressTrackEightHardModeButton:(UIButton *)sender;
-@property (strong, nonatomic) IBOutlet UILabel *currentHighScoreHard;
 
 @property float tempoHardModeBPM;
 
 - (IBAction)didPressHardModeStartButton:(UIButton *)sender;
 
-@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *countdownTimersHardMode;
-
 @property (strong, nonatomic) NSTimer *hardModeTimer;
+
+- (IBAction)didPressHardModeRestartButton:(id)sender;
 
 @end

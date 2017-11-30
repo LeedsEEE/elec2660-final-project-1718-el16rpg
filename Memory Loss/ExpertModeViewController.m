@@ -55,12 +55,10 @@
 
 - (IBAction)didPressExpertModeStartButton:(UIButton *)sender {
     
-    self.expertModeCountdown = [[CRCountdown alloc] init];
-    [self.expertModeCountdown startCountdownWithInterval:100 ticks:3 completion:0];
-    NSLog(@"%@", self.expertModeCountdown, self.countdownTimersExpertMode);
-    
     self.tempoExpertModeBPM = 160;
     
 }
 
+- (IBAction)didPressExpertModeRestartButton:(id)sender {
+}
 @end

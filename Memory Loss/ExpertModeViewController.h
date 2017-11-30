@@ -8,10 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "CRCountdown.h"
 #import "DataModel.h"
 
-@interface ExpertModeViewController : UIViewController
+@interface ExpertModeViewController : UIViewController {
+    
+    NSInteger trackOneButtonStateArray[8];
+    NSInteger trackTwoButtonStateArray[8];
+    NSInteger trackThreeButtonStateArray[8];
+    NSInteger trackFourButtonStateArray[8];
+    NSInteger trackFiveButtonStateArray[8];
+    NSInteger trackSixButtonStateArray[8];
+    NSInteger trackSevenButtonStateArray[8];
+    NSInteger trackEightButtonStateArray[8];
+    
+}
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneExpertModeButtons;
 - (IBAction)didPressTrackOneExpertModeButton:(UIButton *)sender;
@@ -37,16 +47,12 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackEightExpertModeButtons;
 - (IBAction)didPressTrackEightExpertModeButton:(UIButton *)sender;
 
-@property (strong, nonatomic) IBOutlet UILabel *currentHighScoreExpert;
-
 @property float tempoExpertModeBPM;
 
 - (IBAction)didPressExpertModeStartButton:(UIButton *)sender;
 
-@property (strong, nonatomic) IBOutletCollection(UILabel) NSArray *countdownTimersExpertMode;
-
 @property (strong, nonatomic) NSTimer *expertModeTimer;
 
-@property CRCountdown *expertModeCountdown;
+- (IBAction)didPressExpertModeRestartButton:(id)sender;
 
 @end

@@ -16,6 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+   // [self initArrays];
+    //[self setupAudioPlayers];
+    //self.sampleNumber = 0;
+    //[self initAlpha];
+    
     // Do any additional setup after loading the view.
 }
 
@@ -35,23 +41,123 @@
 */
 
 - (IBAction)didPressTrackOneMediumModeButton:(UIButton *)sender {
+    
+    NSLog(@"Track One Button %ld", sender.tag);
+    if ([sender isSelected] == FALSE) {  // Yes
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        sender.selected = YES;
+        sender.alpha = 1;
+        
+    }
+    else { // No
+        NSLog(@"Unselected");
+        trackOneButtonStateArray[sender.tag] = 0;
+        sender.selected = NO;
+        sender.alpha = 0.5;
+    }
+    
 }
 - (IBAction)didPressTrackTwoMediumModeButton:(UIButton *)sender {
+    
+    NSLog(@"Track Two Button %ld", sender.tag);
+    
+    if ([sender isSelected] == FALSE) {  // Yes
+        NSLog(@"Selected");
+        trackTwoButtonStateArray[sender.tag] = 1;
+        sender.selected = YES;
+        sender.alpha = 1;
+        
+    }
+    else { // No
+        NSLog(@"Unselected");
+        trackTwoButtonStateArray[sender.tag] = 0;
+        sender.selected = NO;
+        sender.alpha = 0.5;
+    }
+    
 }
 - (IBAction)didPressTrackThreeMediumModeButton:(UIButton *)sender {
+    
+    NSLog(@"Track Three Button %ld", sender.tag);
+    
+    if ([sender isSelected] == FALSE) {  // Yes
+        NSLog(@"Selected");
+        trackThreeButtonStateArray[sender.tag] = 1;
+        sender.selected = YES;
+        sender.alpha = 1;
+        
+    }
+    else { // No
+        NSLog(@"Unselected");
+        trackThreeButtonStateArray[sender.tag] = 0;
+        sender.selected = NO;
+        sender.alpha = 0.5;
+    }
+
 }
+
 - (IBAction)didPressTrackFourMediumModeButton:(UIButton *)sender {
+    
+    NSLog(@"Track Four Button %ld", sender.tag);
+    
+    if ([sender isSelected] == FALSE) {  // Yes
+        NSLog(@"Selected");
+        trackFourButtonStateArray[sender.tag] = 1;
+        sender.selected = YES;
+        sender.alpha = 1;
+        
+    }
+    else { // No
+        NSLog(@"Unselected");
+        trackFourButtonStateArray[sender.tag] = 0;
+        sender.selected = NO;
+        sender.alpha = 0.5;
+    }
+    
 }
 - (IBAction)didPressPauseMediumModeButton:(UIButton *)sender {
+    
+    NSLog(@"Paused");
+    
+    NSLog(@"Stopped Music!");
+    
+    self.playing = NO;
+    [self.mediumModeTimer invalidate];
+    
+    [self.trackOne stop];
+    self.trackOne.currentTime = 0.0;
+    [self.trackOne prepareToPlay];
+    
+    [self.trackTwo stop];
+    self.trackTwo.currentTime = 0.0;
+    [self.trackTwo prepareToPlay];
+    
+    [self.trackThree stop];
+    self.trackThree.currentTime = 0.0;
+    [self.trackThree prepareToPlay];
+    
+    [self.trackFour stop];
+    self.trackFour.currentTime = 0.0;
+    [self.trackFour prepareToPlay];
+    
 }
 
 - (IBAction)didPressMediumModeStartButton:(UIButton *)sender {
     
-    CRCountdown* countdown123 = [[CRCountdown alloc] init];
-    [countdown123 startCountdownWithInterval:100 ticks:3 completion:0];
-    NSLog(@"%@", countdown123, self.countdownTimerMediumMode);
+    self.playing = YES;
+    
+    // self.mediumModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoMediumModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    
+    ((UIButton *)sender).enabled = NO;
     
     self.tempoMediumModeBPM = 95;
+    
+}
+
+- (IBAction)didPressMediumModeRestartButton:(id)sender {
+    
+    
     
 }
 

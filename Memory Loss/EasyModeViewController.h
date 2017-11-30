@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "CRCountdown.h"
 #import "DataModel.h"
 
 @interface EasyModeViewController : UIViewController {
@@ -17,17 +16,19 @@
     NSInteger trackTwoButtonStateArray[8];
     NSInteger trackThreeButtonStateArray[8];
     NSInteger trackFourButtonStateArray[8];
-    
 }
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneEasyModeButtons;
 - (IBAction)didPressTrackOneEasyModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackOneEasyModeButton:(UIButton *)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackTwoEasyModeButtons;
 - (IBAction)didPressTrackTwoEasyModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackTwoEasyModeButton:(UIButton *)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeEasyModeButtons;
 - (IBAction)didPressTrackThreeEasyModeButton:(UIButton *)sender;
+
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourEasyModeButtons;
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender;
@@ -41,13 +42,9 @@
 @property (strong, nonatomic) AVAudioPlayer *trackThree;
 @property (strong, nonatomic) AVAudioPlayer *trackFour;
 
-@property (strong, nonatomic) IBOutlet UILabel *countdownTimerEasyMode;
-
-@property (strong, nonatomic) IBOutlet UILabel *currentHighScoreEasy;
+@property (strong, nonatomic) NSTimer *easyModeTimer;
 
 @property float tempoEasyModeBPM;
-
-@property (strong, nonatomic) NSTimer *easyModeTimer;
 
 @property NSInteger sampleNumber;
 

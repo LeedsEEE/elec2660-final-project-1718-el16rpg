@@ -31,30 +31,32 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)didPressTrackOneEasyModeButton:(UIButton *)sender {
-    
     NSLog(@"Track One Button %ld", sender.tag);
-    
-    if ([sender isSelected]) {  // Yes
-        NSLog(@"Selected");
-        trackOneButtonStateArray[sender.tag] = 1;
-         sender.selected = NO;
-        
-    }
-    else { // No
+
+     // No
         NSLog(@"Unselected");
         trackOneButtonStateArray[sender.tag] = 0;
-         sender.selected = YES;
-    }
+        sender.selected = NO;
+        sender.alpha = 0.5;
+
+}
+
+- (IBAction)didPressDownTrackOneEasyModeButton:(UIButton *)sender {
+    
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        sender.selected = YES;
+        sender.alpha = 1;
     
 }
 
@@ -62,34 +64,41 @@
     
     NSLog(@"Track Two Button %ld", sender.tag);
     
-    if ([sender isSelected]) {  // Yes
+    if ([sender isSelected] == FALSE) {  // Yes
         NSLog(@"Selected");
         trackTwoButtonStateArray[sender.tag] = 1;
-        sender.selected = NO;
+        sender.selected = YES;
+        sender.alpha = 1;
         
     }
     else { // No
         NSLog(@"Unselected");
         trackTwoButtonStateArray[sender.tag] = 0;
-        sender.selected = YES;
+        sender.selected = NO;
+        sender.alpha = 0.5;
     }
     
+}
+
+- (IBAction)didPressDownTrackTwoEasyModeButton:(UIButton *)sender {
 }
 
 - (IBAction)didPressTrackThreeEasyModeButton:(UIButton *)sender {
     
     NSLog(@"Track Three Button %ld", sender.tag);
     
-    if ([sender isSelected]) {  // Yes
+    if ([sender isSelected] == FALSE) {  // Yes
         NSLog(@"Selected");
         trackThreeButtonStateArray[sender.tag] = 1;
-        sender.selected = NO;
+        sender.selected = YES;
+        sender.alpha = 1;
         
     }
     else { // No
         NSLog(@"Unselected");
         trackThreeButtonStateArray[sender.tag] = 0;
-        sender.selected = YES;
+        sender.selected = NO;
+        sender.alpha = 0.5;
     }
     
 }
@@ -98,25 +107,23 @@
     
     NSLog(@"Track Four Button %ld", sender.tag);
     
-    if ([sender isSelected]) {  // Yes
+    if ([sender isSelected] == FALSE) {  // Yes
         NSLog(@"Selected");
         trackFourButtonStateArray[sender.tag] = 1;
-        sender.selected = NO;
+        sender.selected = YES;
+        sender.alpha = 1;
         
     }
     else { // No
         NSLog(@"Unselected");
         trackFourButtonStateArray[sender.tag] = 0;
-        sender.selected = YES;
+        sender.selected = NO;
+        sender.alpha = 0.5;
     }
     
 }
 
 - (IBAction)didPressEasyModeStartButton:(id)sender {
-    
-    CRCountdown* countdown123 = [[CRCountdown alloc] init];
-    [countdown123 startCountdownWithInterval:100 ticks:3 completion:0];
-    NSLog(@"%@", countdown123, self.countdownTimerEasyMode);
     
     self.playing = YES;
     
@@ -156,7 +163,7 @@
     [self initAlpha];
     
     for (UIButton *button1 in self.trackOneEasyModeButtons) {
-     
+        
         [button1 setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
          UIControlStateNormal];
         button1.selected = YES;
@@ -242,64 +249,91 @@
     
     NSLog(@"Setting Up Audio Players");
     
-/*  NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
-    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-    self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-    [self.trackOne prepareToPlay];
- 
-    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
-    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-    self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-    [self.trackTwo prepareToPlay];
- 
-    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
-    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-    self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-    [self.trackThree prepareToPlay];
- 
-    NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
-    NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-    self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-    [self.trackFour prepareToPlay];
- 
-*/ }
+    /*  NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
+     self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+     [self.trackOne prepareToPlay];
+     
+     NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
+     self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+     [self.trackTwo prepareToPlay];
+     
+     NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
+     self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+     [self.trackThree prepareToPlay];
+     
+     NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
+     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
+     self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
+     [self.trackFour prepareToPlay];
+     
+     */ }
 
 -(void) timerFire:(NSTimer *)timer {
     
     NSLog(@"Timer Fire! Sample %ld", self.sampleNumber);
+    int i = rand() % 10;
+    if (i > 4) {
+        i = 3;
+    }
     
-    for (UIButton *button1 in self.trackOneEasyModeButtons) {
-        if (button1.tag == self.sampleNumber)    {
-            button1.alpha = 1.0;
-        }
-        else {
-            button1.alpha = 0.5;
-        }
+    int o = rand() % 10;
+    if (o > 4) {
+        o = 2;
     }
-    for (UIButton *button2 in self.trackTwoEasyModeButtons) {
-            if (button2.tag == self.sampleNumber)    {
-                button2.alpha = 1.0;
-            }
-            else {
-                button2.alpha = 0.5;
-            }
+        
+    int p = rand() % 10;
+    if (p > 4) {
+        p = 1;
     }
-    for (UIButton *button3 in self.trackThreeEasyModeButtons) {
-            if (button3.tag == self.sampleNumber)    {
-                button3.alpha = 1.0;
-            }
-            else {
-                button3.alpha = 0.5;
-            }
+    
+    int a = rand() % 10;
+    if (a > 4) {
+        a = 0;
     }
+    
+    NSLog(@"%i",i);
+    
     for (UIButton *button4 in self.trackFourEasyModeButtons) {
-            if (button4.tag == self.sampleNumber)    {
-                button4.alpha = 1.0;
+        for (UIButton *button3 in self.trackThreeEasyModeButtons) {
+            for (UIButton *button2 in self.trackTwoEasyModeButtons) {
+                for (UIButton *button1 in self.trackOneEasyModeButtons) {
+                    
+                    if((button1.tag == i) && (i != o) && (i != p) && (i != a)){
+                        button1.alpha = 1.0;
+                    } else {
+                        button1.alpha = 0.5;
+                    }
+                    
+                    if ((button2.tag == p)  && (p != o) && (p != i) && (p != a)){
+                    button2.alpha = 1.0;
+                    } else {
+                    button2.alpha = 0.5;
+                    }
+                    
+                    if ((button3.tag == o)&& (o != p) && (o != i) && (o != a)){
+                        button3.alpha = 1.0;
+                    } else {
+                      button3.alpha = 0.5;
+                    }
+                    
+                    if ((button4.tag == a)&& (o != p) && (o != i) && (o != a)) {
+                        button4.alpha = 1.0;
+                    } else {
+                        button4.alpha = 0.5;
+                    }
+                    // It does not turn it off
+                    // That maybe why>? ?!/
+                }
             }
-            else {
-                button4.alpha = 0.5;
-            }
+        }
     }
+    
+
+
+
 
     // if current sample is on
     if (trackOneButtonStateArray[self.sampleNumber] == 1) {
@@ -330,14 +364,14 @@
         [self.trackFour play];
         
     }
-
+    
     
     self.sampleNumber++;
     if (self.sampleNumber > 3)
         self.sampleNumber = 0;
     
 }
-    
+
 - (void) initAlpha {
     
     for (UIButton *button1 in self.trackOneEasyModeButtons) {
