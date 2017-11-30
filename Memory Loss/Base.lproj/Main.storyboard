@@ -1791,7 +1791,7 @@
                                 </state>
                                 <connections>
                                     <action selector="didPressPauseMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="OWh-dn-mgD"/>
-                                    <segue destination="in2-3a-UE4" kind="showDetail" animates="NO" id="RVu-66-QJr"/>
+                                    <segue destination="in2-3a-UE4" kind="show" animates="NO" action="showDetailViewController:sender:" id="RVu-66-QJr"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WdK-5Y-Mas">
@@ -2701,7 +2701,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WUQ-jn-tM1" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="CAV-h3-Mhv" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2003" y="761"/>
+            <point key="canvasLocation" x="2159" y="686"/>
         </scene>
     </scenes>
     <resources>
@@ -2716,7 +2716,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DcX-eB-8DM"/>
-        <segue reference="9Qd-2A-weg"/>
+        <segue reference="RVu-66-QJr"/>
+        <segue reference="n6G-0B-nAD"/>
     </inferredMetricsTieBreakers>
 </document>

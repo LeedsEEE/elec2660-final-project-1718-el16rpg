@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HighScoreEasyViewController.h"
 
 @interface DataModel : NSObject
 
@@ -21,5 +22,7 @@
 
 @property NSUInteger newHighScoreExpert;
 @property NSUInteger currentHighScoreExpert;
+
+// @property HighScoreEasyViewController *scores;
 
 @end

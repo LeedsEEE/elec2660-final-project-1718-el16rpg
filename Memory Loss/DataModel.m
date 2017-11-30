@@ -10,6 +10,8 @@
 
 @implementation DataModel
 
+// self.scores
+
 -(void) updateHighScore {
     
     if (self.newHighScoreEasy > self.currentHighScoreEasy)
@@ -26,10 +28,11 @@
     
 }
 
--(void) updateScoreNumber {
+/* -(void) updateScoreNumber {
     
-    if (self.newHighScoreEasy)
+    if (self.newHighScoreEasy > self.highScoreEasy1)
+        self.highScoreEasy1 = self.newHighScoreEasy;
     
-}
+} */
 
 @end
