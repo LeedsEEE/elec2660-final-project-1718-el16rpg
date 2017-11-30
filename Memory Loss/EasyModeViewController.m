@@ -46,16 +46,12 @@
     
     if ([sender isSelected]) {  // Yes
         NSLog(@"Selected");
-        [sender setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
-           UIControlStateNormal];
         trackOneButtonStateArray[sender.tag] = 1;
          sender.selected = NO;
         
     }
     else { // No
         NSLog(@"Unselected");
-        [sender setImage: [UIImage imageNamed:@"Spaceship.png"] forState:
-           UIControlStateNormal];
         trackOneButtonStateArray[sender.tag] = 0;
          sender.selected = YES;
     }
@@ -68,16 +64,12 @@
     
     if ([sender isSelected]) {  // Yes
         NSLog(@"Selected");
-        [sender setImage: [UIImage imageNamed:@"UFO.png"] forState:
-         UIControlStateNormal];
         trackTwoButtonStateArray[sender.tag] = 1;
         sender.selected = NO;
         
     }
     else { // No
         NSLog(@"Unselected");
-        [sender setImage: [UIImage imageNamed:@"UFO.png"] forState:
-         UIControlStateNormal];
         trackTwoButtonStateArray[sender.tag] = 0;
         sender.selected = YES;
     }
@@ -90,16 +82,12 @@
     
     if ([sender isSelected]) {  // Yes
         NSLog(@"Selected");
-        [sender setImage: [UIImage imageNamed:@"Saturn.png"] forState:
-         UIControlStateNormal];
         trackThreeButtonStateArray[sender.tag] = 1;
         sender.selected = NO;
         
     }
     else { // No
         NSLog(@"Unselected");
-        [sender setImage: [UIImage imageNamed:@"Saturn.png"] forState:
-         UIControlStateNormal];
         trackThreeButtonStateArray[sender.tag] = 0;
         sender.selected = YES;
     }
@@ -112,16 +100,12 @@
     
     if ([sender isSelected]) {  // Yes
         NSLog(@"Selected");
-        [sender setImage: [UIImage imageNamed:@"Asteroid.png"] forState:
-         UIControlStateNormal];
         trackFourButtonStateArray[sender.tag] = 1;
         sender.selected = NO;
         
     }
     else { // No
         NSLog(@"Unselected");
-        [sender setImage: [UIImage imageNamed:@"Asteroid.png"] forState:
-         UIControlStateNormal];
         trackFourButtonStateArray[sender.tag] = 0;
         sender.selected = YES;
     }
@@ -244,7 +228,7 @@
     
     // initialize every element to zero
     
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < 4; i++) {
         
         trackOneButtonStateArray[i] = 0;
         trackTwoButtonStateArray[i] = 0;

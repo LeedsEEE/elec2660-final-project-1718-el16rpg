@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A8310B0D1FCF43F40030EB2C /* HighScoreEasyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8310B0C1FCF43F40030EB2C /* HighScoreEasyViewController.m */; };
-		A8310B101FCF44230030EB2C /* HighScoreMediumViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8310B0F1FCF44230030EB2C /* HighScoreMediumViewController.m */; };
-		A8310B131FCF44460030EB2C /* HighScoreHardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8310B121FCF44460030EB2C /* HighScoreHardViewController.m */; };
-		A8310B161FCF44630030EB2C /* HighScoreExpertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8310B151FCF44630030EB2C /* HighScoreExpertViewController.m */; };
 		A8603B8D1FC3590000BAB564 /* PauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8603B8C1FC3590000BAB564 /* PauseViewController.m */; };
 		A8603B8F1FC3815900BAB564 /* Space App Music.wav in Resources */ = {isa = PBXBuildFile; fileRef = A8603B8E1FC3815900BAB564 /* Space App Music.wav */; };
 		A892B42E1FBCB0D400AFC330 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A892B42D1FBCB0D400AFC330 /* AVFoundation.framework */; };
@@ -59,14 +55,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A8310B0B1FCF43F40030EB2C /* HighScoreEasyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HighScoreEasyViewController.h; path = ../HighScoreEasyViewController.h; sourceTree = "<group>"; };
-		A8310B0C1FCF43F40030EB2C /* HighScoreEasyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighScoreEasyViewController.m; path = ../HighScoreEasyViewController.m; sourceTree = "<group>"; };
-		A8310B0E1FCF44230030EB2C /* HighScoreMediumViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HighScoreMediumViewController.h; path = ../HighScoreMediumViewController.h; sourceTree = "<group>"; };
-		A8310B0F1FCF44230030EB2C /* HighScoreMediumViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighScoreMediumViewController.m; path = ../HighScoreMediumViewController.m; sourceTree = "<group>"; };
-		A8310B111FCF44460030EB2C /* HighScoreHardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HighScoreHardViewController.h; path = ../HighScoreHardViewController.h; sourceTree = "<group>"; };
-		A8310B121FCF44460030EB2C /* HighScoreHardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighScoreHardViewController.m; path = ../HighScoreHardViewController.m; sourceTree = "<group>"; };
-		A8310B141FCF44630030EB2C /* HighScoreExpertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HighScoreExpertViewController.h; path = ../HighScoreExpertViewController.h; sourceTree = "<group>"; };
-		A8310B151FCF44630030EB2C /* HighScoreExpertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HighScoreExpertViewController.m; path = ../HighScoreExpertViewController.m; sourceTree = "<group>"; };
 		A8603B8B1FC3590000BAB564 /* PauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseViewController.h; sourceTree = "<group>"; };
 		A8603B8C1FC3590000BAB564 /* PauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PauseViewController.m; sourceTree = "<group>"; };
 		A8603B8E1FC3815900BAB564 /* Space App Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Space App Music.wav"; sourceTree = "<group>"; };
@@ -187,14 +175,6 @@
 				A8603B8C1FC3590000BAB564 /* PauseViewController.m */,
 				A8DBEF221FC751D5001889C3 /* GameOverViewController.h */,
 				A8DBEF231FC751D5001889C3 /* GameOverViewController.m */,
-				A8310B0B1FCF43F40030EB2C /* HighScoreEasyViewController.h */,
-				A8310B0C1FCF43F40030EB2C /* HighScoreEasyViewController.m */,
-				A8310B0E1FCF44230030EB2C /* HighScoreMediumViewController.h */,
-				A8310B0F1FCF44230030EB2C /* HighScoreMediumViewController.m */,
-				A8310B111FCF44460030EB2C /* HighScoreHardViewController.h */,
-				A8310B121FCF44460030EB2C /* HighScoreHardViewController.m */,
-				A8310B141FCF44630030EB2C /* HighScoreExpertViewController.h */,
-				A8310B151FCF44630030EB2C /* HighScoreExpertViewController.m */,
 				A8D446851FC4981500969641 /* CRCountdown.h */,
 				A8D446861FC4981500969641 /* CRCountdown.m */,
 				A892B42F1FBE397900AFC330 /* DataModel.h */,
@@ -390,15 +370,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8DBEF241FC751D5001889C3 /* GameOverViewController.m in Sources */,
-				A8310B0D1FCF43F40030EB2C /* HighScoreEasyViewController.m in Sources */,
 				A8D446871FC4981500969641 /* CRCountdown.m in Sources */,
 				A8F81D421FBA0976004D532E /* MediumModeViewController.m in Sources */,
-				A8310B131FCF44460030EB2C /* HighScoreHardViewController.m in Sources */,
-				A8310B161FCF44630030EB2C /* HighScoreExpertViewController.m in Sources */,
 				A892B4311FBE397900AFC330 /* DataModel.m in Sources */,
 				A8F81D121FBA0664004D532E /* ViewController.m in Sources */,
 				A8F81D451FBA0983004D532E /* HardModeViewController.m in Sources */,
-				A8310B101FCF44230030EB2C /* HighScoreMediumViewController.m in Sources */,
 				A8F81D481FBA0991004D532E /* ExpertModeViewController.m in Sources */,
 				A8F81D3F1FBA0962004D532E /* EasyModeViewController.m in Sources */,
 				A8F81D0F1FBA0664004D532E /* AppDelegate.m in Sources */,
