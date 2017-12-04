@@ -337,12 +337,12 @@
     
 }
 
-- (void) stageFlashTimes {
+/* - (void) stageFlashTimes {
     
-    for (int i = 0; (i = *(self.stage)); 1) {
+    for (int i = 0; i = self.stage; 1) {
             self.stage = self.stage + 1;
         }
     
-}
+} */
 
 @end
