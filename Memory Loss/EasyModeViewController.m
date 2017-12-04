@@ -59,7 +59,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 1];
+    [self correctButtonPressed: 0];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -69,7 +69,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 2];
+    [self correctButtonPressed: 1];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -79,7 +79,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 3];
+    [self correctButtonPressed: 2];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -89,7 +89,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 4];
+    [self correctButtonPressed: 3];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -99,7 +99,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 5];
+    [self correctButtonPressed: 4];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -109,7 +109,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 6];
+    [self correctButtonPressed: 5];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -119,7 +119,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 7];
+    [self correctButtonPressed: 6];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -129,7 +129,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 8];
+    [self correctButtonPressed: 7];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -139,7 +139,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 9];
+    [self correctButtonPressed: 8];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -149,7 +149,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 10];
+    [self correctButtonPressed: 9];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -159,7 +159,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 11];
+    [self correctButtonPressed: 10];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -169,7 +169,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 12];
+    [self correctButtonPressed: 11];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -179,7 +179,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 13];
+    [self correctButtonPressed: 12];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -189,7 +189,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 14];
+    [self correctButtonPressed: 13];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -199,7 +199,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 15];
+    [self correctButtonPressed: 14];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -209,7 +209,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
-    [self correctButtonPressed: 16];
+    [self correctButtonPressed: 15];
     sender.selected = YES;
     sender.alpha = 1;
     
