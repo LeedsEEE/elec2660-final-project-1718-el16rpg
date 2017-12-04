@@ -164,6 +164,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchDown" id="6lS-XB-CLL"/>
                                     <action selector="didPressTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="fow-gH-sDJ"/>
                                 </connections>
                             </button>
@@ -172,6 +173,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
                                 <connections>
+                                    <action selector="didPressDownTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchDown" id="gA9-0v-l9J"/>
                                     <action selector="didPressTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="C68-KU-b0z"/>
                                 </connections>
                             </button>
@@ -180,6 +182,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
                                 <connections>
+                                    <action selector="didPressDownTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchDown" id="55m-oZ-Gp0"/>
                                     <action selector="didPressTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="S0y-il-UtT"/>
                                 </connections>
                             </button>
@@ -188,7 +191,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
-                                    <action selector="didPressDownTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchDown" id="jGL-ej-TkC"/>
+                                    <action selector="didPressDownTrackOneEasyModeButton2:" destination="4aZ-tK-48y" eventType="touchDown" id="PfD-Vd-ojJ"/>
                                     <action selector="didPressTrackOneEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="tyL-3o-cJf"/>
                                 </connections>
                             </button>
@@ -197,6 +200,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoEasyModeButton2:" destination="4aZ-tK-48y" eventType="touchDown" id="4cx-69-eBM"/>
                                     <action selector="didPressTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="mq9-NP-rJp"/>
                                 </connections>
                             </button>
@@ -205,6 +209,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
                                 <connections>
+                                    <action selector="didPressDownTrackThreeEasyModeButton2:" destination="4aZ-tK-48y" eventType="touchDown" id="yzt-Z3-hIu"/>
                                     <action selector="didPressTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="RCW-CH-tYU"/>
                                 </connections>
                             </button>
@@ -213,6 +218,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
                                 <connections>
+                                    <action selector="didPressDownTrackFourEasyModeButton2:" destination="4aZ-tK-48y" eventType="touchDown" id="JZd-zd-tNr"/>
                                     <action selector="didPressTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="4tl-qc-FOw"/>
                                 </connections>
                             </button>
@@ -221,6 +227,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneEasyModeButton3:" destination="4aZ-tK-48y" eventType="touchDown" id="5KR-3v-4LO"/>
                                     <action selector="didPressTrackOneEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="B81-hC-pXb"/>
                                 </connections>
                             </button>
@@ -229,6 +236,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoEasyModeButton3:" destination="4aZ-tK-48y" eventType="touchDown" id="niu-0k-Yqx"/>
                                     <action selector="didPressTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="dzU-wj-nYa"/>
                                 </connections>
                             </button>
@@ -237,6 +245,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
                                 <connections>
+                                    <action selector="didPressDownTrackThreeEasyModeButton3:" destination="4aZ-tK-48y" eventType="touchDown" id="sGZ-Gj-u2u"/>
                                     <action selector="didPressTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="ugh-nW-JPi"/>
                                 </connections>
                             </button>
@@ -245,6 +254,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
                                 <connections>
+                                    <action selector="didPressDownTrackFourEasyModeButton3:" destination="4aZ-tK-48y" eventType="touchDown" id="a82-Vn-xi4"/>
                                     <action selector="didPressTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="Kjh-b3-GJE"/>
                                 </connections>
                             </button>
@@ -253,6 +263,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneEasyModeButton4:" destination="4aZ-tK-48y" eventType="touchDown" id="H0h-f9-gPd"/>
                                     <action selector="didPressTrackOneEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="VHv-Mx-45k"/>
                                 </connections>
                             </button>
@@ -261,6 +272,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoEasyModeButton4:" destination="4aZ-tK-48y" eventType="touchDown" id="rjl-WD-dZA"/>
                                     <action selector="didPressTrackTwoEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="CzL-Uc-zNq"/>
                                 </connections>
                             </button>
@@ -269,6 +281,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Saturn.jpg"/>
                                 <connections>
+                                    <action selector="didPressDownTrackThreeEasyModeButton4:" destination="4aZ-tK-48y" eventType="touchDown" id="fGJ-sP-dG9"/>
                                     <action selector="didPressTrackThreeEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="Zly-ak-rIH"/>
                                 </connections>
                             </button>
@@ -277,6 +290,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Asteroid.jpg"/>
                                 <connections>
+                                    <action selector="didPressDownTrackFourEasyModeButton4:" destination="4aZ-tK-48y" eventType="touchDown" id="6tV-fp-x1P"/>
                                     <action selector="didPressTrackFourEasyModeButton:" destination="4aZ-tK-48y" eventType="touchUpInside" id="7Nc-7B-59s"/>
                                 </connections>
                             </button>
@@ -1049,6 +1063,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchDown" id="FDI-yi-7ou"/>
                                     <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="c9r-0P-uDK"/>
                                 </connections>
                             </button>
@@ -1057,6 +1072,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchDown" id="UjM-eu-Z8t"/>
                                     <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="NR5-p3-nhh"/>
                                 </connections>
                             </button>
@@ -1081,6 +1097,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneMediumModeButton2:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="oQe-Q9-2d2"/>
                                     <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="1Fm-ch-23A"/>
                                 </connections>
                             </button>
@@ -1089,6 +1106,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoMediumModeButton2:" destination="RmF-PQ-Nc9" eventType="touchDown" id="oIc-cc-CAL"/>
                                     <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="tBD-Qq-03M"/>
                                 </connections>
                             </button>
@@ -1113,6 +1131,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneMediumModeButton3:" destination="RmF-PQ-Nc9" eventType="touchDown" id="54R-gU-fAm"/>
                                     <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="AKx-Ek-2zv"/>
                                 </connections>
                             </button>
@@ -1121,6 +1140,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoMediumModeButton3:" destination="RmF-PQ-Nc9" eventType="touchDown" id="kba-81-ey0"/>
                                     <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="pGf-gE-cSn"/>
                                 </connections>
                             </button>
@@ -1145,6 +1165,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneMediumModeButton4:" destination="RmF-PQ-Nc9" eventType="touchDown" id="w4J-0H-DVh"/>
                                     <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="WHa-jE-5c5"/>
                                 </connections>
                             </button>
@@ -1153,6 +1174,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoMediumModeButton4:" destination="RmF-PQ-Nc9" eventType="touchDown" id="cIa-Cb-fkM"/>
                                     <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="Sje-7i-mKj"/>
                                 </connections>
                             </button>
@@ -1177,6 +1199,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneMediumModeButton5:" destination="RmF-PQ-Nc9" eventType="touchDown" id="1Lp-dG-vXy"/>
                                     <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="ckC-rx-sd9"/>
                                 </connections>
                             </button>
@@ -1185,6 +1208,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoMediumModeButton5:" destination="RmF-PQ-Nc9" eventType="touchDown" id="23V-3r-fWh"/>
                                     <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="Z0g-hh-1J3"/>
                                 </connections>
                             </button>
@@ -1209,6 +1233,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneMediumModeButton6:" destination="RmF-PQ-Nc9" eventType="touchDown" id="Puz-NS-V4s"/>
                                     <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="EuX-vH-qoJ"/>
                                 </connections>
                             </button>
@@ -1217,6 +1242,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoMediumModeButton6:" destination="RmF-PQ-Nc9" eventType="touchDown" id="y8y-c3-qUB"/>
                                     <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="G04-PZ-SA4"/>
                                 </connections>
                             </button>
@@ -1241,6 +1267,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneMediumModeButton7:" destination="RmF-PQ-Nc9" eventType="touchDown" id="r5o-ji-baZ"/>
                                     <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="3iZ-hu-twS"/>
                                 </connections>
                             </button>
@@ -1249,6 +1276,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoMediumModeButton7:" destination="RmF-PQ-Nc9" eventType="touchDown" id="xXC-hP-f8H"/>
                                     <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="dh1-0t-Lel"/>
                                 </connections>
                             </button>
@@ -1273,6 +1301,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="Spaceship.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackOneMediumModeButton8:" destination="RmF-PQ-Nc9" eventType="touchDown" id="LWa-Pt-sO7"/>
                                     <action selector="didPressTrackOneMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="3BG-2U-cAT"/>
                                 </connections>
                             </button>
@@ -1281,6 +1310,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="UFO.png"/>
                                 <connections>
+                                    <action selector="didPressDownTrackTwoMediumModeButton8:" destination="RmF-PQ-Nc9" eventType="touchDown" id="efo-Yi-IWR"/>
                                     <action selector="didPressTrackTwoMediumModeButton:" destination="RmF-PQ-Nc9" eventType="touchUpInside" id="TBY-HO-Rqv"/>
                                 </connections>
                             </button>
@@ -2227,7 +2257,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="K87-OK-ivB"/>
-        <segue reference="dwC-o7-1Vh"/>
+        <segue reference="PBA-ta-8Qu"/>
+        <segue reference="RVu-66-QJr"/>
     </inferredMetricsTieBreakers>
 </document>

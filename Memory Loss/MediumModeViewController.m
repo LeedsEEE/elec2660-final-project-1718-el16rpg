@@ -58,6 +58,9 @@
     }
     
 }
+
+- (IBAction)didPressDownTrackOneMediumModeButton:(UIButton *)sender {
+}
 - (IBAction)didPressTrackTwoMediumModeButton:(UIButton *)sender {
     
     NSLog(@"Track Two Button %ld", sender.tag);
@@ -76,6 +79,51 @@
         sender.alpha = 0.5;
     }
     
+}
+
+- (IBAction)didPressDownTrackTwoMediumModeButton:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackTwoMediumModeButton2:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackTwoMediumModeButton3:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackTwoMediumModeButton4:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackTwoMediumModeButton5:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackTwoMediumModeButton6:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackTwoMediumModeButton7:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackTwoMediumModeButton8:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackOneMediumModeButton2:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackOneMediumModeButton3:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackOneMediumModeButton4:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackOneMediumModeButton5:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackOneMediumModeButton6:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackOneMediumModeButton7:(UIButton *)sender {
+}
+
+- (IBAction)didPressDownTrackOneMediumModeButton8:(UIButton *)sender {
 }
 - (IBAction)didPressTrackThreeMediumModeButton:(UIButton *)sender {
     

@@ -60,66 +60,169 @@
     
 }
 
+- (IBAction)didPressDownTrackOneEasyModeButton2:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackOneButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackOneEasyModeButton3:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackOneButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackOneEasyModeButton4:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackOneButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
 - (IBAction)didPressTrackTwoEasyModeButton:(UIButton *)sender {
     
     NSLog(@"Track Two Button %ld", sender.tag);
     
-    if ([sender isSelected] == FALSE) {  // Yes
-        NSLog(@"Selected");
-        trackTwoButtonStateArray[sender.tag] = 1;
-        sender.selected = YES;
-        sender.alpha = 1;
-        
-    }
-    else { // No
-        NSLog(@"Unselected");
-        trackTwoButtonStateArray[sender.tag] = 0;
-        sender.selected = NO;
-        sender.alpha = 0.5;
-    }
+    NSLog(@"Unselected");
+    trackTwoButtonStateArray[sender.tag] = 0;
+    sender.selected = NO;
+    sender.alpha = 0.5;
     
 }
 
 - (IBAction)didPressDownTrackTwoEasyModeButton:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackTwoButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackTwoEasyModeButton2:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackTwoButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackTwoEasyModeButton3:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackTwoButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackTwoEasyModeButton4:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackTwoButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
 }
 
 - (IBAction)didPressTrackThreeEasyModeButton:(UIButton *)sender {
     
     NSLog(@"Track Three Button %ld", sender.tag);
-    
-    if ([sender isSelected] == FALSE) {  // Yes
-        NSLog(@"Selected");
-        trackThreeButtonStateArray[sender.tag] = 1;
-        sender.selected = YES;
-        sender.alpha = 1;
         
-    }
-    else { // No
         NSLog(@"Unselected");
         trackThreeButtonStateArray[sender.tag] = 0;
         sender.selected = NO;
         sender.alpha = 0.5;
     }
+
+- (IBAction)didPressDownTrackThreeEasyModeButton:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackThreeButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackThreeEasyModeButton2:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackThreeButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackThreeEasyModeButton3:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackThreeButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackThreeEasyModeButton4:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackThreeButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
     
 }
 
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender {
     
     NSLog(@"Track Four Button %ld", sender.tag);
-    
-    if ([sender isSelected] == FALSE) {  // Yes
-        NSLog(@"Selected");
-        trackFourButtonStateArray[sender.tag] = 1;
-        sender.selected = YES;
-        sender.alpha = 1;
         
-    }
-    else { // No
         NSLog(@"Unselected");
         trackFourButtonStateArray[sender.tag] = 0;
         sender.selected = NO;
         sender.alpha = 0.5;
     }
+
+- (IBAction)didPressDownTrackFourEasyModeButton:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackFourButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackFourEasyModeButton2:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackFourButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackFourEasyModeButton3:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackFourButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
+    
+}
+
+- (IBAction)didPressDownTrackFourEasyModeButton4:(UIButton *)sender {
+    
+    NSLog(@"Selected");
+    trackFourButtonStateArray[sender.tag] = 1;
+    sender.selected = YES;
+    sender.alpha = 1;
     
 }
 

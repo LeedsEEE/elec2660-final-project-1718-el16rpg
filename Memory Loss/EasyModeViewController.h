@@ -21,17 +21,30 @@
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneEasyModeButtons;
 - (IBAction)didPressTrackOneEasyModeButton:(UIButton *)sender;
 - (IBAction)didPressDownTrackOneEasyModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackOneEasyModeButton2:(UIButton *)sender;
+- (IBAction)didPressDownTrackOneEasyModeButton3:(UIButton *)sender;
+- (IBAction)didPressDownTrackOneEasyModeButton4:(UIButton *)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackTwoEasyModeButtons;
 - (IBAction)didPressTrackTwoEasyModeButton:(UIButton *)sender;
 - (IBAction)didPressDownTrackTwoEasyModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackTwoEasyModeButton2:(UIButton *)sender;
+- (IBAction)didPressDownTrackTwoEasyModeButton3:(UIButton *)sender;
+- (IBAction)didPressDownTrackTwoEasyModeButton4:(UIButton *)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeEasyModeButtons;
 - (IBAction)didPressTrackThreeEasyModeButton:(UIButton *)sender;
-
+- (IBAction)didPressDownTrackThreeEasyModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackThreeEasyModeButton2:(UIButton *)sender;
+- (IBAction)didPressDownTrackThreeEasyModeButton3:(UIButton *)sender;
+- (IBAction)didPressDownTrackThreeEasyModeButton4:(UIButton *)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourEasyModeButtons;
 - (IBAction)didPressTrackFourEasyModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackFourEasyModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackFourEasyModeButton2:(UIButton *)sender;
+- (IBAction)didPressDownTrackFourEasyModeButton3:(UIButton *)sender;
+- (IBAction)didPressDownTrackFourEasyModeButton4:(UIButton *)sender;
 
 - (IBAction)didPressEasyModeStartButton:(id)sender;
 
