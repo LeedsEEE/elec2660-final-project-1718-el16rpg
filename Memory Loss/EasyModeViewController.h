@@ -38,6 +38,8 @@
 
 - (IBAction)didPressEasyModeRestartButton:(id)sender;
 
+- (void) correctButtonPressed:(int) tag;
+
 @property (strong, nonatomic) AVAudioPlayer *trackOne;
 
 @property (strong, nonatomic) NSTimer *easyModeTimer;
@@ -52,6 +54,8 @@
 
 - (void) initAlpha;
 
-@property int *stage;
+@property int stage;
+
+
 
 @end

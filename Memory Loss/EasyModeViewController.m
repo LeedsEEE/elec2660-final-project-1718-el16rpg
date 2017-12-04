@@ -10,6 +10,9 @@
 
 @interface EasyModeViewController ()
 
+@property int tick;
+@property int i;
+
 @end
 
 @implementation EasyModeViewController
@@ -56,6 +59,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 1];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -65,6 +69,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 2];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -74,6 +79,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 3];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -83,6 +89,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 4];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -92,6 +99,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 5];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -101,6 +109,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 6];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -110,6 +119,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 7];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -119,6 +129,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 8];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -128,6 +139,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 9];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -137,6 +149,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 10];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -146,6 +159,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 11];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -155,6 +169,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 12];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -164,15 +179,17 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 13];
     sender.selected = YES;
     sender.alpha = 1;
     
 }
 
-- (IBAction)didPressTrackEasyModeButton14:(UIButton *)sender {
+- (IBAction)didPressDownTrackEasyModeButton14:(UIButton *)sender {
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 14];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -182,6 +199,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 15];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -191,6 +209,7 @@
     
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
+    [self correctButtonPressed: 16];
     sender.selected = YES;
     sender.alpha = 1;
     
@@ -201,8 +220,10 @@
     self.playing = YES;
     
     self.tempoEasyModeBPM = 60;
-    
+    self.tick = 1;
     self.easyModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoEasyModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    
+    
     
     ((UIButton *)sender).enabled = NO;
     
@@ -294,13 +315,13 @@
     
     int lowerBound = 0;
     int upperBound = 15;
-    int i = lowerBound + arc4random() % (upperBound - lowerBound);
+    self.i = lowerBound + arc4random() % (upperBound - lowerBound);
     
-    NSLog(@"%i",i);
+    NSLog(@"%i",self.i);
     
     for (UIButton *button1 in self.trackEasyModeButtons) {
         
-        if (button1.tag == i) {
+        if ((button1.tag == self.i)&&(self.tick % 2)) {
             button1.alpha = 1.0;
         } else {
             button1.alpha = 0.5;
@@ -325,7 +346,10 @@
             self.sampleNumber = 0;
         
     }
-    
+    self.tick = self.tick +1;
+    if (self.tick == 1+self.stage*2) {
+        [self.easyModeTimer invalidate];
+    }
 }
 
 - (void) initAlpha {
@@ -344,5 +368,21 @@
         }
     
 } */
+
+
+ 
+- (void) correctButtonPressed:(int) tag {
+ 
+  if (tag == self.i) {
+ 
+      NSLog(@"Correct Button Selected");
+ 
+    self.stage = self.stage + 1;
+ 
+    self.easyModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoEasyModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+ 
+    }
+ 
+ }
 
 @end
