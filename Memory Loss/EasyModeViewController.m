@@ -12,6 +12,7 @@
 
 @property int tick;
 @property int i;
+@property (strong, nonatomic) NSMutableArray *k;
 
 @end
 
@@ -25,7 +26,8 @@
     self.sampleNumber = 0;
     [self initAlpha];
     self.stage = 1;
-    
+    self.k = [NSMutableArray array];
+    //NSMutableArray *k = [NSMutableArray array];
     // Do any additional setup after loading the view.
 }
 
@@ -56,167 +58,167 @@
 }
 
 - (IBAction)didPressDownTrackEasyModeButton:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 0];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton2:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 1];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton3:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 2];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton4:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 3];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton5:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 4];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton6:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 5];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton7:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 6];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton8:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 7];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton9:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 8];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton10:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 9];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton11:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 10];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton12:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 11];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton13:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 12];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton14:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 13];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton15:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 14];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressDownTrackEasyModeButton16:(UIButton *)sender {
-    
+    if (!([self.k count] == 0)){
     NSLog(@"Selected");
     trackOneButtonStateArray[sender.tag] = 1;
     [self correctButtonPressed: 15];
     sender.selected = YES;
     sender.alpha = 1;
-    
+    }
 }
 
 - (IBAction)didPressEasyModeStartButton:(id)sender {
-    
+    self.didPressTrackEasyModeButton.enabled = YES;
     self.playing = YES;
     
     self.tempoEasyModeBPM = 60;
@@ -235,7 +237,8 @@
     
     self.playing = NO;
     [self.easyModeTimer invalidate];
-    
+    [self.k removeAllObjects];
+    self.stage = 1;
     [self.trackOne stop];
     self.trackOne.currentTime = 0.0;
     [self.trackOne prepareToPlay];
@@ -313,11 +316,24 @@
     
     NSLog(@"Timer Fire! Sample %ld", self.sampleNumber);
     
+    NSLog(@"Tick %d", self.tick);
+    
+    [self initArrays];
     int lowerBound = 0;
     int upperBound = 15;
     self.i = lowerBound + arc4random() % (upperBound - lowerBound);
     
-    NSLog(@"%i",self.i);
+    if (self.tick % 2) {
+        NSLog(@"check");
+        [self.k addObject:[NSNumber numberWithInt:self.i]];
+        
+    }
+    
+    
+    NSLog(@"i: %i",self.i);
+    //NSLog(@"k: %i",self.k);
+    NSLog(@":Answers: %@", self.k);
+    NSLog(@"Stage: %d", self.stage);
     
     for (UIButton *button1 in self.trackEasyModeButtons) {
         
@@ -328,6 +344,8 @@
             
         }
         
+        
+            
         // if current sample is on
         if (trackOneButtonStateArray[self.sampleNumber] == 1) {
             
@@ -373,13 +391,29 @@
  
 - (void) correctButtonPressed:(int) tag {
  
-  if (tag == self.i) {
- 
+  if (tag == [[self.k objectAtIndex:0] intValue]) {
+      
+      [self.k removeObjectAtIndex:0];
       NSLog(@"Correct Button Selected");
- 
-    self.stage = self.stage + 1;
- 
-    self.easyModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoEasyModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+
+      
+      if ([self.k count] == 0){
+          self.stage = self.stage + 1;
+          self.playing = NO;
+          [self.easyModeTimer invalidate];
+          
+          [self.trackOne stop];
+          self.trackOne.currentTime = 0.0;
+          [self.trackOne prepareToPlay];
+          
+          [self initArrays];
+          self.sampleNumber = 0;
+          [self initAlpha];
+          
+          self.didPressEasyModeStartButton.enabled = YES;
+          self.didPressTrackEasyModeButton.enabled = NO;
+
+      }
  
     }
  

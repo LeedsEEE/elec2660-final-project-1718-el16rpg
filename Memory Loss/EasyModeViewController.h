@@ -51,11 +51,10 @@
 @property BOOL playing;
 
 @property (strong, nonatomic) IBOutlet UIButton *didPressEasyModeStartButton;
+@property (strong, nonatomic) IBOutlet UIButton *didPressTrackEasyModeButton;
 
 - (void) initAlpha;
 
 @property int stage;
-
-
 
 @end
