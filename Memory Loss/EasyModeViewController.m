@@ -443,6 +443,9 @@
     }
     
 /* - (void) savedScore: (int) {
+ 
+    NSLog(@"Score: %ld", self.score)
+ 
     
     
 } */
