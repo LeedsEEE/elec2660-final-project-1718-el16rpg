@@ -309,7 +309,7 @@
                                 <frame key="frameInset" minX="316" minY="345" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Go!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -919,7 +919,7 @@
                                 <frame key="frameInset" minX="316" minY="345" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Go!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1335,7 +1335,7 @@
                                 <frame key="frameInset" minX="316" minY="345" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Go!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1962,7 +1962,7 @@
                                 <frame key="frameInset" minX="316" minY="345" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
-                                <state key="normal" title="Start">
+                                <state key="normal" title="Go!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -2225,7 +2225,7 @@
         <image name="iphone-background-wallpaper-2217444-l.jpg" width="333" height="500"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dwC-o7-1Vh"/>
-        <segue reference="K87-OK-ivB"/>
+        <segue reference="e0W-wZ-juN"/>
+        <segue reference="9Qd-2A-weg"/>
     </inferredMetricsTieBreakers>
 </document>

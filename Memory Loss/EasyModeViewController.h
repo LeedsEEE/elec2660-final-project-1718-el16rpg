@@ -42,6 +42,8 @@
 
 @property (strong, nonatomic) AVAudioPlayer *trackOne;
 
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
+
 @property (strong, nonatomic) NSTimer *easyModeTimer;
 
 @property float tempoEasyModeBPM;
