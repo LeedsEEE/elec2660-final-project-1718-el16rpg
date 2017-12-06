@@ -14,6 +14,7 @@
 @property int i;
 @property (strong, nonatomic) NSMutableArray *k;
 @property int w;
+@property int z;
 
 @end
 
@@ -312,27 +313,7 @@
     
     NSLog(@"Setting Up Audio Players");
     
-    /*  NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
-     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-     self.trackOne = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-     [self.trackOne prepareToPlay];
-     
-     NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
-     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-     self.trackTwo = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-     [self.trackTwo prepareToPlay];
-     
-     NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
-     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-     self.trackThree = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-     [self.trackThree prepareToPlay];
-     
-     NSString *filePath = NSBundle [mainBundle pathForResource: @" " ofType:@"wav"]; // wav file name
-     NSURL *fileURL = [[NSURL alloc] initFileURLWithPath:filePath];
-     self.trackFour = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
-     [self.trackFour prepareToPlay];
-     
-     */ }
+    }
 
 -(void) timerFire:(NSTimer *)timer {
     
@@ -442,13 +423,20 @@
  
     }
     
-/* - (void) savedScore: (int) {
+ - (void) savedScore: (int) {
  
-    NSLog(@"Score: %ld", self.score)
+    NSLog(@"Score: %ld", self.savedScore)
+     
+    int z = 10
  
+    if (self.stage + 1) {
+ 
+        int z = z + 10;
+        self.finalScore = z
+        
+    }
     
-    
-} */
+}
  
  }
 

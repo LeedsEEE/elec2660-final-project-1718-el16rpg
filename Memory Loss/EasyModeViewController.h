@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 #import "DataModel.h"
+#import "GameOverViewController.h"
 
 @interface EasyModeViewController : UIViewController {
     

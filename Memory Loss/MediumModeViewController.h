@@ -19,27 +19,40 @@
     
 }
 
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackOneMediumModeButtons;
-- (IBAction)didPressTrackOneMediumModeButton:(UIButton *)sender;
-- (IBAction)didPressDownTrackOneMediumModeButton:(UIButton *)sender;
-- (IBAction)didPressDownTrackOneMediumModeButton2:(UIButton *)sender;
-- (IBAction)didPressDownTrackOneMediumModeButton3:(UIButton *)sender;
-- (IBAction)didPressDownTrackOneMediumModeButton4:(UIButton *)sender;
-- (IBAction)didPressDownTrackOneMediumModeButton5:(UIButton *)sender;
-- (IBAction)didPressDownTrackOneMediumModeButton6:(UIButton *)sender;
-- (IBAction)didPressDownTrackOneMediumModeButton7:(UIButton *)sender;
-- (IBAction)didPressDownTrackOneMediumModeButton8:(UIButton *)sender;
-
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackTwoMediumModeButtons;
-- (IBAction)didPressTrackTwoMediumModeButton:(UIButton *)sender;
-- (IBAction)didPressDownTrackTwoMediumModeButton:(UIButton *)sender;
-- (IBAction)didPressDownTrackTwoMediumModeButton2:(UIButton *)sender;
-- (IBAction)didPressDownTrackTwoMediumModeButton3:(UIButton *)sender;
-- (IBAction)didPressDownTrackTwoMediumModeButton4:(UIButton *)sender;
-- (IBAction)didPressDownTrackTwoMediumModeButton5:(UIButton *)sender;
-- (IBAction)didPressDownTrackTwoMediumModeButton6:(UIButton *)sender;
-- (IBAction)didPressDownTrackTwoMediumModeButton7:(UIButton *)sender;
-- (IBAction)didPressDownTrackTwoMediumModeButton8:(UIButton *)sender;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackMediumModeButtons;
+- (IBAction)didPressTrackMediumModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton2:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton3:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton4:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton5:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton6:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton7:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton8:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton9:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton10:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton11:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton12:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton13:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton14:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton15:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton16:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton17:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton18:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton19:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton20:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton21:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton22:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton23:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton24:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton25:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton26:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton27:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton28:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton29:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton30:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton31:(UIButton *)sender;
+- (IBAction)didPressDownTrackMediumModeButton32:(UIButton *)sender;
 
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeMediumModeButtons;
 - (IBAction)didPressTrackThreeMediumModeButton:(UIButton *)sender;
