@@ -10,6 +10,12 @@
 
 @interface MediumModeViewController ()
 
+@property int tick;
+@property int i;
+@property (strong, nonatomic) NSMutableArray *k;
+@property int w;
+@property int z;
+
 @end
 
 @implementation MediumModeViewController
@@ -17,17 +23,37 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-   // [self initArrays];
-    //[self setupAudioPlayers];
-    //self.sampleNumber = 0;
-    //[self initAlpha];
+    [self initArrays];
+    [self setupAudioPlayers];
+    self.sampleNumber = 0;
+    [self initAlpha];
+    self.stage = 1;
+    self.k = [NSMutableArray array];
     
     // Do any additional setup after loading the view.
+    
+    NSString *spaceAppMusic = [[NSBundle mainBundle] pathForResource: @"Space App Music" ofType:@"wav"];
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:spaceAppMusic] error:NULL];
+    
+    self.audioPlayer.delegate = self;
+    self.audioPlayer.numberOfLoops = -1;
+    [self.audioPlayer play];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:NO];
+    
+    self.audioPlayer.delegate = nil;
+    [self.audioPlayer stop];
+    self.audioPlayer = nil;
+    
 }
 
 /*
@@ -40,130 +66,402 @@
 }
 */
 
-- (IBAction)didPressTrackOneMediumModeButton:(UIButton *)sender {
+- (IBAction)didPressTrackMediumModeButton:(UIButton *)sender {
     
     NSLog(@"Track One Button %ld", sender.tag);
-    if ([sender isSelected] == FALSE) {  // Yes
+    
+    // No
+    NSLog(@"Unselected");
+    trackOneButtonStateArray[sender.tag] = 0;
+    sender.selected = NO;
+    sender.alpha = 0.5;
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
         sender.selected = YES;
         sender.alpha = 1;
-        
-    }
-    else { // No
-        NSLog(@"Unselected");
-        trackOneButtonStateArray[sender.tag] = 0;
-        sender.selected = NO;
-        sender.alpha = 0.5;
     }
     
 }
 
-- (IBAction)didPressDownTrackOneMediumModeButton:(UIButton *)sender {
-}
-- (IBAction)didPressTrackTwoMediumModeButton:(UIButton *)sender {
+- (IBAction)didPressDownTrackMediumModeButton2:(UIButton *)sender {
     
-    NSLog(@"Track Two Button %ld", sender.tag);
-    
-    if ([sender isSelected] == FALSE) {  // Yes
+    if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
-        trackTwoButtonStateArray[sender.tag] = 1;
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 1];
         sender.selected = YES;
         sender.alpha = 1;
-        
-    }
-    else { // No
-        NSLog(@"Unselected");
-        trackTwoButtonStateArray[sender.tag] = 0;
-        sender.selected = NO;
-        sender.alpha = 0.5;
     }
     
 }
 
-- (IBAction)didPressDownTrackTwoMediumModeButton:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackTwoMediumModeButton2:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackTwoMediumModeButton3:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackTwoMediumModeButton4:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackTwoMediumModeButton5:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackTwoMediumModeButton6:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackTwoMediumModeButton7:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackTwoMediumModeButton8:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackOneMediumModeButton2:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackOneMediumModeButton3:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackOneMediumModeButton4:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackOneMediumModeButton5:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackOneMediumModeButton6:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackOneMediumModeButton7:(UIButton *)sender {
-}
-
-- (IBAction)didPressDownTrackOneMediumModeButton8:(UIButton *)sender {
-}
-- (IBAction)didPressTrackThreeMediumModeButton:(UIButton *)sender {
+- (IBAction)didPressDownTrackMediumModeButton3:(UIButton *)sender {
     
-    NSLog(@"Track Three Button %ld", sender.tag);
-    
-    if ([sender isSelected] == FALSE) {  // Yes
+    if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
-        trackThreeButtonStateArray[sender.tag] = 1;
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 2];
         sender.selected = YES;
         sender.alpha = 1;
-        
     }
-    else { // No
-        NSLog(@"Unselected");
-        trackThreeButtonStateArray[sender.tag] = 0;
-        sender.selected = NO;
-        sender.alpha = 0.5;
-    }
-
+    
 }
 
-- (IBAction)didPressTrackFourMediumModeButton:(UIButton *)sender {
+- (IBAction)didPressDownTrackMediumModeButton4:(UIButton *)sender {
     
-    NSLog(@"Track Four Button %ld", sender.tag);
-    
-    if ([sender isSelected] == FALSE) {  // Yes
+    if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
-        trackFourButtonStateArray[sender.tag] = 1;
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 3];
         sender.selected = YES;
         sender.alpha = 1;
-        
-    }
-    else { // No
-        NSLog(@"Unselected");
-        trackFourButtonStateArray[sender.tag] = 0;
-        sender.selected = NO;
-        sender.alpha = 0.5;
     }
     
 }
+
+- (IBAction)didPressDownTrackMediumModeButton5:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 4];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton6:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 5];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton7:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 6];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton8:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 7];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton9:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 8];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton10:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 9];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton11:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 10];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton12:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 11];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton13:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 12];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton14:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 13];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton15:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 14];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton16:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 15];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton17:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton18:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton19:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton20:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton21:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton22:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton23:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton24:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton25:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton26:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton27:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton28:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton29:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton30:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton31:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
+- (IBAction)didPressDownTrackMediumModeButton32:(UIButton *)sender {
+    
+    if (!([self.k count] == 0) || self.w == 0){
+        NSLog(@"Selected");
+        trackOneButtonStateArray[sender.tag] = 1;
+        [self correctButtonPressed: 0];
+        sender.selected = YES;
+        sender.alpha = 1;
+    }
+    
+}
+
 - (IBAction)didPressPauseMediumModeButton:(UIButton *)sender {
     
     NSLog(@"Paused");
@@ -177,35 +475,178 @@
     self.trackOne.currentTime = 0.0;
     [self.trackOne prepareToPlay];
     
-    [self.trackTwo stop];
-    self.trackTwo.currentTime = 0.0;
-    [self.trackTwo prepareToPlay];
-    
-    [self.trackThree stop];
-    self.trackThree.currentTime = 0.0;
-    [self.trackThree prepareToPlay];
-    
-    [self.trackFour stop];
-    self.trackFour.currentTime = 0.0;
-    [self.trackFour prepareToPlay];
+    self.didPressMediumModeStartButton.enabled = YES;
     
 }
 
 - (IBAction)didPressMediumModeStartButton:(UIButton *)sender {
     
+    self.didPressTrackMediumModeButton.enabled = YES;
     self.playing = YES;
     
-    // self.mediumModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoMediumModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    self.tempoMediumModeBPM = 95;
+    self.tick = 1;
+    self.mediumModeTimer = [NSTimer scheduledTimerWithTimeInterval:95.0/self.tempoMediumModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
     
     ((UIButton *)sender).enabled = NO;
     
-    self.tempoMediumModeBPM = 95;
+    self.didPressMediumModeStartButton.alpha = 0.5;
     
 }
 
 - (IBAction)didPressMediumModeRestartButton:(id)sender {
     
+    NSLog(@"Restarted!");
     
+    self.playing = NO;
+    [self.mediumModeTimer invalidate];
+    [self.k removeAllObjects];
+    self.stage = 1;
+    [self.trackOne stop];
+    self.trackOne.currentTime = 0.0;
+    [self.trackOne prepareToPlay];
+    
+    [self initArrays];
+    self.sampleNumber = 0;
+    [self initAlpha];
+    
+    for (UIButton *button in self.trackMediumModeButtons) {
+        
+        button.alpha = 0.5;
+        
+        self.didPressMediumModeStartButton.enabled = YES;
+        
+        self.didPressMediumModeStartButton.alpha = 1;
+        
+    }
+    
+}
+
+-(void) initArrays {
+    
+    // initialize every element to zero
+    
+    for (int i = 0; i < 4; i++) {
+        
+        trackOneButtonStateArray[i] = 0;
+        
+    }
+    
+}
+
+-(void) setupAudioPlayers {
+    
+    NSLog(@"Setting Up Audio Players");
+    
+}
+
+-(void) timerFire:(NSTimer *)timer {
+    
+    NSLog(@"Timer Fire! Sample %ld", self.sampleNumber);
+    
+    self.w = 1;
+    
+    NSLog(@"Tick %d", self.tick);
+    
+    [self initArrays];
+    int lowerBound = 0;
+    int upperBound = 31;
+    self.i = lowerBound + arc4random() % (upperBound - lowerBound);
+    
+    if (self.tick % 2) {
+        NSLog(@"check");
+        [self.k addObject:[NSNumber numberWithInt:self.i]];
+        
+    }
+    
+    NSLog(@"i: %i",self.i);
+    //NSLog(@"k: %i",self.k);
+    NSLog(@":Answers: %@", self.k);
+    NSLog(@"Stage: %d", self.stage);
+    
+    for (UIButton *button1 in self.trackMediumModeButtons) {
+        
+        if ((button1.tag == self.i)&&(self.tick % 2)) {
+            button1.alpha = 1.0;
+        } else {
+            button1.alpha = 0.5;
+            
+        }
+        
+        
+        
+        // if current sample is on
+        if (trackOneButtonStateArray[self.sampleNumber] == 1) {
+            
+            if ([self.trackOne isPlaying]) { // if a sample is already playing
+                [self.trackOne stop];
+                self.trackOne.currentTime = 0.0; // stop and rewind
+            }
+            
+            [self.trackOne play];
+            
+        }
+        
+        
+        self.sampleNumber++;
+        if (self.sampleNumber > 3)
+            self.sampleNumber = 0;
+        
+    }
+    self.tick = self.tick +1;
+    if (self.tick == 1+self.stage*2) {
+        [self.mediumModeTimer invalidate];
+    }
+    
+}
+
+- (void) initAlpha {
+    
+    for (UIButton *button1 in self.trackMediumModeButtons) {
+        button1.alpha = 0.5;
+        
+    }
+    
+}
+
+/* - (void) stageFlashTimes {
+ 
+ for (int i = 0; i = self.stage; 1) {
+ self.stage = self.stage + 1;
+ }
+ 
+ } */
+
+
+
+- (void) correctButtonPressed:(int) tag {
+    
+    if (tag == [[self.k objectAtIndex:0] intValue]) {
+        
+        [self.k removeObjectAtIndex:0];
+        NSLog(@"Correct Button Selected");
+        
+        
+        if ([self.k count] == 0){
+            self.stage = self.stage + 1;
+            self.playing = NO;
+            [self.mediumModeTimer invalidate];
+            
+            [self.trackOne stop];
+            self.trackOne.currentTime = 0.0;
+            [self.trackOne prepareToPlay];
+            
+            [self initArrays];
+            self.sampleNumber = 0;
+            [self initAlpha];
+            
+            self.didPressMediumModeStartButton.enabled = YES;
+            self.didPressMediumModeStartButton.alpha = 1;
+            self.didPressTrackMediumModeButton.enabled = NO;
+            
+        }
+        
+    }
     
 }
 

@@ -30,7 +30,6 @@
     self.stage = 1;
     self.k = [NSMutableArray array];
     
-    //NSMutableArray *k = [NSMutableArray array];
     // Do any additional setup after loading the view.
     
     NSString *spaceAppMusic = [[NSBundle mainBundle] pathForResource: @"Space App Music" ofType:@"wav"];
@@ -423,7 +422,7 @@
  
     }
     
- - (void) savedScore: (int) {
+ /* - (void) savedScore: (int) {
  
     NSLog(@"Score: %ld", self.savedScore)
      
@@ -436,7 +435,7 @@
         
     }
     
-}
+} */
  
  }
 

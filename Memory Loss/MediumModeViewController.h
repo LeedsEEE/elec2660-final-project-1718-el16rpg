@@ -12,10 +12,7 @@
 
 @interface MediumModeViewController : UIViewController {
     
-    NSInteger trackOneButtonStateArray[8];
-    NSInteger trackTwoButtonStateArray[8];
-    NSInteger trackThreeButtonStateArray[8];
-    NSInteger trackFourButtonStateArray[8];
+    NSInteger trackOneButtonStateArray[32];
     
 }
 
@@ -54,20 +51,19 @@
 - (IBAction)didPressDownTrackMediumModeButton31:(UIButton *)sender;
 - (IBAction)didPressDownTrackMediumModeButton32:(UIButton *)sender;
 
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackThreeMediumModeButtons;
-- (IBAction)didPressTrackThreeMediumModeButton:(UIButton *)sender;
-
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *trackFourMediumModeButtons;
-- (IBAction)didPressTrackFourMediumModeButton:(UIButton *)sender;
-
 @property (strong, nonatomic) AVAudioPlayer *trackOne;
-@property (strong, nonatomic) AVAudioPlayer *trackTwo;
-@property (strong, nonatomic) AVAudioPlayer *trackThree;
-@property (strong, nonatomic) AVAudioPlayer *trackFour;
+
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
 
 @property float tempoMediumModeBPM;
 
-- (IBAction)didPressMediumModeStartButton:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIButton *didPressMediumModeStartButton;
+
+@property (strong, nonatomic) IBOutlet UIButton *didPressTrackMediumModeButton;
+
+- (IBAction)didPressMediumModeStartButton:(id)sender;
+
+- (void) correctButtonPressed:(int) tag;
 
 @property NSInteger sampleNumber;
 
@@ -76,5 +72,9 @@
 @property BOOL playing;
 
 - (IBAction)didPressMediumModeRestartButton:(id)sender;
+
+- (void) initAlpha;
+
+@property int stage;
 
 @end
