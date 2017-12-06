@@ -275,7 +275,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 16];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -287,7 +287,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 17];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -299,7 +299,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 18];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -311,7 +311,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 19];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -323,7 +323,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 20];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -335,7 +335,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 21];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -347,7 +347,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 22];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -359,7 +359,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 23];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -371,7 +371,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 24];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -383,7 +383,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 25];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -395,7 +395,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 26];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -407,7 +407,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 27];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -419,7 +419,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 28];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -431,7 +431,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 29];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -443,7 +443,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 30];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -455,7 +455,7 @@
     if (!([self.k count] == 0) || self.w == 0){
         NSLog(@"Selected");
         trackOneButtonStateArray[sender.tag] = 1;
-        [self correctButtonPressed: 0];
+        [self correctButtonPressed: 31];
         sender.selected = YES;
         sender.alpha = 1;
     }
@@ -647,6 +647,21 @@
         }
         
     }
+    
+    /* - (void) savedScore: (int) {
+     
+     NSLog(@"Score: %ld", self.savedScore)
+     
+     int z = 10
+     
+     if (self.stage + 1) {
+     
+     int z = z + 10;
+     self.finalScore = z
+     
+     }
+     
+     } */
     
 }
 
