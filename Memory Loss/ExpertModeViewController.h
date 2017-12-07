@@ -83,12 +83,30 @@
 - (IBAction)didPressDownTrackExpertModeButton63:(UIButton *)sender;
 - (IBAction)didPressDownTrackExpertModeButton64:(UIButton *)sender;
 
+@property (strong, nonatomic) AVAudioPlayer *trackOne;
+
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
+
 @property float tempoExpertModeBPM;
 
 - (IBAction)didPressExpertModeStartButton:(UIButton *)sender;
 
+@property (strong, nonatomic) IBOutlet UIButton *didPressExpertModeStartButton;
+
+@property (strong, nonatomic) IBOutlet UIButton *didPressTrackExpertModeButton;
+
 @property (strong, nonatomic) NSTimer *expertModeTimer;
 
 - (IBAction)didPressExpertModeRestartButton:(id)sender;
+
+- (void) correctButtonPressed:(int) tag;
+
+@property NSInteger sampleNumber;
+
+@property BOOL playing;
+
+- (void) initAlpha;
+
+@property int stage;
 
 @end

@@ -57,14 +57,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)didPressTrackHardModeButton:(UIButton *)sender {
     
@@ -77,7 +77,7 @@
     sender.alpha = 0.5;
     
 }
-    
+
 - (IBAction)didPressDownTrackHardModeButton:(UIButton *)sender {
     
     if (!([self.k count] == 0) || self.w == 0){
@@ -846,6 +846,23 @@
     
 }
 
+- (IBAction)didPressPauseHardModeButton:(UIButton *)sender {
+    
+    NSLog(@"Paused");
+    
+    NSLog(@"Stopped Music!");
+    
+    self.playing = NO;
+    [self.hardModeTimer invalidate];
+    
+    [self.trackOne stop];
+    self.trackOne.currentTime = 0.0;
+    [self.trackOne prepareToPlay];
+    
+    self.didPressHardModeStartButton.enabled = YES;
+    
+}
+
 - (IBAction)didPressHardModeStartButton:(UIButton *)sender {
     
     self.didPressTrackHardModeButton.enabled = YES;
@@ -893,7 +910,7 @@
     
     // initialize every element to zero
     
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < 64; i++) {
         
         trackOneButtonStateArray[i] = 0;
         
@@ -916,7 +933,7 @@
     
     [self initArrays];
     int lowerBound = 0;
-    int upperBound = 31;
+    int upperBound = 63;
     self.i = lowerBound + arc4random() % (upperBound - lowerBound);
     
     if (self.tick % 2) {
@@ -955,7 +972,7 @@
         
         
         self.sampleNumber++;
-        if (self.sampleNumber > 3)
+        if (self.sampleNumber > 63)
             self.sampleNumber = 0;
         
     }

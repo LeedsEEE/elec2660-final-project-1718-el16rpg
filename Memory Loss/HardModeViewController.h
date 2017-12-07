@@ -89,7 +89,7 @@
 
 @property float tempoHardModeBPM;
 
-- (IBAction)didPressHardModeStartButton:(UIButton *)sender;
+- (IBAction)didPressHardModeStartButton:(id)sender;
 
 @property (strong, nonatomic) IBOutlet UIButton *didPressHardModeStartButton;
 
