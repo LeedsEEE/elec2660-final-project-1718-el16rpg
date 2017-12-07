@@ -903,158 +903,157 @@
         self.didPressExpertModeStartButton.alpha = 1;
     }
 }
+
+-(void) initArrays {
     
-    -(void) initArrays {
-        
-        // initialize every element to zero
-        
-        for (int i = 0; i < 64; i++) {
-            
-            trackOneButtonStateArray[i] = 0;
-            
-        }
-    }
+    // initialize every element to zero
     
-    -(void) setupAudioPlayers {
+    for (int i = 0; i < 64; i++) {
         
-        NSLog(@"Setting Up Audio Players");
+        trackOneButtonStateArray[i] = 0;
         
     }
+}
+
+-(void) setupAudioPlayers {
     
-    -(void) timerFire:(NSTimer *)timer {
-        
-        NSLog(@"Timer Fire! Sample %ld", self.sampleNumber);
-        
-        self.w = 1;
-        
-        NSLog(@"Tick %d", self.tick);
-        
-        [self initArrays];
-        int lowerBound = 0;
-        int upperBound = 63;
-        self.i = lowerBound + arc4random() % (upperBound - lowerBound);
-        
-        if (self.tick % 2) {
-            NSLog(@"check");
-            [self.k addObject:[NSNumber numberWithInt:self.i]];
-            
-        }
-        
-        NSLog(@"i: %i",self.i);
-        //NSLog(@"k: %i",self.k);
-        NSLog(@":Answers: %@", self.k);
-        NSLog(@"Stage: %d", self.stage);
-        
-        for (UIButton *button1 in self.trackExpertModeButtons) {
-            
-            if ((button1.tag == self.i)&&(self.tick % 2)) {
-                button1.alpha = 1.0;
-            } else {
-                button1.alpha = 0.5;
-                
-            }
-            
-            
-            
-            // if current sample is on
-            if (trackOneButtonStateArray[self.sampleNumber] == 1) {
-                
-                if ([self.trackOne isPlaying]) { // if a sample is already playing
-                    [self.trackOne stop];
-                    self.trackOne.currentTime = 0.0; // stop and rewind
-                }
-                
-                [self.trackOne play];
-                
-            }
-            
-            
-            self.sampleNumber++;
-            if (self.sampleNumber > 63)
-                self.sampleNumber = 0;
-            
-        }
-        self.tick = self.tick +1;
-        if (self.tick == 1+self.stage*2) {
-            [self.expertModeTimer invalidate];
-        }
+    NSLog(@"Setting Up Audio Players");
+    
+}
+
+-(void) timerFire:(NSTimer *)timer {
+    
+    NSLog(@"Timer Fire! Sample %ld", self.sampleNumber);
+    
+    self.w = 1;
+    
+    NSLog(@"Tick %d", self.tick);
+    
+    [self initArrays];
+    int lowerBound = 0;
+    int upperBound = 63;
+    self.i = lowerBound + arc4random() % (upperBound - lowerBound);
+    
+    if (self.tick % 2) {
+        NSLog(@"check");
+        [self.k addObject:[NSNumber numberWithInt:self.i]];
         
     }
     
-    - (void) initAlpha {
+    NSLog(@"i: %i",self.i);
+    //NSLog(@"k: %i",self.k);
+    NSLog(@":Answers: %@", self.k);
+    NSLog(@"Stage: %d", self.stage);
+    
+    for (UIButton *button1 in self.trackExpertModeButtons) {
         
-        for (UIButton *button1 in self.trackExpertModeButtons) {
+        if ((button1.tag == self.i)&&(self.tick % 2)) {
+            button1.alpha = 1.0;
+        } else {
             button1.alpha = 0.5;
             
         }
         
+        
+        
+        // if current sample is on
+        if (trackOneButtonStateArray[self.sampleNumber] == 1) {
+            
+            if ([self.trackOne isPlaying]) { // if a sample is already playing
+                [self.trackOne stop];
+                self.trackOne.currentTime = 0.0; // stop and rewind
+            }
+            
+            [self.trackOne play];
+            
+        }
+        
+        
+        self.sampleNumber++;
+        if (self.sampleNumber > 63)
+            self.sampleNumber = 0;
+        
+    }
+    self.tick = self.tick +1;
+    if (self.tick == 1+self.stage*2) {
+        [self.expertModeTimer invalidate];
     }
     
-    /* - (void) stageFlashTimes {
-     
-     for (int i = 0; i = self.stage; 1) {
-     self.stage = self.stage + 1;
-     }
-     
-     } */
-    
-    
-    
-    - (void) correctButtonPressed:(int) tag {
-        
-        if (tag == [[self.k objectAtIndex:0] intValue]) {
-            
-            [self.k removeObjectAtIndex:0];
-            NSLog(@"Correct Button Selected");
-            
-            
-            if ([self.k count] == 0){
-                self.stage = self.stage + 1;
-                self.playing = NO;
-                [self.expertModeTimer invalidate];
-                
-                [self.trackOne stop];
-                self.trackOne.currentTime = 0.0;
-                [self.trackOne prepareToPlay];
-                
-                [self initArrays];
-                self.sampleNumber = 0;
-                [self initAlpha];
-                
-                self.didPressExpertModeStartButton.enabled = YES;
-                self.didPressExpertModeStartButton.alpha = 1;
-                self.didPressTrackExpertModeButton.enabled = NO;
-                
-            }
-            
-        }
-        
-  /*      - (void) incorrectButtonPressed:(int) tag {
-            
-            if (tag != [[self.k objectAtIndex:0] intValue]) {
-            
-                NSLog(@"Incorrect Button Selected");
-                
-            }
-            
-        }
-        
-         - (void) savedScore: (int) {
-         
-         NSLog(@"Score: %ld", self.savedScore)
-         
-         int z = 10
-         
-         if (self.stage + 1) {
-         
-         int z = z + 10;
-         self.finalScore = z
-         
-         }
-         
-         } */
-        
 }
+
+- (void) initAlpha {
+    
+    for (UIButton *button1 in self.trackExpertModeButtons) {
+        button1.alpha = 0.5;
+        
+    }
+    
+}
+
+/* - (void) stageFlashTimes {
+ 
+ for (int i = 0; i = self.stage; 1) {
+ self.stage = self.stage + 1;
+ }
+ 
+ } */
+
+
+
+- (void) correctButtonPressed:(int) tag {
+    
+    if (tag == [[self.k objectAtIndex:0] intValue]) {
+        
+        [self.k removeObjectAtIndex:0];
+        NSLog(@"Correct Button Selected");
+        
+        
+        if ([self.k count] == 0){
+            self.stage = self.stage + 1;
+            self.playing = NO;
+            [self.expertModeTimer invalidate];
+            
+            [self.trackOne stop];
+            self.trackOne.currentTime = 0.0;
+            [self.trackOne prepareToPlay];
+            
+            [self initArrays];
+            self.sampleNumber = 0;
+            [self initAlpha];
+            
+            self.didPressExpertModeStartButton.enabled = YES;
+            self.didPressExpertModeStartButton.alpha = 1;
+            self.didPressTrackExpertModeButton.enabled = NO;
+            
+        }
+        
+    }
+}
+
+/* - (void) incorrectButtonPressed:(int) tag {
+    
+    if (tag != [[self.k objectAtIndex:0] intValue]) {
+        
+        NSLog(@"Incorrect Button Selected");
+        
+    }
+    
+}
+   
+   - (void) savedScore: (int) {
+   
+   NSLog(@"Score: %ld", self.savedScore)
+   
+   int z = 10
+   
+   if (self.stage + 1) {
+   
+   int z = z + 10;
+   self.finalScore = z
+   
+   }
+   
+   } */
 
 
 @end
