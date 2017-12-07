@@ -29,6 +29,7 @@
     [self initAlpha];
     self.stage = 1;
     self.k = [NSMutableArray array];
+    self.w = 1;
     
     // Do any additional setup after loading the view.
     
@@ -1030,7 +1031,7 @@
     }
 }
 
-/* - (void) incorrectButtonPressed:(int) tag {
+- (void) incorrectButtonPressed:(int) tag {
     
     if (tag != [[self.k objectAtIndex:0] intValue]) {
         
@@ -1040,7 +1041,7 @@
     
 }
    
-   - (void) savedScore: (int) {
+ /*   - (void) savedScore: (int) {
    
    NSLog(@"Score: %ld", self.savedScore)
    

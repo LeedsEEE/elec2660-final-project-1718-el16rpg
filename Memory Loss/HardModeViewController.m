@@ -29,6 +29,7 @@
     [self initAlpha];
     self.stage = 1;
     self.k = [NSMutableArray array];
+    self.w = 1;
     
     // Do any additional setup after loading the view.
     
