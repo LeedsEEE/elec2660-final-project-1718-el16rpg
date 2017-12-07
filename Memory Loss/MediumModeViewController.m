@@ -486,7 +486,7 @@
     
     self.tempoMediumModeBPM = 95;
     self.tick = 1;
-    self.mediumModeTimer = [NSTimer scheduledTimerWithTimeInterval:95.0/self.tempoMediumModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    self.mediumModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoMediumModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
     
     ((UIButton *)sender).enabled = NO;
     
@@ -526,7 +526,7 @@
     
     // initialize every element to zero
     
-    for (int i = 0; i < 8; i++) {
+    for (int i = 0; i < 32; i++) {
         
         trackOneButtonStateArray[i] = 0;
         
@@ -589,7 +589,7 @@
         
         
         self.sampleNumber++;
-        if (self.sampleNumber > 3)
+        if (self.sampleNumber > 31)
             self.sampleNumber = 0;
         
     }

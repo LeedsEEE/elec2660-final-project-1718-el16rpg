@@ -33,6 +33,15 @@
     if (self.newHighScoreEasy > self.highScoreEasy1)
         self.highScoreEasy1 = self.newHighScoreEasy;
     
-} */
+}
+ 
+ NSString *button1 = [[NSBundle mainBundle] pathForResource: @"" ofType:@"wav"];
+ self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:spaceAppMusic] error:NULL];
+ 
+ NSString *button2 = [[NSBundle mainBundle] pathForResource: @"" ofType:@"wav"];
+ self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:spaceAppMusic] error:NULL];
+ 
+ NSString *button3 = [[NSBundle mainBundle] pathForResource: @"" ofType:@"wav"];
+ self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:spaceAppMusic] error:NULL]; */
 
 @end

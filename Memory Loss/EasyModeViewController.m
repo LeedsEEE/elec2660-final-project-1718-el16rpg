@@ -300,7 +300,7 @@
     
     // initialize every element to zero
     
-    for (int i = 0; i < 4; i++) {
+    for (int i = 0; i < 16; i++) {
         
         trackOneButtonStateArray[i] = 0;
         
@@ -363,7 +363,7 @@
         
         
         self.sampleNumber++;
-        if (self.sampleNumber > 3)
+        if (self.sampleNumber > 15)
             self.sampleNumber = 0;
         
     }

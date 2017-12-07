@@ -22,12 +22,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self initArrays];
+    [self setupAudioPlayers];
+    self.sampleNumber = 0;
+    [self initAlpha];
+    self.stage = 1;
+    self.k = [NSMutableArray array];
+    
     // Do any additional setup after loading the view.
+    
+    NSString *spaceAppMusic = [[NSBundle mainBundle] pathForResource: @"Space App Music" ofType:@"wav"];
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:spaceAppMusic] error:NULL];
+    
+    self.audioPlayer.delegate = self;
+    self.audioPlayer.numberOfLoops = -1;
+    [self.audioPlayer play];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
+    [super viewWillDisappear:NO];
+    
+    self.audioPlayer.delegate = nil;
+    [self.audioPlayer stop];
+    self.audioPlayer = nil;
+    
 }
 
 /*
@@ -844,7 +870,7 @@
     
     self.tempoExpertModeBPM = 160;
     self.tick = 1;
-    self.expertModeTimer = [NSTimer scheduledTimerWithTimeInterval:160.0/self.tempoExpertModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    self.expertModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoExpertModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
     
     ((UIButton *)sender).enabled = NO;
     
@@ -944,7 +970,7 @@
             
             
             self.sampleNumber++;
-            if (self.sampleNumber > 3)
+            if (self.sampleNumber > 63)
                 self.sampleNumber = 0;
             
         }
@@ -1003,7 +1029,17 @@
             
         }
         
-        /* - (void) savedScore: (int) {
+  /*      - (void) incorrectButtonPressed:(int) tag {
+            
+            if (tag != [[self.k objectAtIndex:0] intValue]) {
+            
+                NSLog(@"Incorrect Button Selected");
+                
+            }
+            
+        }
+        
+         - (void) savedScore: (int) {
          
          NSLog(@"Score: %ld", self.savedScore)
          

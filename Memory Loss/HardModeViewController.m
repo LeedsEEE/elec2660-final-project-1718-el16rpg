@@ -870,7 +870,7 @@
     
     self.tempoHardModeBPM = 120;
     self.tick = 1;
-    self.hardModeTimer = [NSTimer scheduledTimerWithTimeInterval:120.0/self.tempoHardModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    self.hardModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoHardModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
     
     ((UIButton *)sender).enabled = NO;
     
