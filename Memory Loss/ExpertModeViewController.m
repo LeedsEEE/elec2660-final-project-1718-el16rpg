@@ -36,9 +36,13 @@
     NSString *spaceAppMusic = [[NSBundle mainBundle] pathForResource: @"Space App Music" ofType:@"wav"];
     self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:spaceAppMusic] error:NULL];
     
+    // Path of the Main Theme Song
+    
     self.audioPlayer.delegate = self;
     self.audioPlayer.numberOfLoops = -1;
     [self.audioPlayer play];
+    
+    // This for looping the song indefinitely
     
 }
 
@@ -54,6 +58,8 @@
     self.audioPlayer.delegate = nil;
     [self.audioPlayer stop];
     self.audioPlayer = nil;
+    
+    // Will stop the song when the view is disposed of
     
 }
 
@@ -77,6 +83,8 @@
     sender.selected = NO;
     sender.alpha = 0.5;
     
+    // When not selected, it will be on half brightness
+    
 }
 
 - (IBAction)didPressDownTrackExpertModeButton:(UIButton *)sender {
@@ -87,6 +95,10 @@
         [self correctButtonPressed: 0];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // When selected, it will be on full brightness
+        // It is also the action that makes the button flash instead of staying on all the time
+        
     }
     
 }
@@ -99,6 +111,9 @@
         [self correctButtonPressed: 1];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // " (ditto)
+        
     }
     
 }
@@ -111,6 +126,9 @@
         [self correctButtonPressed: 2];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -123,6 +141,9 @@
         [self correctButtonPressed: 3];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -135,6 +156,9 @@
         [self correctButtonPressed: 4];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -147,6 +171,9 @@
         [self correctButtonPressed: 5];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -159,6 +186,9 @@
         [self correctButtonPressed: 6];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -171,6 +201,9 @@
         [self correctButtonPressed: 7];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -183,6 +216,9 @@
         [self correctButtonPressed: 8];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -195,6 +231,9 @@
         [self correctButtonPressed: 9];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -207,6 +246,9 @@
         [self correctButtonPressed: 10];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -219,6 +261,9 @@
         [self correctButtonPressed: 11];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -231,6 +276,9 @@
         [self correctButtonPressed: 12];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -243,6 +291,9 @@
         [self correctButtonPressed: 13];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -255,6 +306,9 @@
         [self correctButtonPressed: 14];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -267,6 +321,9 @@
         [self correctButtonPressed: 15];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -279,6 +336,9 @@
         [self correctButtonPressed: 16];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -291,6 +351,9 @@
         [self correctButtonPressed: 17];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -303,6 +366,9 @@
         [self correctButtonPressed: 18];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -315,6 +381,9 @@
         [self correctButtonPressed: 19];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -327,6 +396,9 @@
         [self correctButtonPressed: 20];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -339,6 +411,9 @@
         [self correctButtonPressed: 21];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -351,6 +426,9 @@
         [self correctButtonPressed: 22];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -363,6 +441,9 @@
         [self correctButtonPressed: 23];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -375,6 +456,9 @@
         [self correctButtonPressed: 24];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -387,6 +471,9 @@
         [self correctButtonPressed: 25];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -399,6 +486,9 @@
         [self correctButtonPressed: 26];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -411,6 +501,9 @@
         [self correctButtonPressed: 27];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -423,6 +516,9 @@
         [self correctButtonPressed: 28];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -435,6 +531,9 @@
         [self correctButtonPressed: 29];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -447,6 +546,9 @@
         [self correctButtonPressed: 30];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -459,6 +561,9 @@
         [self correctButtonPressed: 31];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -471,6 +576,9 @@
         [self correctButtonPressed: 32];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -483,6 +591,9 @@
         [self correctButtonPressed: 33];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -495,6 +606,9 @@
         [self correctButtonPressed: 34];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -507,6 +621,9 @@
         [self correctButtonPressed: 35];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -519,6 +636,9 @@
         [self correctButtonPressed: 36];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -531,6 +651,9 @@
         [self correctButtonPressed: 37];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -543,6 +666,9 @@
         [self correctButtonPressed: 38];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -555,6 +681,9 @@
         [self correctButtonPressed: 39];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -567,6 +696,9 @@
         [self correctButtonPressed: 40];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -579,6 +711,9 @@
         [self correctButtonPressed: 41];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -591,6 +726,9 @@
         [self correctButtonPressed: 42];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -603,6 +741,9 @@
         [self correctButtonPressed: 43];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -615,6 +756,9 @@
         [self correctButtonPressed: 44];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -627,6 +771,9 @@
         [self correctButtonPressed: 45];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -639,6 +786,9 @@
         [self correctButtonPressed: 46];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -651,6 +801,9 @@
         [self correctButtonPressed: 47];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -663,6 +816,9 @@
         [self correctButtonPressed: 48];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -675,6 +831,9 @@
         [self correctButtonPressed: 49];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -687,6 +846,9 @@
         [self correctButtonPressed: 50];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -699,6 +861,9 @@
         [self correctButtonPressed: 51];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -711,6 +876,9 @@
         [self correctButtonPressed: 52];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -723,6 +891,9 @@
         [self correctButtonPressed: 53];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -735,6 +906,9 @@
         [self correctButtonPressed: 54];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -747,6 +921,9 @@
         [self correctButtonPressed: 55];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -759,6 +936,9 @@
         [self correctButtonPressed: 56];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -771,6 +951,9 @@
         [self correctButtonPressed: 57];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -783,6 +966,9 @@
         [self correctButtonPressed: 58];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -795,6 +981,9 @@
         [self correctButtonPressed: 59];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -807,6 +996,9 @@
         [self correctButtonPressed: 60];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -819,6 +1011,9 @@
         [self correctButtonPressed: 61];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -831,6 +1026,9 @@
         [self correctButtonPressed: 62];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -843,6 +1041,9 @@
         [self correctButtonPressed: 63];
         sender.selected = YES;
         sender.alpha = 1;
+        
+        // "
+        
     }
     
 }
@@ -856,11 +1057,17 @@
     self.playing = NO;
     [self.expertModeTimer invalidate];
     
+    // To stop the main theme song and the timer for the game
+    
     [self.trackOne stop];
     self.trackOne.currentTime = 0.0;
     [self.trackOne prepareToPlay];
     
+    // This is to make sure that the array/buttons are ready for when the view is restored
+    
     self.didPressExpertModeStartButton.enabled = YES;
+    
+    // To enable the start button again
     
 }
 
@@ -869,13 +1076,22 @@
     self.didPressTrackExpertModeButton.enabled = YES;
     self.playing = YES;
     
+    // Enabling both the start button and music to play
+    
     self.tempoExpertModeBPM = 160;
+    
+    // The tempo chosen for this specific mode
+    
     self.tick = 1;
     self.expertModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoExpertModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
+    
+    // The speed that the buttons will be flashing which in this case it is very quickly
     
     ((UIButton *)sender).enabled = NO;
     
     self.didPressExpertModeStartButton.alpha = 0.5;
+    
+    // This shows the user that the Go! button is disabled forcing the user to wait for the flashing of the sequence to end
     
 }
 
@@ -890,6 +1106,8 @@
     [self.trackOne stop];
     self.trackOne.currentTime = 0.0;
     [self.trackOne prepareToPlay];
+    
+    // Stops the sequence being played and intializes it back to stage 1
     
     [self initArrays];
     self.sampleNumber = 0;
@@ -907,11 +1125,11 @@
 
 -(void) initArrays {
     
-    // initialize every element to zero
-    
     for (int i = 0; i < 64; i++) {
         
         trackOneButtonStateArray[i] = 0;
+        
+        // initializes every element to zero
         
     }
 }
@@ -928,12 +1146,17 @@
     
     self.w = 1;
     
+    // This straight away gives all the buttons a value as otherwise (when zero) the app will crash
+    
     NSLog(@"Tick %d", self.tick);
     
     [self initArrays];
     int lowerBound = 0;
     int upperBound = 63;
     self.i = lowerBound + arc4random() % (upperBound - lowerBound);
+    
+    // ^^ From Stackoverflow: https://stackoverflow.com/questions/9678373/generate-random-numbers-between-two-numbers-in-objective-c
+    // To have a random number generated between to numbers every time
     
     if (self.tick % 2) {
         NSLog(@"check");
@@ -954,8 +1177,6 @@
             button1.alpha = 0.5;
             
         }
-        
-        
         
         // if current sample is on
         if (trackOneButtonStateArray[self.sampleNumber] == 1) {

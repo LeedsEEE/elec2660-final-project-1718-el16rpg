@@ -26,6 +26,8 @@
     if (self.newHighScoreExpert > self.currentHighScoreExpert)
         self.currentHighScoreExpert = _newHighScoreExpert;
     
+    // The way a new high score would take place on the screen
+    
 }
 
 /* -(void) updateScoreNumber {
@@ -43,5 +45,7 @@
  
  NSString *button3 = [[NSBundle mainBundle] pathForResource: @"" ofType:@"wav"];
  self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL: [NSURL fileURLWithPath:spaceAppMusic] error:NULL]; */
+
+// If samples would of been added to every button, they would have come from the here in the Data Model
 
 @end

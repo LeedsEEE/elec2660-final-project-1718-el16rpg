@@ -26,7 +26,11 @@
 
 - (IBAction)didPressResumeButton:(UIStoryboardSegue *)unwindsegue {
     
+    // ^^ Steb-by-Step Guide From Atomic Object: https://spin.atomicobject.com/2014/10/25/ios-unwind-segues/
+    
     [self.navigationController popViewControllerAnimated:YES];
+    
+    // ^^ From Stackoverflow: https://stackoverflow.com/questions/16075525/navigate-back-to-previous-view-controller
     
 }
 

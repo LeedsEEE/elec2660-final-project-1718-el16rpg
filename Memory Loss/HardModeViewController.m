@@ -937,6 +937,8 @@
     int upperBound = 63;
     self.i = lowerBound + arc4random() % (upperBound - lowerBound);
     
+    // ^^ From Stackoverflow: https://stackoverflow.com/questions/9678373/generate-random-numbers-between-two-numbers-in-objective-c
+    
     if (self.tick % 2) {
         NSLog(@"check");
         [self.k addObject:[NSNumber numberWithInt:self.i]];
@@ -956,8 +958,6 @@
             button1.alpha = 0.5;
             
         }
-        
-        
         
         // if current sample is on
         if (trackOneButtonStateArray[self.sampleNumber] == 1) {
