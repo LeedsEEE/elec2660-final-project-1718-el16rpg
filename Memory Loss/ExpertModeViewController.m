@@ -10,6 +10,8 @@
 
 @interface ExpertModeViewController ()
 
+#pragma mark - Properties
+
 @property int tick;
 @property int i;
 @property (strong, nonatomic) NSMutableArray *k;
@@ -63,16 +65,8 @@
     
 }
 
-/*
- #pragma mark - Navigation
+ #pragma mark - Buttons
  
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
-
 - (IBAction)didPressTrackExpertModeButton:(UIButton *)sender {
     
     NSLog(@"Track One Button %ld", sender.tag);
@@ -1048,6 +1042,8 @@
     
 }
 
+#pragma mark - Pause Button
+
 - (IBAction)didPressPauseExpertModeButton:(UIButton *)sender {
     
     NSLog(@"Paused");
@@ -1071,6 +1067,8 @@
     
 }
 
+#pragma mark - Go! Button
+
 - (IBAction)didPressExpertModeStartButton:(UIButton *)sender {
     
     self.didPressTrackExpertModeButton.enabled = YES;
@@ -1083,6 +1081,9 @@
     // The tempo chosen for this specific mode
     
     self.tick = 1;
+    
+    // Ticks are used to control the flash of a button
+    
     self.expertModeTimer = [NSTimer scheduledTimerWithTimeInterval:60.0/self.tempoExpertModeBPM target:self selector:@selector(timerFire:) userInfo:nil repeats:YES];
     
     // The speed that the buttons will be flashing which in this case it is very quickly
@@ -1094,6 +1095,8 @@
     // This shows the user that the Go! button is disabled forcing the user to wait for the flashing of the sequence to end
     
 }
+
+#pragma mark - Restart Button
 
 - (IBAction)didPressExpertModeRestartButton:(id)sender {
     
@@ -1120,6 +1123,9 @@
         self.didPressExpertModeStartButton.enabled = YES;
         
         self.didPressExpertModeStartButton.alpha = 1;
+        
+        // Initializes all buttons to their respective alpha
+        
     }
 }
 
@@ -1137,6 +1143,8 @@
 -(void) setupAudioPlayers {
     
     NSLog(@"Setting Up Audio Players");
+    
+    // To check if the audio players are set up
     
 }
 
@@ -1162,6 +1170,8 @@
         NSLog(@"check");
         [self.k addObject:[NSNumber numberWithInt:self.i]];
         
+        // With every increasing stage, a new number is added to the array
+        
     }
     
     NSLog(@"i: %i",self.i);
@@ -1177,6 +1187,8 @@
             button1.alpha = 0.5;
             
         }
+        
+        // Two ticks mean that the button will flash. One tick for the button to come on and then another for the button to go off.
         
         // if current sample is on
         if (trackOneButtonStateArray[self.sampleNumber] == 1) {
@@ -1208,19 +1220,13 @@
     for (UIButton *button1 in self.trackExpertModeButtons) {
         button1.alpha = 0.5;
         
+        // To make every button set to half brightness
+        
     }
     
 }
 
-/* - (void) stageFlashTimes {
- 
- for (int i = 0; i = self.stage; 1) {
- self.stage = self.stage + 1;
- }
- 
- } */
-
-
+#pragma mark - When a Correct or Incorrect Button is Pressed
 
 - (void) correctButtonPressed:(int) tag {
     
@@ -1229,11 +1235,15 @@
         [self.k removeObjectAtIndex:0];
         NSLog(@"Correct Button Selected");
         
+        // k is a value in the array. The array stores a string of numbers which are the correct sequence to progress to the next stage
+        
         
         if ([self.k count] == 0){
             self.stage = self.stage + 1;
             self.playing = NO;
             [self.expertModeTimer invalidate];
+            
+            // Stops the timer for that button
             
             [self.trackOne stop];
             self.trackOne.currentTime = 0.0;
@@ -1243,39 +1253,42 @@
             self.sampleNumber = 0;
             [self initAlpha];
             
+            // initialzes the button to it's normal state
+            
             self.didPressExpertModeStartButton.enabled = YES;
             self.didPressExpertModeStartButton.alpha = 1;
             self.didPressTrackExpertModeButton.enabled = NO;
             
+            // Allows the user to go to the next stage
+            // Not enabled is for the user not to be able to progress when only pressing one butt when there is more than one integer in the array
+            
         }
+    }
+    else {
+        
+        NSLog(@"Incorrect Button Selected");
+        
+        [self performSegueWithIdentifier:@"expertGameOver" sender:self];
+        
+        // When the wrong button is pressed, go to the game over screen
         
     }
 }
 
-- (void) incorrectButtonPressed:(int) tag {
-    
-    if (tag != [[self.k objectAtIndex:0] intValue]) {
-        
-        NSLog(@"Incorrect Button Selected");
-        
-    }
-    
-}
-   
- /*   - (void) savedScore: (int) {
-   
-   NSLog(@"Score: %ld", self.savedScore)
-   
-   int z = 10
-   
-   if (self.stage + 1) {
-   
-   int z = z + 10;
-   self.finalScore = z
-   
-   }
-   
-   } */
+/*   - (void) savedScore: (int) {
+ 
+ NSLog(@"Score: %ld", self.savedScore)
+ 
+ int z = 10
+ 
+ if (self.stage + 1) {
+ 
+ int z = z + 10;
+ self.finalScore = z
+ 
+ }
+ 
+ } */
 
 
 @end

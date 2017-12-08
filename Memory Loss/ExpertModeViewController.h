@@ -101,8 +101,6 @@
 
 - (void) correctButtonPressed:(int) tag;
 
-- (void) incorrectButtonPressed:(int) tag;
-
 @property NSInteger sampleNumber;
 
 @property BOOL playing;

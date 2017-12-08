@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GameOverViewController : UIViewController
-
+    
 @property (strong, nonatomic) IBOutlet UILabel *finalScore;
 
 @end

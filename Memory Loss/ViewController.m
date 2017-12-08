@@ -25,8 +25,9 @@
     self.audioPlayer.numberOfLoops = -1;
     [self.audioPlayer play];
     
+    // This loops the main theme song indefinitely
+    
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -40,6 +41,8 @@
     self.audioPlayer.delegate = nil;
     [self.audioPlayer stop];
     self.audioPlayer = nil;
+    
+    // This stops the music playing
     
 }
 

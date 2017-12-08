@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface PauseViewController : UIViewController
 
 - (IBAction)didPressResumeButton:(UIStoryboardSegue *)segue;
+
+@property (nonatomic, retain) AVAudioPlayer *audioPlayer;
 
 @end
